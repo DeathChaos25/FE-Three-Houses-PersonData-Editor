@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5970BB8D-8B00-4A21-8693-39F2E97EE48D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ThreeHousesPersonDataEditor</RootNamespace>
+    <AssemblyName>ThreeHousesPersonDataEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>fbyleth_jeralthair.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.7.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IO\Common\AlignmentHelper.cs" />
+    <Compile Include="IO\Common\BinarySourceInfo.cs" />
+    <Compile Include="IO\Common\Bits.cs" />
+    <Compile Include="IO\Common\Color.cs" />
+    <Compile Include="IO\Common\EncodingExtensions.cs" />
+    <Compile Include="IO\Common\EndianBinaryReader.cs" />
+    <Compile Include="IO\Common\EndianBinaryWriter.cs" />
+    <Compile Include="IO\Common\EndianBinaryWriter.ExplicitWriteMethods.cs" />
+    <Compile Include="IO\Common\Endianness.cs" />
+    <Compile Include="IO\Common\EndiannessHelper.cs" />
+    <Compile Include="IO\Common\FileHelper.cs" />
+    <Compile Include="IO\Common\IBinarySerializable.cs" />
+    <Compile Include="IO\Common\IBinarySerializableExtensions.cs" />
+    <Compile Include="IO\Common\StreamView.cs" />
+    <Compile Include="IO\Common\StringBinaryFormat.cs" />
+    <Compile Include="PersonDataEditorMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonDataEditorMain.Designer.cs">
+      <DependentUpon>PersonDataEditorMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonData\PersonDataFile.cs" />
+    <Compile Include="PersonData\Sections\CharacterBlocks.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PersonDataEditorMain.resx">
+      <DependentUpon>PersonDataEditorMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="msgData\en_US.bin" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Face\Face_0.bmp" />
+    <EmbeddedResource Include="Face\Face_1.bmp" />
+    <EmbeddedResource Include="Face\Face_10.bmp" />
+    <EmbeddedResource Include="Face\Face_11.bmp" />
+    <EmbeddedResource Include="Face\Face_12.bmp" />
+    <EmbeddedResource Include="Face\Face_13.bmp" />
+    <EmbeddedResource Include="Face\Face_14.bmp" />
+    <EmbeddedResource Include="Face\Face_15.bmp" />
+    <EmbeddedResource Include="Face\Face_16.bmp" />
+    <EmbeddedResource Include="Face\Face_17.bmp" />
+    <EmbeddedResource Include="Face\Face_18.bmp" />
+    <EmbeddedResource Include="Face\Face_19.bmp" />
+    <EmbeddedResource Include="Face\Face_2.bmp" />
+    <EmbeddedResource Include="Face\Face_20.bmp" />
+    <EmbeddedResource Include="Face\Face_21.bmp" />
+    <EmbeddedResource Include="Face\Face_22.bmp" />
+    <EmbeddedResource Include="Face\Face_23.bmp" />
+    <EmbeddedResource Include="Face\Face_24.bmp" />
+    <EmbeddedResource Include="Face\Face_25.bmp" />
+    <EmbeddedResource Include="Face\Face_26.bmp" />
+    <EmbeddedResource Include="Face\Face_27.bmp" />
+    <EmbeddedResource Include="Face\Face_28.bmp" />
+    <EmbeddedResource Include="Face\Face_29.bmp" />
+    <EmbeddedResource Include="Face\Face_3.bmp" />
+    <EmbeddedResource Include="Face\Face_30.bmp" />
+    <EmbeddedResource Include="Face\Face_31.bmp" />
+    <EmbeddedResource Include="Face\Face_32.bmp" />
+    <EmbeddedResource Include="Face\Face_33.bmp" />
+    <EmbeddedResource Include="Face\Face_34.bmp" />
+    <EmbeddedResource Include="Face\Face_35.bmp" />
+    <EmbeddedResource Include="Face\Face_36.bmp" />
+    <EmbeddedResource Include="Face\Face_37.bmp" />
+    <EmbeddedResource Include="Face\Face_38.bmp" />
+    <EmbeddedResource Include="Face\Face_39.bmp" />
+    <EmbeddedResource Include="Face\Face_4.bmp" />
+    <EmbeddedResource Include="Face\Face_40.bmp" />
+    <EmbeddedResource Include="Face\Face_41.bmp" />
+    <EmbeddedResource Include="Face\Face_42.bmp" />
+    <EmbeddedResource Include="Face\Face_43.bmp" />
+    <EmbeddedResource Include="Face\Face_44.bmp" />
+    <EmbeddedResource Include="Face\Face_45.bmp" />
+    <EmbeddedResource Include="Face\Face_46.bmp" />
+    <EmbeddedResource Include="Face\Face_47.bmp" />
+    <EmbeddedResource Include="Face\Face_48.bmp" />
+    <EmbeddedResource Include="Face\Face_49.bmp" />
+    <EmbeddedResource Include="Face\Face_5.bmp" />
+    <EmbeddedResource Include="Face\Face_50.bmp" />
+    <EmbeddedResource Include="Face\Face_500.bmp" />
+    <EmbeddedResource Include="Face\Face_501.bmp" />
+    <EmbeddedResource Include="Face\Face_502.bmp" />
+    <EmbeddedResource Include="Face\Face_503.bmp" />
+    <EmbeddedResource Include="Face\Face_505.bmp" />
+    <EmbeddedResource Include="Face\Face_507.bmp" />
+    <EmbeddedResource Include="Face\Face_51.bmp" />
+    <EmbeddedResource Include="Face\Face_52.bmp" />
+    <EmbeddedResource Include="Face\Face_53.bmp" />
+    <EmbeddedResource Include="Face\Face_54.bmp" />
+    <EmbeddedResource Include="Face\Face_55.bmp" />
+    <EmbeddedResource Include="Face\Face_56.bmp" />
+    <EmbeddedResource Include="Face\Face_6.bmp" />
+    <EmbeddedResource Include="Face\Face_63.bmp" />
+    <EmbeddedResource Include="Face\Face_7.bmp" />
+    <EmbeddedResource Include="Face\Face_8.bmp" />
+    <EmbeddedResource Include="Face\Face_85.bmp" />
+    <EmbeddedResource Include="Face\Face_9.bmp" />
+    <EmbeddedResource Include="Face\unk.bmp" />
+    <Content Include="fbyleth_jeralthair.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

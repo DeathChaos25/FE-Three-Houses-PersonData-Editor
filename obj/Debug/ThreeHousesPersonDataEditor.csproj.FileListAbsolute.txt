@@ -1,0 +1,12 @@
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\bin\Debug\ThreeHousesPersonDataEditor.exe.config
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\bin\Debug\ThreeHousesPersonDataEditor.exe
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\bin\Debug\ThreeHousesPersonDataEditor.pdb
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\obj\Debug\ThreeHousesPersonDataEditor.csprojAssemblyReference.cache
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\obj\Debug\ThreeHousesPersonDataEditor.Properties.Resources.resources
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\obj\Debug\ThreeHousesPersonDataEditor.csproj.GenerateResource.cache
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\obj\Debug\ThreeHousesPersonDataEditor.exe
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\obj\Debug\ThreeHousesPersonDataEditor.pdb
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\obj\Debug\ThreeHousesPersonDataEditor.PersonDataEditorMain.resources
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\obj\Debug\ThreeHousesPersonDataEditor.csproj.CopyComplete
