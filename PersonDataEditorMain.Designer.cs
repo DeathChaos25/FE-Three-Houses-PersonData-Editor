@@ -103,9 +103,38 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label31 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.unk0x10NumBox = new System.Windows.Forms.NumericUpDown();
+            this.NameIDNumBox = new System.Windows.Forms.NumericUpDown();
+            this.unk0x14NumBox = new System.Windows.Forms.NumericUpDown();
+            this.voiceIDNumBox = new System.Windows.Forms.NumericUpDown();
+            this.assetIDNumBox = new System.Windows.Forms.NumericUpDown();
+            this.birthdayFlagNumbox = new System.Windows.Forms.NumericUpDown();
+            this.unk0x1FNumBox = new System.Windows.Forms.NumericUpDown();
+            this.saveDataIDNumBox = new System.Windows.Forms.NumericUpDown();
+            this.unk0x21NumBox = new System.Windows.Forms.NumericUpDown();
+            this.unk0x23NumBox = new System.Windows.Forms.NumericUpDown();
+            this.unk0x25NumBox = new System.Windows.Forms.NumericUpDown();
+            this.bodyTypeNumBox = new System.Windows.Forms.NumericUpDown();
+            this.nonCombatAnimNumBox = new System.Windows.Forms.NumericUpDown();
+            this.unk0x2ENumBox = new System.Windows.Forms.NumericUpDown();
+            this.unk0x31NumBox = new System.Windows.Forms.NumericUpDown();
+            this.paddingNumBox = new System.Windows.Forms.NumericUpDown();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -153,35 +182,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.PointersListBox = new System.Windows.Forms.ListBox();
             this.numOfPointersLabel = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.unk0x10NumBox = new System.Windows.Forms.NumericUpDown();
-            this.NameIDNumBox = new System.Windows.Forms.NumericUpDown();
-            this.unk0x14NumBox = new System.Windows.Forms.NumericUpDown();
-            this.voiceIDNumBox = new System.Windows.Forms.NumericUpDown();
-            this.assetIDNumBox = new System.Windows.Forms.NumericUpDown();
-            this.birthdayFlagNumbox = new System.Windows.Forms.NumericUpDown();
-            this.unk0x1FNumBox = new System.Windows.Forms.NumericUpDown();
-            this.saveDataIDNumBox = new System.Windows.Forms.NumericUpDown();
-            this.unk0x21NumBox = new System.Windows.Forms.NumericUpDown();
-            this.unk0x23NumBox = new System.Windows.Forms.NumericUpDown();
-            this.unk0x25NumBox = new System.Windows.Forms.NumericUpDown();
-            this.bodyTypeNumBox = new System.Windows.Forms.NumericUpDown();
-            this.nonCombatAnimNumBox = new System.Windows.Forms.NumericUpDown();
-            this.unk0x2ENumBox = new System.Windows.Forms.NumericUpDown();
-            this.unk0x31NumBox = new System.Windows.Forms.NumericUpDown();
-            this.paddingNumBox = new System.Windows.Forms.NumericUpDown();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.CharacterBlocksTab.SuspendLayout();
@@ -227,17 +228,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.baseHPNumBox)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.facePicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.birthDayNumberBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.birthMonthNumberBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ageNumberBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.height1NumberBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.height2NumberBox)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            this.MiscInfoTab.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.unk0x10NumBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NameIDNumBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unk0x14NumBox)).BeginInit();
@@ -254,6 +244,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.unk0x2ENumBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unk0x31NumBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paddingNumBox)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.facePicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.birthDayNumberBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.birthMonthNumberBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ageNumberBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.height1NumberBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.height2NumberBox)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.MiscInfoTab.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -349,6 +350,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.splitter1);
             this.tabPage1.Controls.Add(this.groupBox6);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -1254,6 +1256,17 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(496, 275);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
+            // label31
+            // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(7, 233);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(48, 13);
+            this.label31.TabIndex = 4;
+            this.label31.Text = "Voice ID";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label27
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1286,6 +1299,378 @@
             this.label29.TabIndex = 2;
             this.label29.Text = "unk_0x14";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label30
+            // 
+            this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(131, 27);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(47, 13);
+            this.label30.TabIndex = 3;
+            this.label30.Text = "Asset ID";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label32
+            // 
+            this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(132, 89);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(45, 26);
+            this.label32.TabIndex = 3;
+            this.label32.Text = "Birthday Flag";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(128, 163);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(54, 13);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "unk_0x1F";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(127, 226);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(55, 26);
+            this.label34.TabIndex = 3;
+            this.label34.Text = "SaveData Block ID";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label35
+            // 
+            this.label35.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(252, 27);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(54, 13);
+            this.label35.TabIndex = 2;
+            this.label35.Text = "unk_0x21";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label36
+            // 
+            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(252, 95);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(54, 13);
+            this.label36.TabIndex = 2;
+            this.label36.Text = "unk_0x23";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label37
+            // 
+            this.label37.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(252, 163);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(54, 13);
+            this.label37.TabIndex = 2;
+            this.label37.Text = "unk_0x25";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label38
+            // 
+            this.label38.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(263, 226);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(31, 26);
+            this.label38.TabIndex = 3;
+            this.label38.Text = "Body Type";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label39
+            // 
+            this.label39.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(376, 8);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(53, 52);
+            this.label39.TabIndex = 3;
+            this.label39.Text = "Out of Combat Animation Set";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label40
+            // 
+            this.label40.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(375, 95);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(55, 13);
+            this.label40.TabIndex = 2;
+            this.label40.Text = "unk_0x2E";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label41
+            // 
+            this.label41.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(376, 163);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(54, 13);
+            this.label41.TabIndex = 2;
+            this.label41.Text = "unk_0x31";
+            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            this.label42.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(380, 226);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(45, 26);
+            this.label42.TabIndex = 2;
+            this.label42.Text = "padding tm";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // unk0x10NumBox
+            // 
+            this.unk0x10NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x10NumBox.Location = new System.Drawing.Point(65, 24);
+            this.unk0x10NumBox.Maximum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            0});
+            this.unk0x10NumBox.Minimum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            -2147483648});
+            this.unk0x10NumBox.Name = "unk0x10NumBox";
+            this.unk0x10NumBox.Size = new System.Drawing.Size(56, 20);
+            this.unk0x10NumBox.TabIndex = 4;
+            this.unk0x10NumBox.ValueChanged += new System.EventHandler(this.unk0x10NumBox_ValueChanged);
+            // 
+            // NameIDNumBox
+            // 
+            this.NameIDNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NameIDNumBox.Location = new System.Drawing.Point(65, 92);
+            this.NameIDNumBox.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.NameIDNumBox.Name = "NameIDNumBox";
+            this.NameIDNumBox.ReadOnly = true;
+            this.NameIDNumBox.Size = new System.Drawing.Size(56, 20);
+            this.NameIDNumBox.TabIndex = 5;
+            this.NameIDNumBox.ValueChanged += new System.EventHandler(this.NameIDNumBox_ValueChanged);
+            // 
+            // unk0x14NumBox
+            // 
+            this.unk0x14NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x14NumBox.Location = new System.Drawing.Point(65, 160);
+            this.unk0x14NumBox.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.unk0x14NumBox.Name = "unk0x14NumBox";
+            this.unk0x14NumBox.Size = new System.Drawing.Size(56, 20);
+            this.unk0x14NumBox.TabIndex = 6;
+            this.unk0x14NumBox.ValueChanged += new System.EventHandler(this.unk0x14NumBox_ValueChanged);
+            // 
+            // voiceIDNumBox
+            // 
+            this.voiceIDNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.voiceIDNumBox.Location = new System.Drawing.Point(65, 229);
+            this.voiceIDNumBox.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.voiceIDNumBox.Name = "voiceIDNumBox";
+            this.voiceIDNumBox.Size = new System.Drawing.Size(56, 20);
+            this.voiceIDNumBox.TabIndex = 7;
+            this.voiceIDNumBox.ValueChanged += new System.EventHandler(this.voiceIDNumBox_ValueChanged);
+            // 
+            // assetIDNumBox
+            // 
+            this.assetIDNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.assetIDNumBox.Location = new System.Drawing.Point(189, 24);
+            this.assetIDNumBox.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.assetIDNumBox.Name = "assetIDNumBox";
+            this.assetIDNumBox.Size = new System.Drawing.Size(56, 20);
+            this.assetIDNumBox.TabIndex = 8;
+            this.assetIDNumBox.ValueChanged += new System.EventHandler(this.assetIDNumBox_ValueChanged);
+            // 
+            // birthdayFlagNumbox
+            // 
+            this.birthdayFlagNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.birthdayFlagNumbox.Location = new System.Drawing.Point(189, 92);
+            this.birthdayFlagNumbox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.birthdayFlagNumbox.Name = "birthdayFlagNumbox";
+            this.birthdayFlagNumbox.Size = new System.Drawing.Size(56, 20);
+            this.birthdayFlagNumbox.TabIndex = 9;
+            this.birthdayFlagNumbox.ValueChanged += new System.EventHandler(this.birthdayFlagNumbox_ValueChanged);
+            // 
+            // unk0x1FNumBox
+            // 
+            this.unk0x1FNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x1FNumBox.Location = new System.Drawing.Point(189, 160);
+            this.unk0x1FNumBox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.unk0x1FNumBox.Name = "unk0x1FNumBox";
+            this.unk0x1FNumBox.Size = new System.Drawing.Size(56, 20);
+            this.unk0x1FNumBox.TabIndex = 10;
+            this.unk0x1FNumBox.ValueChanged += new System.EventHandler(this.unk0x1FNumBox_ValueChanged);
+            // 
+            // saveDataIDNumBox
+            // 
+            this.saveDataIDNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.saveDataIDNumBox.Location = new System.Drawing.Point(189, 229);
+            this.saveDataIDNumBox.Maximum = new decimal(new int[] {
+            127,
+            0,
+            0,
+            0});
+            this.saveDataIDNumBox.Minimum = new decimal(new int[] {
+            128,
+            0,
+            0,
+            -2147483648});
+            this.saveDataIDNumBox.Name = "saveDataIDNumBox";
+            this.saveDataIDNumBox.Size = new System.Drawing.Size(56, 20);
+            this.saveDataIDNumBox.TabIndex = 11;
+            this.saveDataIDNumBox.ValueChanged += new System.EventHandler(this.saveDataIDNumBox_ValueChanged);
+            // 
+            // unk0x21NumBox
+            // 
+            this.unk0x21NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x21NumBox.Location = new System.Drawing.Point(313, 24);
+            this.unk0x21NumBox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.unk0x21NumBox.Name = "unk0x21NumBox";
+            this.unk0x21NumBox.Size = new System.Drawing.Size(56, 20);
+            this.unk0x21NumBox.TabIndex = 12;
+            this.unk0x21NumBox.ValueChanged += new System.EventHandler(this.unk0x21NumBox_ValueChanged);
+            // 
+            // unk0x23NumBox
+            // 
+            this.unk0x23NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x23NumBox.Location = new System.Drawing.Point(313, 92);
+            this.unk0x23NumBox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.unk0x23NumBox.Name = "unk0x23NumBox";
+            this.unk0x23NumBox.Size = new System.Drawing.Size(56, 20);
+            this.unk0x23NumBox.TabIndex = 13;
+            this.unk0x23NumBox.ValueChanged += new System.EventHandler(this.unk0x23NumBox_ValueChanged);
+            // 
+            // unk0x25NumBox
+            // 
+            this.unk0x25NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x25NumBox.Location = new System.Drawing.Point(313, 160);
+            this.unk0x25NumBox.Maximum = new decimal(new int[] {
+            127,
+            0,
+            0,
+            0});
+            this.unk0x25NumBox.Minimum = new decimal(new int[] {
+            128,
+            0,
+            0,
+            -2147483648});
+            this.unk0x25NumBox.Name = "unk0x25NumBox";
+            this.unk0x25NumBox.Size = new System.Drawing.Size(56, 20);
+            this.unk0x25NumBox.TabIndex = 14;
+            this.unk0x25NumBox.ValueChanged += new System.EventHandler(this.unk0x25NumBox_ValueChanged);
+            // 
+            // bodyTypeNumBox
+            // 
+            this.bodyTypeNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bodyTypeNumBox.Location = new System.Drawing.Point(313, 229);
+            this.bodyTypeNumBox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.bodyTypeNumBox.Name = "bodyTypeNumBox";
+            this.bodyTypeNumBox.Size = new System.Drawing.Size(56, 20);
+            this.bodyTypeNumBox.TabIndex = 15;
+            this.bodyTypeNumBox.ValueChanged += new System.EventHandler(this.bodyTypeNumBox_ValueChanged);
+            // 
+            // nonCombatAnimNumBox
+            // 
+            this.nonCombatAnimNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nonCombatAnimNumBox.Location = new System.Drawing.Point(437, 24);
+            this.nonCombatAnimNumBox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.nonCombatAnimNumBox.Name = "nonCombatAnimNumBox";
+            this.nonCombatAnimNumBox.Size = new System.Drawing.Size(56, 20);
+            this.nonCombatAnimNumBox.TabIndex = 16;
+            this.nonCombatAnimNumBox.ValueChanged += new System.EventHandler(this.nonCombatAnimNumBox_ValueChanged);
+            // 
+            // unk0x2ENumBox
+            // 
+            this.unk0x2ENumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x2ENumBox.Location = new System.Drawing.Point(437, 92);
+            this.unk0x2ENumBox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.unk0x2ENumBox.Name = "unk0x2ENumBox";
+            this.unk0x2ENumBox.Size = new System.Drawing.Size(56, 20);
+            this.unk0x2ENumBox.TabIndex = 17;
+            this.unk0x2ENumBox.ValueChanged += new System.EventHandler(this.unk0x2ENumBox_ValueChanged);
+            // 
+            // unk0x31NumBox
+            // 
+            this.unk0x31NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x31NumBox.Location = new System.Drawing.Point(437, 160);
+            this.unk0x31NumBox.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.unk0x31NumBox.Name = "unk0x31NumBox";
+            this.unk0x31NumBox.Size = new System.Drawing.Size(56, 20);
+            this.unk0x31NumBox.TabIndex = 18;
+            this.unk0x31NumBox.ValueChanged += new System.EventHandler(this.unk0x31NumBox_ValueChanged);
+            // 
+            // paddingNumBox
+            // 
+            this.paddingNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.paddingNumBox.Location = new System.Drawing.Point(437, 229);
+            this.paddingNumBox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.paddingNumBox.Name = "paddingNumBox";
+            this.paddingNumBox.ReadOnly = true;
+            this.paddingNumBox.Size = new System.Drawing.Size(56, 20);
+            this.paddingNumBox.TabIndex = 19;
             // 
             // tabPage3
             // 
@@ -1760,383 +2145,14 @@
             this.numOfPointersLabel.TabIndex = 0;
             this.numOfPointersLabel.Text = "Number of Pointers: 0";
             // 
-            // label30
+            // splitter1
             // 
-            this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(131, 27);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(47, 13);
-            this.label30.TabIndex = 3;
-            this.label30.Text = "Asset ID";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label31
-            // 
-            this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(7, 233);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(48, 13);
-            this.label31.TabIndex = 4;
-            this.label31.Text = "Voice ID";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label32
-            // 
-            this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(132, 89);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(45, 26);
-            this.label32.TabIndex = 3;
-            this.label32.Text = "Birthday Flag";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label33
-            // 
-            this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(128, 163);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(54, 13);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "unk_0x1F";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label34
-            // 
-            this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(127, 226);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(55, 26);
-            this.label34.TabIndex = 3;
-            this.label34.Text = "SaveData Block ID";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label35
-            // 
-            this.label35.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(252, 27);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(54, 13);
-            this.label35.TabIndex = 2;
-            this.label35.Text = "unk_0x21";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label36
-            // 
-            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(252, 95);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(54, 13);
-            this.label36.TabIndex = 2;
-            this.label36.Text = "unk_0x23";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label37
-            // 
-            this.label37.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(252, 163);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(54, 13);
-            this.label37.TabIndex = 2;
-            this.label37.Text = "unk_0x25";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label38
-            // 
-            this.label38.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(263, 226);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(31, 26);
-            this.label38.TabIndex = 3;
-            this.label38.Text = "Body Type";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label39
-            // 
-            this.label39.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(376, 8);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(53, 52);
-            this.label39.TabIndex = 3;
-            this.label39.Text = "Out of Combat Animation Set";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label40
-            // 
-            this.label40.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(375, 95);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(55, 13);
-            this.label40.TabIndex = 2;
-            this.label40.Text = "unk_0x2E";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label41
-            // 
-            this.label41.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(376, 163);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(54, 13);
-            this.label41.TabIndex = 2;
-            this.label41.Text = "unk_0x31";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label42
-            // 
-            this.label42.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(380, 226);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(45, 26);
-            this.label42.TabIndex = 2;
-            this.label42.Text = "padding tm";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // unk0x10NumBox
-            // 
-            this.unk0x10NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.unk0x10NumBox.Location = new System.Drawing.Point(65, 24);
-            this.unk0x10NumBox.Maximum = new decimal(new int[] {
-            32768,
-            0,
-            0,
-            0});
-            this.unk0x10NumBox.Minimum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            -2147483648});
-            this.unk0x10NumBox.Name = "unk0x10NumBox";
-            this.unk0x10NumBox.Size = new System.Drawing.Size(56, 20);
-            this.unk0x10NumBox.TabIndex = 4;
-            this.unk0x10NumBox.ValueChanged += new System.EventHandler(this.unk0x10NumBox_ValueChanged);
-            // 
-            // NameIDNumBox
-            // 
-            this.NameIDNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.NameIDNumBox.Location = new System.Drawing.Point(65, 92);
-            this.NameIDNumBox.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.NameIDNumBox.Name = "NameIDNumBox";
-            this.NameIDNumBox.ReadOnly = true;
-            this.NameIDNumBox.Size = new System.Drawing.Size(56, 20);
-            this.NameIDNumBox.TabIndex = 5;
-            this.NameIDNumBox.ValueChanged += new System.EventHandler(this.NameIDNumBox_ValueChanged);
-            // 
-            // unk0x14NumBox
-            // 
-            this.unk0x14NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.unk0x14NumBox.Location = new System.Drawing.Point(65, 160);
-            this.unk0x14NumBox.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.unk0x14NumBox.Name = "unk0x14NumBox";
-            this.unk0x14NumBox.Size = new System.Drawing.Size(56, 20);
-            this.unk0x14NumBox.TabIndex = 6;
-            this.unk0x14NumBox.ValueChanged += new System.EventHandler(this.unk0x14NumBox_ValueChanged);
-            // 
-            // voiceIDNumBox
-            // 
-            this.voiceIDNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.voiceIDNumBox.Location = new System.Drawing.Point(65, 229);
-            this.voiceIDNumBox.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.voiceIDNumBox.Name = "voiceIDNumBox";
-            this.voiceIDNumBox.Size = new System.Drawing.Size(56, 20);
-            this.voiceIDNumBox.TabIndex = 7;
-            this.voiceIDNumBox.ValueChanged += new System.EventHandler(this.voiceIDNumBox_ValueChanged);
-            // 
-            // assetIDNumBox
-            // 
-            this.assetIDNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.assetIDNumBox.Location = new System.Drawing.Point(189, 24);
-            this.assetIDNumBox.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.assetIDNumBox.Name = "assetIDNumBox";
-            this.assetIDNumBox.Size = new System.Drawing.Size(56, 20);
-            this.assetIDNumBox.TabIndex = 8;
-            this.assetIDNumBox.ValueChanged += new System.EventHandler(this.assetIDNumBox_ValueChanged);
-            // 
-            // birthdayFlagNumbox
-            // 
-            this.birthdayFlagNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.birthdayFlagNumbox.Location = new System.Drawing.Point(189, 92);
-            this.birthdayFlagNumbox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.birthdayFlagNumbox.Name = "birthdayFlagNumbox";
-            this.birthdayFlagNumbox.Size = new System.Drawing.Size(56, 20);
-            this.birthdayFlagNumbox.TabIndex = 9;
-            this.birthdayFlagNumbox.ValueChanged += new System.EventHandler(this.birthdayFlagNumbox_ValueChanged);
-            // 
-            // unk0x1FNumBox
-            // 
-            this.unk0x1FNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.unk0x1FNumBox.Location = new System.Drawing.Point(189, 160);
-            this.unk0x1FNumBox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.unk0x1FNumBox.Name = "unk0x1FNumBox";
-            this.unk0x1FNumBox.Size = new System.Drawing.Size(56, 20);
-            this.unk0x1FNumBox.TabIndex = 10;
-            this.unk0x1FNumBox.ValueChanged += new System.EventHandler(this.unk0x1FNumBox_ValueChanged);
-            // 
-            // saveDataIDNumBox
-            // 
-            this.saveDataIDNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.saveDataIDNumBox.Location = new System.Drawing.Point(189, 229);
-            this.saveDataIDNumBox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.saveDataIDNumBox.Name = "saveDataIDNumBox";
-            this.saveDataIDNumBox.Size = new System.Drawing.Size(56, 20);
-            this.saveDataIDNumBox.TabIndex = 11;
-            this.saveDataIDNumBox.ValueChanged += new System.EventHandler(this.saveDataIDNumBox_ValueChanged);
-            // 
-            // unk0x21NumBox
-            // 
-            this.unk0x21NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.unk0x21NumBox.Location = new System.Drawing.Point(313, 24);
-            this.unk0x21NumBox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.unk0x21NumBox.Name = "unk0x21NumBox";
-            this.unk0x21NumBox.Size = new System.Drawing.Size(56, 20);
-            this.unk0x21NumBox.TabIndex = 12;
-            this.unk0x21NumBox.ValueChanged += new System.EventHandler(this.unk0x21NumBox_ValueChanged);
-            // 
-            // unk0x23NumBox
-            // 
-            this.unk0x23NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.unk0x23NumBox.Location = new System.Drawing.Point(313, 92);
-            this.unk0x23NumBox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.unk0x23NumBox.Name = "unk0x23NumBox";
-            this.unk0x23NumBox.Size = new System.Drawing.Size(56, 20);
-            this.unk0x23NumBox.TabIndex = 13;
-            this.unk0x23NumBox.ValueChanged += new System.EventHandler(this.unk0x23NumBox_ValueChanged);
-            // 
-            // unk0x25NumBox
-            // 
-            this.unk0x25NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.unk0x25NumBox.Location = new System.Drawing.Point(313, 160);
-            this.unk0x25NumBox.Maximum = new decimal(new int[] {
-            127,
-            0,
-            0,
-            0});
-            this.unk0x25NumBox.Minimum = new decimal(new int[] {
-            128,
-            0,
-            0,
-            -2147483648});
-            this.unk0x25NumBox.Name = "unk0x25NumBox";
-            this.unk0x25NumBox.Size = new System.Drawing.Size(56, 20);
-            this.unk0x25NumBox.TabIndex = 14;
-            this.unk0x25NumBox.ValueChanged += new System.EventHandler(this.unk0x25NumBox_ValueChanged);
-            // 
-            // bodyTypeNumBox
-            // 
-            this.bodyTypeNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bodyTypeNumBox.Location = new System.Drawing.Point(313, 229);
-            this.bodyTypeNumBox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.bodyTypeNumBox.Name = "bodyTypeNumBox";
-            this.bodyTypeNumBox.Size = new System.Drawing.Size(56, 20);
-            this.bodyTypeNumBox.TabIndex = 15;
-            this.bodyTypeNumBox.ValueChanged += new System.EventHandler(this.bodyTypeNumBox_ValueChanged);
-            // 
-            // nonCombatAnimNumBox
-            // 
-            this.nonCombatAnimNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.nonCombatAnimNumBox.Location = new System.Drawing.Point(437, 24);
-            this.nonCombatAnimNumBox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.nonCombatAnimNumBox.Name = "nonCombatAnimNumBox";
-            this.nonCombatAnimNumBox.Size = new System.Drawing.Size(56, 20);
-            this.nonCombatAnimNumBox.TabIndex = 16;
-            this.nonCombatAnimNumBox.ValueChanged += new System.EventHandler(this.nonCombatAnimNumBox_ValueChanged);
-            // 
-            // unk0x2ENumBox
-            // 
-            this.unk0x2ENumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.unk0x2ENumBox.Location = new System.Drawing.Point(437, 92);
-            this.unk0x2ENumBox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.unk0x2ENumBox.Name = "unk0x2ENumBox";
-            this.unk0x2ENumBox.Size = new System.Drawing.Size(56, 20);
-            this.unk0x2ENumBox.TabIndex = 17;
-            this.unk0x2ENumBox.ValueChanged += new System.EventHandler(this.unk0x2ENumBox_ValueChanged);
-            // 
-            // unk0x31NumBox
-            // 
-            this.unk0x31NumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.unk0x31NumBox.Location = new System.Drawing.Point(437, 160);
-            this.unk0x31NumBox.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.unk0x31NumBox.Name = "unk0x31NumBox";
-            this.unk0x31NumBox.Size = new System.Drawing.Size(56, 20);
-            this.unk0x31NumBox.TabIndex = 18;
-            this.unk0x31NumBox.ValueChanged += new System.EventHandler(this.unk0x31NumBox_ValueChanged);
-            // 
-            // paddingNumBox
-            // 
-            this.paddingNumBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.paddingNumBox.Location = new System.Drawing.Point(437, 229);
-            this.paddingNumBox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.paddingNumBox.Name = "paddingNumBox";
-            this.paddingNumBox.ReadOnly = true;
-            this.paddingNumBox.Size = new System.Drawing.Size(56, 20);
-            this.paddingNumBox.TabIndex = 19;
+            this.splitter1.Location = new System.Drawing.Point(3, 3);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 281);
+            this.splitter1.TabIndex = 16;
+            this.splitter1.TabStop = false;
+            this.splitter1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter1_SplitterMoved);
             // 
             // PersonDataEditorMain
             // 
@@ -2201,20 +2217,6 @@
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.facePicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.birthDayNumberBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.birthMonthNumberBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ageNumberBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.height1NumberBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.height2NumberBox)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.MiscInfoTab.ResumeLayout(false);
-            this.MiscInfoTab.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.unk0x10NumBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NameIDNumBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unk0x14NumBox)).EndInit();
@@ -2231,6 +2233,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.unk0x2ENumBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unk0x31NumBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paddingNumBox)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.facePicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.birthDayNumberBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.birthMonthNumberBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ageNumberBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.height1NumberBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.height2NumberBox)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.MiscInfoTab.ResumeLayout(false);
+            this.MiscInfoTab.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2391,5 +2407,6 @@
         private System.Windows.Forms.NumericUpDown unk0x2ENumBox;
         private System.Windows.Forms.NumericUpDown unk0x31NumBox;
         private System.Windows.Forms.NumericUpDown paddingNumBox;
+        private System.Windows.Forms.Splitter splitter1;
     }
 }
