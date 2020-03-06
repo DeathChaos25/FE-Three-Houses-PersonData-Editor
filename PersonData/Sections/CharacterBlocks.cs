@@ -13,7 +13,7 @@ namespace ThreeHousesPersonDataEditor.PersonData.Sections
         public float chestSize1 { get; set; }
         public float modelScale { get; set; }
         public float chestSize2 { get; set; }
-        public ushort unk_0x10 { get; set; }
+        public short unk_0x10 { get; set; }
         public ushort nameID { get; set; }
         public ushort unk_0x14 { get; set; }
         public ushort voiceID { get; set; }
@@ -24,12 +24,12 @@ namespace ThreeHousesPersonDataEditor.PersonData.Sections
         public byte birthDayFlag { get; set; }
         public byte birthDay { get; set; }
         public byte unk_0x1F { get; set; }
-        public byte saveDataID { get; set; }
+        public sbyte saveDataID { get; set; }
         public byte unk_0x21 { get; set; }
         public byte maxHP { get; set; }
         public byte unk_0x23 { get; set; }
         public byte allegiance { get; set; }
-        public byte unk_0x25 { get; set; }
+        public sbyte unk_0x25 { get; set; }
         public byte gender { get; set; }
         public byte bodyType { get; set; }
         public byte baseBattalion { get; set; }
@@ -78,7 +78,7 @@ namespace ThreeHousesPersonDataEditor.PersonData.Sections
 			modelScale = fixed_persondata.ReadSingle();
 			chestSize2 = fixed_persondata.ReadSingle();
 	
-			unk_0x10 = fixed_persondata.ReadUInt16();
+			unk_0x10 = fixed_persondata.ReadInt16();
 			nameID = fixed_persondata.ReadUInt16();
 			unk_0x14 = fixed_persondata.ReadUInt16();
 			voiceID = fixed_persondata.ReadUInt16();
@@ -89,12 +89,12 @@ namespace ThreeHousesPersonDataEditor.PersonData.Sections
 			birthDayFlag = fixed_persondata.ReadByte();
 			birthDay = fixed_persondata.ReadByte();
 			unk_0x1F = fixed_persondata.ReadByte();
-			saveDataID = fixed_persondata.ReadByte();
+			saveDataID = fixed_persondata.ReadSByte();
 			unk_0x21 = fixed_persondata.ReadByte();
 			maxHP = fixed_persondata.ReadByte();
 			unk_0x23 = fixed_persondata.ReadByte();
 			allegiance = fixed_persondata.ReadByte();
-			unk_0x25 = fixed_persondata.ReadByte();
+			unk_0x25 = fixed_persondata.ReadSByte();
 			gender = fixed_persondata.ReadByte();
 			bodyType = fixed_persondata.ReadByte();
 			baseBattalion = fixed_persondata.ReadByte();

@@ -151,6 +151,7 @@ namespace ThreeHousesPersonDataEditor
             //Hide Tabs to prevent data being set
             tabControl1.TabPages.Remove(CharacterBlocksTab);
             tabControl1.TabPages.Remove(MiscInfoTab);
+            characterListBox.Items.Clear();
         }
         private void PersonDataEditorMain_Load(object sender, EventArgs e)
         {
@@ -254,6 +255,24 @@ namespace ThreeHousesPersonDataEditor
             chestSize2NumBox.Value = Convert.ToDecimal(currentPersonData.Character[characterListBox.SelectedIndex].chestSize2);
             chestWidthScale.Value = Convert.ToDecimal(currentPersonData.Character[characterListBox.SelectedIndex].chestBandMod);
             modelScaleNumBox.Value = Convert.ToDecimal(currentPersonData.Character[characterListBox.SelectedIndex].modelScale);
+
+            //Other Section
+            unk0x10NumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].unk_0x10;
+            unk0x14NumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].unk_0x14;
+            unk0x1FNumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].unk_0x1F;
+            unk0x21NumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].unk_0x21;
+            unk0x23NumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].unk_0x23;
+            unk0x25NumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].unk_0x25;
+            unk0x2ENumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].unk_0x2E;
+            unk0x31NumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].unk_0x31;
+
+            NameIDNumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].nameID;
+            voiceIDNumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].voiceID;
+            assetIDNumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].assetID;
+            birthdayFlagNumbox.Value = currentPersonData.Character[characterListBox.SelectedIndex].birthDayFlag;
+            saveDataIDNumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].saveDataID;
+            bodyTypeNumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].bodyType;
+            nonCombatAnimNumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].nonCombatAnimSet;
         }
 
         private void height1NumberBox_ValueChanged(object sender, EventArgs e)
@@ -469,6 +488,81 @@ namespace ThreeHousesPersonDataEditor
         private void battalionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             currentPersonData.Character[characterListBox.SelectedIndex].baseBattalion = Convert.ToByte(battalionComboBox.SelectedIndex);
+        }
+
+        private void unk0x10NumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].unk_0x10 = Decimal.ToInt16(unk0x10NumBox.Value);
+        }
+
+        private void NameIDNumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].nameID = Decimal.ToUInt16(NameIDNumBox.Value);
+        }
+
+        private void unk0x14NumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].unk_0x14 = Decimal.ToUInt16(unk0x14NumBox.Value);
+        }
+
+        private void voiceIDNumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].voiceID = Decimal.ToUInt16(voiceIDNumBox.Value);
+        }
+
+        private void assetIDNumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].assetID = Decimal.ToUInt16(assetIDNumBox.Value);
+        }
+
+        private void birthdayFlagNumbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].birthDayFlag = Decimal.ToByte(birthdayFlagNumbox.Value);
+        }
+
+        private void unk0x1FNumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].unk_0x1F = Decimal.ToByte(unk0x1FNumBox.Value);
+        }
+
+        private void saveDataIDNumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].saveDataID = Decimal.ToSByte(saveDataIDNumBox.Value);
+        }
+
+        private void unk0x21NumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].unk_0x21 = Decimal.ToByte(unk0x21NumBox.Value);
+        }
+
+        private void unk0x23NumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].unk_0x23 = Decimal.ToByte(unk0x23NumBox.Value);
+        }
+
+        private void unk0x25NumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].unk_0x25 = Decimal.ToSByte(unk0x25NumBox.Value);
+        }
+
+        private void bodyTypeNumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].bodyType = Decimal.ToByte(bodyTypeNumBox.Value);
+        }
+
+        private void nonCombatAnimNumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].nonCombatAnimSet = Decimal.ToByte(nonCombatAnimNumBox.Value);
+        }
+
+        private void unk0x2ENumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].unk_0x2E = Decimal.ToByte(unk0x2ENumBox.Value);
+        }
+
+        private void unk0x31NumBox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Character[characterListBox.SelectedIndex].unk_0x31 = Decimal.ToUInt16(unk0x31NumBox.Value);
         }
     }
 }
