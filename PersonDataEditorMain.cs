@@ -24,19 +24,18 @@ namespace ThreeHousesPersonDataEditor
         public ushort numOfmsgDataPointers { get; set; }
         public uint msgDataPointer { get; set; }
         public List<String> msgDataNames { get; private set; }
+        public string filePath { get; set; }
+        public string nameOfFile { get; set; }
 
         string[] SectionNames = new string[] { "Character Data", "Asset IDs", "Voice IDs", "Skill Levels", "Spell Learnset", "Skill Learnset", "Starting Inventory", "Combat Arts Learnset", "Support Bonuses", "Support Bonuses", "Support List", "Budding Talents", "Generic Learnset", "Faculty Teachings", "Seminar Teachings", "Character Goals", "Portrait IDs", "Enemy Personal Skills" };
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var filePath = string.Empty;
-            var nameOfFile = string.Empty;
-
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 openFileDialog.Filter = "fixed_persondata.bin (*.bin)|*.bin|All files (*.*)|*.*";
                 openFileDialog.FilterIndex = 1;
                 openFileDialog.RestoreDirectory = true;
-                openFileDialog.Title = "Look for fixed_persondata.bin";
+                openFileDialog.Title = "open fixed_persondata.bin (v1.1.0 or later)";
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
@@ -82,7 +81,11 @@ namespace ThreeHousesPersonDataEditor
                             //read List for character names
                             for (int i = 0; i < currentPersonData.SectionBlockCount[0]; i++)
                             {
-                                characterListBox.Items.Add(i.ToString("D" + 4) + " : " + msgDataNames[(currentPersonData.Character[i].nameID) + 1157]);
+                                if (currentPersonData.Character[i].nameID == 0 && currentPersonData.Character[i].voiceID == 60)
+                                {
+                                    characterListBox.Items.Add(i.ToString("D" + 4) + " : " + "----------");
+                                }
+                                else characterListBox.Items.Add(i.ToString("D" + 4) + " : " + msgDataNames[(currentPersonData.Character[i].nameID) + 1157]);
                             }
                             //read List for class names
                             for (int i = 0; i <= 100; i++)
@@ -563,6 +566,35 @@ namespace ThreeHousesPersonDataEditor
         private void unk0x31NumBox_ValueChanged(object sender, EventArgs e)
         {
             currentPersonData.Character[characterListBox.SelectedIndex].unk_0x31 = Decimal.ToUInt16(unk0x31NumBox.Value);
+        }
+
+        private void saveFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (EndianBinaryWriter fixed_persondata = new EndianBinaryWriter(File.Open(filePath, FileMode.Create, FileAccess.Write), Endianness.Little))
+            {
+                currentPersonData.WritePersonData(fixed_persondata);
+                MessageBox.Show("File saved to: " + filePath, "File saved");
+            }
+        }
+
+        private void saveFileAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveFileDialog1 = new SaveFileDialog())
+            {
+                saveFileDialog1.Filter = "fixed_persondata.bin (*.bin)|*.bin|All files (*.*)|*.*";
+                saveFileDialog1.FilterIndex = 1;
+                saveFileDialog1.RestoreDirectory = true;
+
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    var savePath = saveFileDialog1.FileName;
+                    using (EndianBinaryWriter fixed_persondata = new EndianBinaryWriter(File.Open(savePath, FileMode.Create, FileAccess.Write), Endianness.Little))
+                    {
+                        currentPersonData.WritePersonData(fixed_persondata);
+                        MessageBox.Show("File saved to: " + savePath, "File saved");
+                    }
+                }
+            }
         }
     }
 }

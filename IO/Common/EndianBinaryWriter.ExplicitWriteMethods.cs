@@ -11,6 +11,9 @@ namespace ThreeHousesPersonDataEditor
     {
         [DebuggerStepThrough, MethodImpl( MethodImplOptions.AggressiveInlining )]
         public void WriteByte( byte value ) => Write( value );
+		
+		[DebuggerStepThrough, MethodImpl( MethodImplOptions.AggressiveInlining )]
+        public void WriteSByte( sbyte value ) => Write( value );
 
         [DebuggerStepThrough, MethodImpl( MethodImplOptions.AggressiveInlining )]
         public void WriteBytes( IEnumerable<byte> values ) => Write( values );

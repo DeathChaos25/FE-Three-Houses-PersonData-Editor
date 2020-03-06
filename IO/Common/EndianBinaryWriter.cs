@@ -392,6 +392,15 @@ namespace ThreeHousesPersonDataEditor
             for ( int i = 0; i < count % 8; i++ )
                 Write( ( byte )0 );
         }
+		
+		public void WritePadding( uint count )
+        {
+            for ( int i = 0; i < count / 8; i++ )
+                Write( 0L );
+
+            for ( int i = 0; i < count % 8; i++ )
+                Write( ( byte )0 );
+        }
 
         public void ScheduleWriteOffset( Action action ) => ScheduleWriteOffsetAligned( 0, DefaultAlignment, action );
 

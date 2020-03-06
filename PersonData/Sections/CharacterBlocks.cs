@@ -144,5 +144,79 @@ namespace ThreeHousesPersonDataEditor.PersonData.Sections
 			// Block ends with 2 bytes of padding
 			padding = fixed_persondata.ReadInt16();
         }
+		public void Write(EndianBinaryWriter fixed_persondata)
+        {
+            // Main Data, the important stuff
+            fixed_persondata.WriteSingle(chestBandMod);
+			fixed_persondata.WriteSingle(chestSize1);
+			fixed_persondata.WriteSingle(modelScale);
+			fixed_persondata.WriteSingle(chestSize2);
+	
+			fixed_persondata.WriteInt16(unk_0x10);
+			fixed_persondata.WriteUInt16(nameID);
+			fixed_persondata.WriteUInt16(unk_0x14);
+			fixed_persondata.WriteUInt16(voiceID);
+			fixed_persondata.WriteUInt16(assetID);
+            fixed_persondata.WriteByte(classID);
+			fixed_persondata.WriteByte(age);
+			fixed_persondata.WriteByte(month);
+			fixed_persondata.WriteByte(birthDayFlag);
+			fixed_persondata.WriteByte(birthDay);
+			fixed_persondata.WriteByte(unk_0x1F);
+			fixed_persondata.WriteSByte(saveDataID);
+			fixed_persondata.WriteByte(unk_0x21);
+			fixed_persondata.WriteByte(maxHP);
+			fixed_persondata.WriteByte(unk_0x23);
+			fixed_persondata.WriteByte(allegiance);
+			fixed_persondata.WriteSByte(unk_0x25);
+			fixed_persondata.WriteByte(gender);
+			fixed_persondata.WriteByte(bodyType);
+			fixed_persondata.WriteByte(baseBattalion);
+			fixed_persondata.WriteByte(hpGrowth);
+			fixed_persondata.WriteByte(nonCombatAnimSet);
+			fixed_persondata.WriteByte(baseHP);
+			fixed_persondata.WriteByte(crest1);
+			fixed_persondata.WriteByte(crest2);
+			fixed_persondata.WriteByte(unk_0x2E);
+			fixed_persondata.WriteByte(height1);
+			fixed_persondata.WriteByte(height2);
+			fixed_persondata.WriteUInt16(unk_0x31);
+			
+			// Base Stats
+			fixed_persondata.WriteByte(baseStr);
+			fixed_persondata.WriteByte(baseMag);
+			fixed_persondata.WriteByte(baseDex);
+			fixed_persondata.WriteByte(baseSpd);
+			fixed_persondata.WriteByte(baseLck);
+			fixed_persondata.WriteByte(baseDef);
+			fixed_persondata.WriteByte(baseRes);
+			fixed_persondata.WriteByte(baseMov);
+			fixed_persondata.WriteByte(baseCha);
+			
+			// Stat Growths
+			fixed_persondata.WriteByte(strGrowth);
+			fixed_persondata.WriteByte(magGrowth);
+			fixed_persondata.WriteByte(dexGrowth);
+			fixed_persondata.WriteByte(spdGrowth);
+			fixed_persondata.WriteByte(lckGrowth);
+			fixed_persondata.WriteByte(defGrowth);
+			fixed_persondata.WriteByte(resGrowth);
+			fixed_persondata.WriteByte(movGrowth);
+			fixed_persondata.WriteByte(chaGrowth);
+			
+			// Max Stats
+			fixed_persondata.WriteByte(maxStr);
+			fixed_persondata.WriteByte(maxMag);
+			fixed_persondata.WriteByte(maxDex);
+			fixed_persondata.WriteByte(maxSpd);
+			fixed_persondata.WriteByte(maxLck);
+			fixed_persondata.WriteByte(maxDef);
+			fixed_persondata.WriteByte(maxRes);
+			fixed_persondata.WriteByte(maxMov);
+			fixed_persondata.WriteByte(maxCha);
+			
+			// Block ends with 2 bytes of padding
+			fixed_persondata.WriteInt16(padding);
+        }
     }
 }
