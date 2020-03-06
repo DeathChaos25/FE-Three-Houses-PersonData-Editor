@@ -45,6 +45,7 @@ namespace ThreeHousesPersonDataEditor
 
                     //Reset Stuff
                     PointersListBox.Items.Clear();
+                    characterListBox.Items.Clear();
 
                     //Read the contents of the file into a stream
                     var fileStream = openFileDialog.OpenFile();
@@ -54,8 +55,11 @@ namespace ThreeHousesPersonDataEditor
                     //Write Info in Misc Section
                     if (currentPersonData.numOfPointers == 18)
                     {
-                        tabControl1.TabPages.Add(CharacterBlocksTab);
-                        tabControl1.TabPages.Add(MiscInfoTab);
+                        if (tabControl1.TabPages.Contains(CharacterBlocksTab) == false)
+                        {
+                            tabControl1.TabPages.Add(CharacterBlocksTab);
+                            tabControl1.TabPages.Add(MiscInfoTab);
+                        }
                         for (int i = 0; i < currentPersonData.numOfPointers; i++)
                         {
                             FillMiscSection(i);
@@ -590,6 +594,7 @@ namespace ThreeHousesPersonDataEditor
                     var savePath = saveFileDialog1.FileName;
                     using (EndianBinaryWriter fixed_persondata = new EndianBinaryWriter(File.Open(savePath, FileMode.Create, FileAccess.Write), Endianness.Little))
                     {
+                        filePath = savePath; //now the Save File option writes here too
                         currentPersonData.WritePersonData(fixed_persondata);
                         MessageBox.Show("File saved to: " + savePath, "File saved");
                     }

@@ -38,7 +38,6 @@
             this.CharacterBlocksTab = new System.Windows.Forms.TabPage();
             this.statsTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -280,21 +279,25 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.openToolStripMenuItem.Text = "Open...";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveFileToolStripMenuItem
             // 
             this.saveFileToolStripMenuItem.Name = "saveFileToolStripMenuItem";
-            this.saveFileToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.saveFileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveFileToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.saveFileToolStripMenuItem.Text = "Save File...";
             this.saveFileToolStripMenuItem.Click += new System.EventHandler(this.saveFileToolStripMenuItem_Click);
             // 
             // saveFileAsToolStripMenuItem
             // 
             this.saveFileAsToolStripMenuItem.Name = "saveFileAsToolStripMenuItem";
-            this.saveFileAsToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.saveFileAsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.saveFileAsToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.saveFileAsToolStripMenuItem.Text = "Save File As...";
             this.saveFileAsToolStripMenuItem.Click += new System.EventHandler(this.saveFileAsToolStripMenuItem_Click);
             // 
@@ -352,7 +355,6 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.splitter1);
             this.tabPage1.Controls.Add(this.groupBox6);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -362,14 +364,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Stats";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(3, 3);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 281);
-            this.splitter1.TabIndex = 0;
-            this.splitter1.TabStop = false;
             // 
             // groupBox6
             // 
@@ -2408,6 +2402,5 @@
         private System.Windows.Forms.NumericUpDown unk0x2ENumBox;
         private System.Windows.Forms.NumericUpDown unk0x31NumBox;
         private System.Windows.Forms.NumericUpDown paddingNumBox;
-        private System.Windows.Forms.Splitter splitter1;
     }
 }
