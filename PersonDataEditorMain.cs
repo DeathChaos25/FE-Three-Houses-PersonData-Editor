@@ -564,10 +564,5 @@ namespace ThreeHousesPersonDataEditor
         {
             currentPersonData.Character[characterListBox.SelectedIndex].unk_0x31 = Decimal.ToUInt16(unk0x31NumBox.Value);
         }
-
-        private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
-        {
-
-        }
     }
 }

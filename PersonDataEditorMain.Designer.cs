@@ -38,6 +38,7 @@
             this.CharacterBlocksTab = new System.Windows.Forms.TabPage();
             this.statsTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.splitter1 = new System.Windows.Forms.Splitter();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -182,7 +183,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.PointersListBox = new System.Windows.Forms.ListBox();
             this.numOfPointersLabel = new System.Windows.Forms.Label();
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.CharacterBlocksTab.SuspendLayout();
@@ -2144,15 +2144,6 @@
             this.numOfPointersLabel.Size = new System.Drawing.Size(109, 13);
             this.numOfPointersLabel.TabIndex = 0;
             this.numOfPointersLabel.Text = "Number of Pointers: 0";
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(3, 3);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 281);
-            this.splitter1.TabIndex = 16;
-            this.splitter1.TabStop = false;
-            this.splitter1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter1_SplitterMoved);
             // 
             // PersonDataEditorMain
             // 

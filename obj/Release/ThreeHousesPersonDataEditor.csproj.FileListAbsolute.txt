@@ -1,0 +1,4 @@
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\obj\Release\ThreeHousesPersonDataEditor.csprojAssemblyReference.cache
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\obj\Release\ThreeHousesPersonDataEditor.PersonDataEditorMain.resources
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\obj\Release\ThreeHousesPersonDataEditor.Properties.Resources.resources
+C:\Users\death\Documents\VSProj\ThreeHouses\PersonData\ThreeHousesPersonDataEditor\obj\Release\ThreeHousesPersonDataEditor.csproj.GenerateResource.cache
