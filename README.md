@@ -1,6 +1,9 @@
 # FE Three Houses PersonData Editor
 WIP GUI Editor for fixed_persondata.bin (update v1.1.0 or later)
 
+Makes use of (an earlier version of) Amicitia.IO from TGEnigma.
+https://github.com/TGEnigma/Amicitia.IO
+
 Current Progress:
 - Loads and parses fixed_persondata and all of its section headers
 - Section 0 (Character blocks) has been implemented/parsed in its entirety
