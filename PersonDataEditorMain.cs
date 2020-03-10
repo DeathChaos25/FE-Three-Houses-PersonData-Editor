@@ -21,9 +21,9 @@ namespace ThreeHousesPersonDataEditor
         {
             InitializeComponent();
         }
-        public ushort numOfmsgDataPointers { get; set; }
-        public uint msgDataPointer { get; set; }
+        public int SelectedLanguage { get; set; }
         public List<String> msgDataNames { get; private set; }
+        public List<uint> msgDataLanguageSections { get; private set; }
         public string filePath { get; set; }
         public string nameOfFile { get; set; }
 
@@ -58,6 +58,7 @@ namespace ThreeHousesPersonDataEditor
                         if (tabControl1.TabPages.Contains(CharacterBlocksTab) == false)
                         {
                             tabControl1.TabPages.Add(CharacterBlocksTab);
+                            tabControl1.TabPages.Add(AssetIDTab);
                             tabControl1.TabPages.Add(MiscInfoTab);
                         }
                         for (int i = 0; i < currentPersonData.numOfPointers; i++)
@@ -65,58 +66,13 @@ namespace ThreeHousesPersonDataEditor
                             FillMiscSection(i);
                         }
 
-                        //Load msgData en_US section with names
-                        Assembly myAssembly = Assembly.GetExecutingAssembly();
-                        Stream msgDataStream = myAssembly.GetManifestResourceStream("ThreeHousesPersonDataEditor.msgData.en_US.bin");
-                        using (EndianBinaryReader msgData = new EndianBinaryReader(msgDataStream, Endianness.Little))
+                        //read msgData sections
+                        LoadLanguageTomsgDataNames();
+                        languageToolStripMenuItem.Visible = true;
+
+                        for (int i = 0; i < currentPersonData.SectionBlockCount[1]; i++)
                         {
-                            msgData.SeekCurrent(0x8); // skip header, we don't care
-                            numOfmsgDataPointers = msgData.ReadUInt16();
-                            msgDataNames = new List<String>();
-
-                            //store all strings in msgData on List
-                            for (int i = 0; i < numOfmsgDataPointers; i++)
-                            {
-                                msgData.Seek(0x14 + (4 * i), SeekOrigin.Begin);
-                                msgDataPointer = msgData.ReadUInt32();
-                                msgData.Seek(msgDataPointer + 0x14, SeekOrigin.Begin);
-                                msgDataNames.Add(msgData.ReadString(StringBinaryFormat.NullTerminated));
-                            }
-                            //read List for character names
-                            for (int i = 0; i < currentPersonData.SectionBlockCount[0]; i++)
-                            {
-                                if (currentPersonData.Character[i].nameID == 0 && currentPersonData.Character[i].voiceID == 60)
-                                {
-                                    characterListBox.Items.Add(i.ToString("D" + 4) + " : " + "----------");
-                                }
-                                else characterListBox.Items.Add(i.ToString("D" + 4) + " : " + msgDataNames[(currentPersonData.Character[i].nameID) + 1157]);
-                            }
-                            //read List for class names
-                            for (int i = 0; i <= 100; i++)
-                            {
-                                classComboBox.Items.Add(msgDataNames[i + 3453]);
-                            }
-
-                            //read List for allegiances
-                            for (int i = 0; i <= 30; i++)
-                            {
-                                allegianceComboBox.Items.Add(msgDataNames[i + 9498]);
-                            }
-
-                            //read List for Crest Names
-                            for (int i = 0; i <= 85; i++)
-                            {
-                                crest1ComboBox.Items.Add(msgDataNames[i + 9590]);
-                                crest2ComboBox.Items.Add(msgDataNames[i + 9590]);
-                            }
-                            crest1ComboBox.Items.Add("No Crest");
-                            crest2ComboBox.Items.Add("No Crest");
-
-                            //read List for battalion names
-                            for (int i = 0; i <= 200; i++)
-                            {
-                                battalionComboBox.Items.Add(msgDataNames[i + 9096]);
-                            }
+                            assetIDListbox.Items.Add("Asset ID #" + i.ToString());
                         }
                     }
                     else
@@ -126,6 +82,66 @@ namespace ThreeHousesPersonDataEditor
                     }
                 }
                 else return;
+            }
+        }
+
+        public void LoadLanguageTomsgDataNames()
+        {
+            Assembly myAssembly = Assembly.GetExecutingAssembly();
+            Stream msgDataStream = myAssembly.GetManifestResourceStream("ThreeHousesPersonDataEditor.msgData." + SelectedLanguage.ToString() + ".bin");
+            Console.WriteLine("Loading language file " + SelectedLanguage.ToString() + ".bin");
+
+            using (EndianBinaryReader msgData = new EndianBinaryReader(msgDataStream, Endianness.Little))
+            {
+                msgData.SeekCurrent(0x8); // skip header, we don't care
+                var numOfmsgDataPointers = msgData.ReadUInt16();
+                msgDataNames = new List<String>();
+
+                //store all strings in msgData on List
+                for (int i = 0; i < numOfmsgDataPointers; i++)
+                {
+                    msgData.Seek(0x14 + (4 * i), SeekOrigin.Begin);
+                    var msgDataLanguageSectionPointer = msgData.ReadUInt32();
+                    msgData.Seek(msgDataLanguageSectionPointer + 0x14, SeekOrigin.Begin);
+                    msgDataNames.Add(msgData.ReadString(StringBinaryFormat.NullTerminated));
+                }
+                ClearBoxesForLangChange();
+
+                //read List for character names
+                for (int i = 0; i < currentPersonData.SectionBlockCount[0]; i++)
+                {
+                    if (currentPersonData.Character[i].nameID == 0 && currentPersonData.Character[i].voiceID == 60)
+                    {
+                        characterListBox.Items.Add(i.ToString("D" + 4) + " : " + "----------");
+                    }
+                    else characterListBox.Items.Add(i.ToString("D" + 4) + " : " + msgDataNames[(currentPersonData.Character[i].nameID) + 1157]);
+                }
+                //read List for class names
+                for (int i = 0; i <= 100; i++)
+                {
+                    classComboBox.Items.Add(msgDataNames[i + 3453]);
+                }
+
+                //read List for allegiances
+                for (int i = 0; i <= 30; i++)
+                {
+                    allegianceComboBox.Items.Add(msgDataNames[i + 9498]);
+                }
+
+                //read List for Crest Names
+                for (int i = 0; i <= 85; i++)
+                {
+                    crest1ComboBox.Items.Add(msgDataNames[i + 9590]);
+                    crest2ComboBox.Items.Add(msgDataNames[i + 9590]);
+                }
+                crest1ComboBox.Items.Add(msgDataNames[9096 + 200]);
+                crest2ComboBox.Items.Add(msgDataNames[9096 + 200]);
+
+                //read List for battalion names
+                for (int i = 0; i <= 200; i++)
+                {
+                    battalionComboBox.Items.Add(msgDataNames[i + 9096]);
+                }
             }
         }
 
@@ -157,8 +173,10 @@ namespace ThreeHousesPersonDataEditor
             MessageBox.Show("This file is not a valid PersonData file", "Invalid file");
             //Hide Tabs to prevent data being set
             tabControl1.TabPages.Remove(CharacterBlocksTab);
+            tabControl1.TabPages.Remove(AssetIDTab);
             tabControl1.TabPages.Remove(MiscInfoTab);
             characterListBox.Items.Clear();
+            assetIDListbox.Items.Clear();
         }
         private void PersonDataEditorMain_Load(object sender, EventArgs e)
         {
@@ -184,6 +202,20 @@ namespace ThreeHousesPersonDataEditor
             tabControl1.TabPages.Remove(CombatArtsTab);
             tabControl1.TabPages.Remove(GenericLearnsetTab);
             tabControl1.TabPages.Remove(EnemyPersonalSkillTab);
+
+            SelectedLanguage = 1;
+            languageToolStripMenuItem.Visible = false;
+        }
+
+        private void ClearBoxesForLangChange()
+        {
+            //Combo Boxes
+            classComboBox.Items.Clear();
+            allegianceComboBox.Items.Clear();
+            crest1ComboBox.Items.Clear();
+            crest2ComboBox.Items.Clear();
+            battalionComboBox.Items.Clear();
+            characterListBox.Items.Clear();
         }
 
         private void characterListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -600,6 +632,175 @@ namespace ThreeHousesPersonDataEditor
                     }
                 }
             }
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            englishToolStripMenuItem.Checked = true;
+            SelectedLanguage = 1;
+            LoadLanguageTomsgDataNames();
+        }
+        private void UncheckLanguageStrips()
+        {
+            englishToolStripMenuItem.Checked = false;
+            japaneseToolStripMenuItem.Checked = false;
+            toolStripMenuItem2.Checked = false;
+            toolStripMenuItem3.Checked = false;
+            toolStripMenuItem4.Checked = false;
+            toolStripMenuItem5.Checked = false;
+            toolStripMenuItem6.Checked = false;
+            toolStripMenuItem7.Checked = false;
+            toolStripMenuItem8.Checked = false;
+            toolStripMenuItem9.Checked = false;
+            toolStripMenuItem10.Checked = false;
+            toolStripMenuItem11.Checked = false;
+        }
+
+        private void japaneseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            japaneseToolStripMenuItem.Checked = true;
+            SelectedLanguage = 0;
+            LoadLanguageTomsgDataNames();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            toolStripMenuItem2.Checked = true;
+            SelectedLanguage = 2;
+            LoadLanguageTomsgDataNames();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            toolStripMenuItem3.Checked = true;
+            SelectedLanguage = 3;
+            LoadLanguageTomsgDataNames();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            toolStripMenuItem4.Checked = true;
+            SelectedLanguage = 4;
+            LoadLanguageTomsgDataNames();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            toolStripMenuItem5.Checked = true;
+            SelectedLanguage = 5;
+            LoadLanguageTomsgDataNames();
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            toolStripMenuItem6.Checked = true;
+            SelectedLanguage = 6;
+            LoadLanguageTomsgDataNames();
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            toolStripMenuItem7.Checked = true;
+            SelectedLanguage = 7;
+            LoadLanguageTomsgDataNames();
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            toolStripMenuItem8.Checked = true;
+            SelectedLanguage = 8;
+            LoadLanguageTomsgDataNames();
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            toolStripMenuItem9.Checked = true;
+            SelectedLanguage = 9;
+            LoadLanguageTomsgDataNames();
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            toolStripMenuItem10.Checked = true;
+            SelectedLanguage = 10;
+            LoadLanguageTomsgDataNames();
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            UncheckLanguageStrips();
+            toolStripMenuItem11.Checked = true;
+            SelectedLanguage = 11;
+            LoadLanguageTomsgDataNames();
+        }
+
+        private void part1HeadNumbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.AssetID[assetIDListbox.SelectedIndex].part1Head = Decimal.ToInt16(part1HeadNumbox.Value);
+        }
+
+        private void part1BodyNumbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.AssetID[assetIDListbox.SelectedIndex].part1Body = Decimal.ToInt16(part1BodyNumbox.Value);
+        }
+
+        private void part1FaceIDNumbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.AssetID[assetIDListbox.SelectedIndex].part1FaceID = Decimal.ToInt16(part1FaceIDNumbox.Value);
+        }
+
+        private void part2HeadNumbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.AssetID[assetIDListbox.SelectedIndex].part2Head = Decimal.ToInt16(part2HeadNumbox.Value);
+        }
+
+        private void part2BodyNumbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.AssetID[assetIDListbox.SelectedIndex].part2Body = Decimal.ToInt16(part2BodyNumbox.Value);
+        }
+
+        private void part2FaceIDNumbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.AssetID[assetIDListbox.SelectedIndex].part2FaceID = Decimal.ToInt16(part2FaceIDNumbox.Value);
+        }
+
+        private void ngplusHair_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.AssetID[assetIDListbox.SelectedIndex].ngplusHair = Decimal.ToInt16(ngplusHair.Value);
+        }
+
+        private void sothisFusionAIDNumbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.AssetID[assetIDListbox.SelectedIndex].sothisFusedID = Decimal.ToInt16(sothisFusionAIDNumbox.Value);
+        }
+
+        private void altFaceIDNumbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.AssetID[assetIDListbox.SelectedIndex].altFaceID = Decimal.ToInt16(altFaceIDNumbox.Value);
+        }
+
+        private void assetIDListbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            part1HeadNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].part1Head;
+            part2HeadNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].part2Head;
+            part1BodyNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].part1Body;
+            part2BodyNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].part2Body;
+            part1FaceIDNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].part1FaceID;
+            part2FaceIDNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].part2FaceID;
+            sothisFusionAIDNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].sothisFusedID;
+            ngplusHair.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].ngplusHair;
+            altFaceIDNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].altFaceID;
         }
     }
 }
