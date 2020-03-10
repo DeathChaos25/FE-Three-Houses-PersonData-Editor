@@ -17,3 +17,4 @@ ToDo:
 - Implement the rest of the sections
 - Better portrait loading code (currently loads it based on asset ID and only very few are actually implemented)
 - Multi lang support maybe? (Partially done)
+- Add a reset button for current highlighted character
