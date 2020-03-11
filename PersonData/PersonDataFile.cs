@@ -55,7 +55,6 @@ namespace ThreeHousesPersonDataEditor
                     // Section 0 is Character Block, data such as base stats and growths
                     fixed_persondata.Seek(SectionPointers[0], SeekOrigin.Begin);
                     fixed_persondata.SeekCurrent(0x40);  //skip header cus we already stored info
-
                     Character = new List<CharacterBlocks>();
                     for (int i = 0; i < SectionBlockCount[0]; i++)
                     {

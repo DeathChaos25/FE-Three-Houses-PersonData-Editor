@@ -169,6 +169,31 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.characterListBox = new System.Windows.Forms.ListBox();
             this.AssetIDTab = new System.Windows.Forms.TabPage();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.label51 = new System.Windows.Forms.Label();
+            this.ngplusHair = new System.Windows.Forms.NumericUpDown();
+            this.sothisFusionAIDNumbox = new System.Windows.Forms.NumericUpDown();
+            this.altFaceIDNumbox = new System.Windows.Forms.NumericUpDown();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.label48 = new System.Windows.Forms.Label();
+            this.part2HeadNumbox = new System.Windows.Forms.NumericUpDown();
+            this.part2BodyNumbox = new System.Windows.Forms.NumericUpDown();
+            this.part2FaceIDNumbox = new System.Windows.Forms.NumericUpDown();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.part1HeadNumbox = new System.Windows.Forms.NumericUpDown();
+            this.part1BodyNumbox = new System.Windows.Forms.NumericUpDown();
+            this.part1FaceIDNumbox = new System.Windows.Forms.NumericUpDown();
+            this.label43 = new System.Windows.Forms.Label();
+            this.assetIDListbox = new System.Windows.Forms.ListBox();
             this.VoiceIDTab = new System.Windows.Forms.TabPage();
             this.SkillLevelsTab = new System.Windows.Forms.TabPage();
             this.SpellLearnsetTab = new System.Windows.Forms.TabPage();
@@ -195,31 +220,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.PointersListBox = new System.Windows.Forms.ListBox();
             this.numOfPointersLabel = new System.Windows.Forms.Label();
-            this.assetIDListbox = new System.Windows.Forms.ListBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.part1HeadNumbox = new System.Windows.Forms.NumericUpDown();
-            this.part1BodyNumbox = new System.Windows.Forms.NumericUpDown();
-            this.part1FaceIDNumbox = new System.Windows.Forms.NumericUpDown();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.part2HeadNumbox = new System.Windows.Forms.NumericUpDown();
-            this.part2BodyNumbox = new System.Windows.Forms.NumericUpDown();
-            this.part2FaceIDNumbox = new System.Windows.Forms.NumericUpDown();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.ngplusHair = new System.Windows.Forms.NumericUpDown();
-            this.sothisFusionAIDNumbox = new System.Windows.Forms.NumericUpDown();
-            this.altFaceIDNumbox = new System.Windows.Forms.NumericUpDown();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.CharacterBlocksTab.SuspendLayout();
@@ -290,24 +291,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.height2NumberBox)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.AssetIDTab.SuspendLayout();
-            this.MiscInfoTab.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.part1HeadNumbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.part1BodyNumbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.part1FaceIDNumbox)).BeginInit();
-            this.groupBox8.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.part2HeadNumbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.part2BodyNumbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.part2FaceIDNumbox)).BeginInit();
             this.groupBox9.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ngplusHair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sothisFusionAIDNumbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.altFaceIDNumbox)).BeginInit();
+            this.groupBox8.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.part2HeadNumbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.part2BodyNumbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.part2FaceIDNumbox)).BeginInit();
+            this.groupBox7.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.part1HeadNumbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.part1BodyNumbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.part1FaceIDNumbox)).BeginInit();
+            this.MiscInfoTab.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -378,7 +379,7 @@
             // japaneseToolStripMenuItem
             // 
             this.japaneseToolStripMenuItem.Name = "japaneseToolStripMenuItem";
-            this.japaneseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.japaneseToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.japaneseToolStripMenuItem.Text = "JPN";
             this.japaneseToolStripMenuItem.Click += new System.EventHandler(this.japaneseToolStripMenuItem_Click);
             // 
@@ -387,77 +388,77 @@
             this.englishToolStripMenuItem.Checked = true;
             this.englishToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.englishToolStripMenuItem.Text = "ENG (U)";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem2.Text = "ENG (E)";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem3.Text = "GER";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem4.Text = "FRA (E)";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem5.Text = "FRA (U)";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem6.Text = "ESP (E)";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem7.Text = "ESP (U)";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem8.Text = "ITA";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem9.Text = "KOR";
             this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem10.Text = "TWN";
             this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(116, 22);
             this.toolStripMenuItem11.Text = "CHN";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
@@ -491,6 +492,7 @@
             // CharacterBlocksTab
             // 
             this.CharacterBlocksTab.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CharacterBlocksTab.Controls.Add(this.button1);
             this.CharacterBlocksTab.Controls.Add(this.statsTab);
             this.CharacterBlocksTab.Controls.Add(this.groupBox4);
             this.CharacterBlocksTab.Controls.Add(this.groupBox3);
@@ -2071,6 +2073,381 @@
             this.AssetIDTab.Text = "Asset ID";
             this.AssetIDTab.UseVisualStyleBackColor = true;
             // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.tableLayoutPanel6);
+            this.groupBox9.Location = new System.Drawing.Point(129, 280);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(509, 132);
+            this.groupBox9.TabIndex = 3;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Other";
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.label51, 0, 2);
+            this.tableLayoutPanel6.Controls.Add(this.ngplusHair, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.sothisFusionAIDNumbox, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.altFaceIDNumbox, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.label49, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label50, 0, 1);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 3;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(497, 100);
+            this.tableLayoutPanel6.TabIndex = 0;
+            // 
+            // label51
+            // 
+            this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(59, 75);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(132, 13);
+            this.label51.TabIndex = 11;
+            this.label51.Text = "Generic Unit Asset ID Flag";
+            // 
+            // ngplusHair
+            // 
+            this.ngplusHair.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ngplusHair.Location = new System.Drawing.Point(312, 7);
+            this.ngplusHair.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.ngplusHair.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.ngplusHair.Name = "ngplusHair";
+            this.ngplusHair.Size = new System.Drawing.Size(120, 20);
+            this.ngplusHair.TabIndex = 6;
+            this.ngplusHair.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.ngplusHair.ValueChanged += new System.EventHandler(this.ngplusHair_ValueChanged);
+            // 
+            // sothisFusionAIDNumbox
+            // 
+            this.sothisFusionAIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sothisFusionAIDNumbox.Location = new System.Drawing.Point(312, 39);
+            this.sothisFusionAIDNumbox.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.sothisFusionAIDNumbox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.sothisFusionAIDNumbox.Name = "sothisFusionAIDNumbox";
+            this.sothisFusionAIDNumbox.Size = new System.Drawing.Size(120, 20);
+            this.sothisFusionAIDNumbox.TabIndex = 7;
+            this.sothisFusionAIDNumbox.ValueChanged += new System.EventHandler(this.sothisFusionAIDNumbox_ValueChanged);
+            // 
+            // altFaceIDNumbox
+            // 
+            this.altFaceIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.altFaceIDNumbox.Location = new System.Drawing.Point(312, 72);
+            this.altFaceIDNumbox.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.altFaceIDNumbox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.altFaceIDNumbox.Name = "altFaceIDNumbox";
+            this.altFaceIDNumbox.Size = new System.Drawing.Size(120, 20);
+            this.altFaceIDNumbox.TabIndex = 8;
+            this.altFaceIDNumbox.ValueChanged += new System.EventHandler(this.altFaceIDNumbox_ValueChanged);
+            // 
+            // label49
+            // 
+            this.label49.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(65, 11);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(120, 13);
+            this.label49.TabIndex = 9;
+            this.label49.Text = "New Game+ Hair Model";
+            // 
+            // label50
+            // 
+            this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(67, 43);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(115, 13);
+            this.label50.TabIndex = 10;
+            this.label50.Text = "Post Sothis Fusion AID";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.tableLayoutPanel5);
+            this.groupBox8.Location = new System.Drawing.Point(129, 142);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(509, 132);
+            this.groupBox8.TabIndex = 2;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Part 2 Assets";
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Controls.Add(this.label48, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.part2HeadNumbox, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.part2BodyNumbox, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.part2FaceIDNumbox, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.label46, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label47, 0, 1);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 3;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(497, 100);
+            this.tableLayoutPanel5.TabIndex = 0;
+            // 
+            // label48
+            // 
+            this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(102, 75);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(45, 13);
+            this.label48.TabIndex = 8;
+            this.label48.Text = "Face ID";
+            // 
+            // part2HeadNumbox
+            // 
+            this.part2HeadNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.part2HeadNumbox.Location = new System.Drawing.Point(312, 7);
+            this.part2HeadNumbox.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.part2HeadNumbox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.part2HeadNumbox.Name = "part2HeadNumbox";
+            this.part2HeadNumbox.Size = new System.Drawing.Size(120, 20);
+            this.part2HeadNumbox.TabIndex = 3;
+            this.part2HeadNumbox.ValueChanged += new System.EventHandler(this.part2HeadNumbox_ValueChanged);
+            // 
+            // part2BodyNumbox
+            // 
+            this.part2BodyNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.part2BodyNumbox.Location = new System.Drawing.Point(312, 39);
+            this.part2BodyNumbox.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.part2BodyNumbox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.part2BodyNumbox.Name = "part2BodyNumbox";
+            this.part2BodyNumbox.Size = new System.Drawing.Size(120, 20);
+            this.part2BodyNumbox.TabIndex = 4;
+            this.part2BodyNumbox.ValueChanged += new System.EventHandler(this.part2BodyNumbox_ValueChanged);
+            // 
+            // part2FaceIDNumbox
+            // 
+            this.part2FaceIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.part2FaceIDNumbox.Location = new System.Drawing.Point(312, 72);
+            this.part2FaceIDNumbox.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.part2FaceIDNumbox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.part2FaceIDNumbox.Name = "part2FaceIDNumbox";
+            this.part2FaceIDNumbox.Size = new System.Drawing.Size(120, 20);
+            this.part2FaceIDNumbox.TabIndex = 5;
+            this.part2FaceIDNumbox.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.part2FaceIDNumbox.ValueChanged += new System.EventHandler(this.part2FaceIDNumbox_ValueChanged);
+            // 
+            // label46
+            // 
+            this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(92, 11);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(65, 13);
+            this.label46.TabIndex = 6;
+            this.label46.Text = "Head Model";
+            // 
+            // label47
+            // 
+            this.label47.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(93, 43);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(63, 13);
+            this.label47.TabIndex = 7;
+            this.label47.Text = "Body Model";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.tableLayoutPanel4);
+            this.groupBox7.Location = new System.Drawing.Point(129, 4);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(509, 132);
+            this.groupBox7.TabIndex = 1;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Part 1 Assets";
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.label45, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.label44, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.part1HeadNumbox, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.part1BodyNumbox, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.part1FaceIDNumbox, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.label43, 0, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(497, 100);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // label45
+            // 
+            this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(102, 75);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(45, 13);
+            this.label45.TabIndex = 5;
+            this.label45.Text = "Face ID";
+            // 
+            // label44
+            // 
+            this.label44.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(93, 43);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(63, 13);
+            this.label44.TabIndex = 4;
+            this.label44.Text = "Body Model";
+            // 
+            // part1HeadNumbox
+            // 
+            this.part1HeadNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.part1HeadNumbox.Location = new System.Drawing.Point(312, 7);
+            this.part1HeadNumbox.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.part1HeadNumbox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.part1HeadNumbox.Name = "part1HeadNumbox";
+            this.part1HeadNumbox.Size = new System.Drawing.Size(120, 20);
+            this.part1HeadNumbox.TabIndex = 0;
+            this.part1HeadNumbox.ValueChanged += new System.EventHandler(this.part1HeadNumbox_ValueChanged);
+            // 
+            // part1BodyNumbox
+            // 
+            this.part1BodyNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.part1BodyNumbox.Location = new System.Drawing.Point(312, 39);
+            this.part1BodyNumbox.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.part1BodyNumbox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.part1BodyNumbox.Name = "part1BodyNumbox";
+            this.part1BodyNumbox.Size = new System.Drawing.Size(120, 20);
+            this.part1BodyNumbox.TabIndex = 1;
+            this.part1BodyNumbox.ValueChanged += new System.EventHandler(this.part1BodyNumbox_ValueChanged);
+            // 
+            // part1FaceIDNumbox
+            // 
+            this.part1FaceIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.part1FaceIDNumbox.Location = new System.Drawing.Point(312, 72);
+            this.part1FaceIDNumbox.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.part1FaceIDNumbox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.part1FaceIDNumbox.Name = "part1FaceIDNumbox";
+            this.part1FaceIDNumbox.Size = new System.Drawing.Size(120, 20);
+            this.part1FaceIDNumbox.TabIndex = 2;
+            this.part1FaceIDNumbox.ValueChanged += new System.EventHandler(this.part1FaceIDNumbox_ValueChanged);
+            // 
+            // label43
+            // 
+            this.label43.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(92, 11);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(65, 13);
+            this.label43.TabIndex = 3;
+            this.label43.Text = "Head Model";
+            // 
+            // assetIDListbox
+            // 
+            this.assetIDListbox.FormattingEnabled = true;
+            this.assetIDListbox.Location = new System.Drawing.Point(3, 4);
+            this.assetIDListbox.Name = "assetIDListbox";
+            this.assetIDListbox.Size = new System.Drawing.Size(120, 433);
+            this.assetIDListbox.TabIndex = 0;
+            this.assetIDListbox.SelectedIndexChanged += new System.EventHandler(this.assetIDListbox_SelectedIndexChanged);
+            // 
             // VoiceIDTab
             // 
             this.VoiceIDTab.Location = new System.Drawing.Point(4, 22);
@@ -2315,380 +2692,15 @@
             this.numOfPointersLabel.TabIndex = 0;
             this.numOfPointersLabel.Text = "Number of Pointers: 0";
             // 
-            // assetIDListbox
+            // button1
             // 
-            this.assetIDListbox.FormattingEnabled = true;
-            this.assetIDListbox.Location = new System.Drawing.Point(3, 4);
-            this.assetIDListbox.Name = "assetIDListbox";
-            this.assetIDListbox.Size = new System.Drawing.Size(120, 433);
-            this.assetIDListbox.TabIndex = 0;
-            this.assetIDListbox.SelectedIndexChanged += new System.EventHandler(this.assetIDListbox_SelectedIndexChanged);
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.tableLayoutPanel4);
-            this.groupBox7.Location = new System.Drawing.Point(129, 4);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(509, 132);
-            this.groupBox7.TabIndex = 1;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Part 1 Assets";
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.label45, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.label44, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.part1HeadNumbox, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.part1BodyNumbox, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.part1FaceIDNumbox, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.label43, 0, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(6, 19);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(497, 100);
-            this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // part1HeadNumbox
-            // 
-            this.part1HeadNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part1HeadNumbox.Location = new System.Drawing.Point(312, 7);
-            this.part1HeadNumbox.Maximum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            0});
-            this.part1HeadNumbox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.part1HeadNumbox.Name = "part1HeadNumbox";
-            this.part1HeadNumbox.Size = new System.Drawing.Size(120, 20);
-            this.part1HeadNumbox.TabIndex = 0;
-            this.part1HeadNumbox.ValueChanged += new System.EventHandler(this.part1HeadNumbox_ValueChanged);
-            // 
-            // part1BodyNumbox
-            // 
-            this.part1BodyNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part1BodyNumbox.Location = new System.Drawing.Point(312, 39);
-            this.part1BodyNumbox.Maximum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            0});
-            this.part1BodyNumbox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.part1BodyNumbox.Name = "part1BodyNumbox";
-            this.part1BodyNumbox.Size = new System.Drawing.Size(120, 20);
-            this.part1BodyNumbox.TabIndex = 1;
-            this.part1BodyNumbox.ValueChanged += new System.EventHandler(this.part1BodyNumbox_ValueChanged);
-            // 
-            // part1FaceIDNumbox
-            // 
-            this.part1FaceIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part1FaceIDNumbox.Location = new System.Drawing.Point(312, 72);
-            this.part1FaceIDNumbox.Maximum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            0});
-            this.part1FaceIDNumbox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.part1FaceIDNumbox.Name = "part1FaceIDNumbox";
-            this.part1FaceIDNumbox.Size = new System.Drawing.Size(120, 20);
-            this.part1FaceIDNumbox.TabIndex = 2;
-            this.part1FaceIDNumbox.ValueChanged += new System.EventHandler(this.part1FaceIDNumbox_ValueChanged);
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.tableLayoutPanel5);
-            this.groupBox8.Location = new System.Drawing.Point(129, 142);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(509, 132);
-            this.groupBox8.TabIndex = 2;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Part 2 Assets";
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
-            this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.label48, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.part2HeadNumbox, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.part2BodyNumbox, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.part2FaceIDNumbox, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.label46, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.label47, 0, 1);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(6, 19);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 3;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(497, 100);
-            this.tableLayoutPanel5.TabIndex = 0;
-            // 
-            // part2HeadNumbox
-            // 
-            this.part2HeadNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part2HeadNumbox.Location = new System.Drawing.Point(312, 7);
-            this.part2HeadNumbox.Maximum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            0});
-            this.part2HeadNumbox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.part2HeadNumbox.Name = "part2HeadNumbox";
-            this.part2HeadNumbox.Size = new System.Drawing.Size(120, 20);
-            this.part2HeadNumbox.TabIndex = 3;
-            this.part2HeadNumbox.ValueChanged += new System.EventHandler(this.part2HeadNumbox_ValueChanged);
-            // 
-            // part2BodyNumbox
-            // 
-            this.part2BodyNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part2BodyNumbox.Location = new System.Drawing.Point(312, 39);
-            this.part2BodyNumbox.Maximum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            0});
-            this.part2BodyNumbox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.part2BodyNumbox.Name = "part2BodyNumbox";
-            this.part2BodyNumbox.Size = new System.Drawing.Size(120, 20);
-            this.part2BodyNumbox.TabIndex = 4;
-            this.part2BodyNumbox.ValueChanged += new System.EventHandler(this.part2BodyNumbox_ValueChanged);
-            // 
-            // part2FaceIDNumbox
-            // 
-            this.part2FaceIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part2FaceIDNumbox.Location = new System.Drawing.Point(312, 72);
-            this.part2FaceIDNumbox.Maximum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            0});
-            this.part2FaceIDNumbox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.part2FaceIDNumbox.Name = "part2FaceIDNumbox";
-            this.part2FaceIDNumbox.Size = new System.Drawing.Size(120, 20);
-            this.part2FaceIDNumbox.TabIndex = 5;
-            this.part2FaceIDNumbox.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.part2FaceIDNumbox.ValueChanged += new System.EventHandler(this.part2FaceIDNumbox_ValueChanged);
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.tableLayoutPanel6);
-            this.groupBox9.Location = new System.Drawing.Point(129, 280);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(509, 132);
-            this.groupBox9.TabIndex = 3;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Other";
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
-            this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.label51, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.ngplusHair, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.sothisFusionAIDNumbox, 1, 1);
-            this.tableLayoutPanel6.Controls.Add(this.altFaceIDNumbox, 1, 2);
-            this.tableLayoutPanel6.Controls.Add(this.label49, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.label50, 0, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(6, 19);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 3;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(497, 100);
-            this.tableLayoutPanel6.TabIndex = 0;
-            // 
-            // ngplusHair
-            // 
-            this.ngplusHair.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ngplusHair.Location = new System.Drawing.Point(312, 7);
-            this.ngplusHair.Maximum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            0});
-            this.ngplusHair.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.ngplusHair.Name = "ngplusHair";
-            this.ngplusHair.Size = new System.Drawing.Size(120, 20);
-            this.ngplusHair.TabIndex = 6;
-            this.ngplusHair.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.ngplusHair.ValueChanged += new System.EventHandler(this.ngplusHair_ValueChanged);
-            // 
-            // sothisFusionAIDNumbox
-            // 
-            this.sothisFusionAIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sothisFusionAIDNumbox.Location = new System.Drawing.Point(312, 39);
-            this.sothisFusionAIDNumbox.Maximum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            0});
-            this.sothisFusionAIDNumbox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.sothisFusionAIDNumbox.Name = "sothisFusionAIDNumbox";
-            this.sothisFusionAIDNumbox.Size = new System.Drawing.Size(120, 20);
-            this.sothisFusionAIDNumbox.TabIndex = 7;
-            this.sothisFusionAIDNumbox.ValueChanged += new System.EventHandler(this.sothisFusionAIDNumbox_ValueChanged);
-            // 
-            // altFaceIDNumbox
-            // 
-            this.altFaceIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.altFaceIDNumbox.Location = new System.Drawing.Point(312, 72);
-            this.altFaceIDNumbox.Maximum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            0});
-            this.altFaceIDNumbox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.altFaceIDNumbox.Name = "altFaceIDNumbox";
-            this.altFaceIDNumbox.Size = new System.Drawing.Size(120, 20);
-            this.altFaceIDNumbox.TabIndex = 8;
-            this.altFaceIDNumbox.ValueChanged += new System.EventHandler(this.altFaceIDNumbox_ValueChanged);
-            // 
-            // label43
-            // 
-            this.label43.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(92, 11);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(65, 13);
-            this.label43.TabIndex = 3;
-            this.label43.Text = "Head Model";
-            // 
-            // label44
-            // 
-            this.label44.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(93, 43);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(63, 13);
-            this.label44.TabIndex = 4;
-            this.label44.Text = "Body Model";
-            // 
-            // label45
-            // 
-            this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(102, 75);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(45, 13);
-            this.label45.TabIndex = 5;
-            this.label45.Text = "Face ID";
-            // 
-            // label46
-            // 
-            this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(92, 11);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(65, 13);
-            this.label46.TabIndex = 6;
-            this.label46.Text = "Head Model";
-            // 
-            // label47
-            // 
-            this.label47.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(93, 43);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(63, 13);
-            this.label47.TabIndex = 7;
-            this.label47.Text = "Body Model";
-            // 
-            // label48
-            // 
-            this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(102, 75);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(45, 13);
-            this.label48.TabIndex = 8;
-            this.label48.Text = "Face ID";
-            // 
-            // label49
-            // 
-            this.label49.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(65, 11);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(120, 13);
-            this.label49.TabIndex = 9;
-            this.label49.Text = "New Game+ Hair Model";
-            // 
-            // label50
-            // 
-            this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(67, 43);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(115, 13);
-            this.label50.TabIndex = 10;
-            this.label50.Text = "Post Sothis Fusion AID";
-            // 
-            // label51
-            // 
-            this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(59, 75);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(132, 13);
-            this.label51.TabIndex = 11;
-            this.label51.Text = "Generic Unit Asset ID Flag";
+            this.button1.Location = new System.Drawing.Point(520, 117);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Reset Selected Character Stats";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // PersonDataEditorMain
             // 
@@ -2779,29 +2791,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.height2NumberBox)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.AssetIDTab.ResumeLayout(false);
-            this.MiscInfoTab.ResumeLayout(false);
-            this.MiscInfoTab.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.part1HeadNumbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.part1BodyNumbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.part1FaceIDNumbox)).EndInit();
-            this.groupBox8.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.part2HeadNumbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.part2BodyNumbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.part2FaceIDNumbox)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ngplusHair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sothisFusionAIDNumbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.altFaceIDNumbox)).EndInit();
+            this.groupBox8.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.part2HeadNumbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.part2BodyNumbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.part2FaceIDNumbox)).EndInit();
+            this.groupBox7.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.part1HeadNumbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.part1BodyNumbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.part1FaceIDNumbox)).EndInit();
+            this.MiscInfoTab.ResumeLayout(false);
+            this.MiscInfoTab.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3000,5 +3012,6 @@
         private System.Windows.Forms.NumericUpDown part1BodyNumbox;
         private System.Windows.Forms.NumericUpDown part1FaceIDNumbox;
         private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Button button1;
     }
 }

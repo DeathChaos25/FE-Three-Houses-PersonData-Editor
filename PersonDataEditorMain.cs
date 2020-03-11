@@ -17,6 +17,7 @@ namespace ThreeHousesPersonDataEditor
     public partial class PersonDataEditorMain : Form
     {
         private PersonDataFile currentPersonData;
+        private PersonDataFile currentPersonDataCopy;
         public PersonDataEditorMain()
         {
             InitializeComponent();
@@ -219,6 +220,11 @@ namespace ThreeHousesPersonDataEditor
         }
 
         private void characterListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplayCurrentCharacter();
+        }
+
+        private void DisplayCurrentCharacter()
         {
             height1NumberBox.Text = currentPersonData.Character[characterListBox.SelectedIndex].height1.ToString();
             height2NumberBox.Text = currentPersonData.Character[characterListBox.SelectedIndex].height2.ToString();
@@ -801,6 +807,15 @@ namespace ThreeHousesPersonDataEditor
             sothisFusionAIDNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].sothisFusedID;
             ngplusHair.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].ngplusHair;
             altFaceIDNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].altFaceID;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            currentPersonDataCopy = new PersonDataFile();
+            currentPersonDataCopy.ReadPersonData(filePath);
+            currentPersonData.Character[characterListBox.SelectedIndex] = currentPersonDataCopy.Character[characterListBox.SelectedIndex];
+            DisplayCurrentCharacter();
+            MessageBox.Show("The currently selected character has been reset!", "Reset Complete");
         }
     }
 }
