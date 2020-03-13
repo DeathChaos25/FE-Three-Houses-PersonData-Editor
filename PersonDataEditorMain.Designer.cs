@@ -221,6 +221,8 @@
             this.PointersListBox = new System.Windows.Forms.ListBox();
             this.numOfPointersLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label52 = new System.Windows.Forms.Label();
+            this.AIDTabTextbox = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.CharacterBlocksTab.SuspendLayout();
@@ -2062,6 +2064,8 @@
             // 
             // AssetIDTab
             // 
+            this.AssetIDTab.Controls.Add(this.AIDTabTextbox);
+            this.AssetIDTab.Controls.Add(this.label52);
             this.AssetIDTab.Controls.Add(this.groupBox9);
             this.AssetIDTab.Controls.Add(this.groupBox8);
             this.AssetIDTab.Controls.Add(this.groupBox7);
@@ -2076,9 +2080,9 @@
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.tableLayoutPanel6);
-            this.groupBox9.Location = new System.Drawing.Point(129, 280);
+            this.groupBox9.Location = new System.Drawing.Point(129, 246);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(509, 132);
+            this.groupBox9.Size = new System.Drawing.Size(509, 115);
             this.groupBox9.TabIndex = 3;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Other";
@@ -2101,14 +2105,14 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(497, 100);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(497, 90);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // label51
             // 
             this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(59, 75);
+            this.label51.Location = new System.Drawing.Point(59, 67);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(132, 13);
             this.label51.TabIndex = 11;
@@ -2117,7 +2121,7 @@
             // ngplusHair
             // 
             this.ngplusHair.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ngplusHair.Location = new System.Drawing.Point(312, 7);
+            this.ngplusHair.Location = new System.Drawing.Point(312, 6);
             this.ngplusHair.Maximum = new decimal(new int[] {
             32767,
             0,
@@ -2141,7 +2145,7 @@
             // sothisFusionAIDNumbox
             // 
             this.sothisFusionAIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sothisFusionAIDNumbox.Location = new System.Drawing.Point(312, 39);
+            this.sothisFusionAIDNumbox.Location = new System.Drawing.Point(312, 35);
             this.sothisFusionAIDNumbox.Maximum = new decimal(new int[] {
             32767,
             0,
@@ -2160,7 +2164,7 @@
             // altFaceIDNumbox
             // 
             this.altFaceIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.altFaceIDNumbox.Location = new System.Drawing.Point(312, 72);
+            this.altFaceIDNumbox.Location = new System.Drawing.Point(312, 64);
             this.altFaceIDNumbox.Maximum = new decimal(new int[] {
             32767,
             0,
@@ -2180,7 +2184,7 @@
             // 
             this.label49.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(65, 11);
+            this.label49.Location = new System.Drawing.Point(65, 9);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(120, 13);
             this.label49.TabIndex = 9;
@@ -2190,7 +2194,7 @@
             // 
             this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(67, 43);
+            this.label50.Location = new System.Drawing.Point(67, 38);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(115, 13);
             this.label50.TabIndex = 10;
@@ -2199,9 +2203,9 @@
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.tableLayoutPanel5);
-            this.groupBox8.Location = new System.Drawing.Point(129, 142);
+            this.groupBox8.Location = new System.Drawing.Point(129, 125);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(509, 132);
+            this.groupBox8.Size = new System.Drawing.Size(509, 115);
             this.groupBox8.TabIndex = 2;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Part 2 Assets";
@@ -2225,14 +2229,14 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(497, 100);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(497, 90);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // label48
             // 
             this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(102, 75);
+            this.label48.Location = new System.Drawing.Point(102, 67);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(45, 13);
             this.label48.TabIndex = 8;
@@ -2241,7 +2245,7 @@
             // part2HeadNumbox
             // 
             this.part2HeadNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part2HeadNumbox.Location = new System.Drawing.Point(312, 7);
+            this.part2HeadNumbox.Location = new System.Drawing.Point(312, 6);
             this.part2HeadNumbox.Maximum = new decimal(new int[] {
             32767,
             0,
@@ -2260,7 +2264,7 @@
             // part2BodyNumbox
             // 
             this.part2BodyNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part2BodyNumbox.Location = new System.Drawing.Point(312, 39);
+            this.part2BodyNumbox.Location = new System.Drawing.Point(312, 35);
             this.part2BodyNumbox.Maximum = new decimal(new int[] {
             32767,
             0,
@@ -2279,7 +2283,7 @@
             // part2FaceIDNumbox
             // 
             this.part2FaceIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part2FaceIDNumbox.Location = new System.Drawing.Point(312, 72);
+            this.part2FaceIDNumbox.Location = new System.Drawing.Point(312, 64);
             this.part2FaceIDNumbox.Maximum = new decimal(new int[] {
             32767,
             0,
@@ -2304,7 +2308,7 @@
             // 
             this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(92, 11);
+            this.label46.Location = new System.Drawing.Point(92, 9);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(65, 13);
             this.label46.TabIndex = 6;
@@ -2314,7 +2318,7 @@
             // 
             this.label47.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(93, 43);
+            this.label47.Location = new System.Drawing.Point(93, 38);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(63, 13);
             this.label47.TabIndex = 7;
@@ -2325,7 +2329,7 @@
             this.groupBox7.Controls.Add(this.tableLayoutPanel4);
             this.groupBox7.Location = new System.Drawing.Point(129, 4);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(509, 132);
+            this.groupBox7.Size = new System.Drawing.Size(509, 115);
             this.groupBox7.TabIndex = 1;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Part 1 Assets";
@@ -2349,14 +2353,14 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(497, 100);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(497, 90);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // label45
             // 
             this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(102, 75);
+            this.label45.Location = new System.Drawing.Point(102, 67);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(45, 13);
             this.label45.TabIndex = 5;
@@ -2366,7 +2370,7 @@
             // 
             this.label44.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(93, 43);
+            this.label44.Location = new System.Drawing.Point(93, 38);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(63, 13);
             this.label44.TabIndex = 4;
@@ -2375,7 +2379,7 @@
             // part1HeadNumbox
             // 
             this.part1HeadNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part1HeadNumbox.Location = new System.Drawing.Point(312, 7);
+            this.part1HeadNumbox.Location = new System.Drawing.Point(312, 6);
             this.part1HeadNumbox.Maximum = new decimal(new int[] {
             32767,
             0,
@@ -2394,7 +2398,7 @@
             // part1BodyNumbox
             // 
             this.part1BodyNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part1BodyNumbox.Location = new System.Drawing.Point(312, 39);
+            this.part1BodyNumbox.Location = new System.Drawing.Point(312, 35);
             this.part1BodyNumbox.Maximum = new decimal(new int[] {
             32767,
             0,
@@ -2413,7 +2417,7 @@
             // part1FaceIDNumbox
             // 
             this.part1FaceIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.part1FaceIDNumbox.Location = new System.Drawing.Point(312, 72);
+            this.part1FaceIDNumbox.Location = new System.Drawing.Point(312, 64);
             this.part1FaceIDNumbox.Maximum = new decimal(new int[] {
             32767,
             0,
@@ -2433,7 +2437,7 @@
             // 
             this.label43.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(92, 11);
+            this.label43.Location = new System.Drawing.Point(92, 9);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(65, 13);
             this.label43.TabIndex = 3;
@@ -2702,6 +2706,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(175, 370);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(49, 13);
+            this.label52.TabIndex = 4;
+            this.label52.Text = "Used by:";
+            // 
+            // AIDTabTextbox
+            // 
+            this.AIDTabTextbox.Location = new System.Drawing.Point(230, 367);
+            this.AIDTabTextbox.Multiline = true;
+            this.AIDTabTextbox.Name = "AIDTabTextbox";
+            this.AIDTabTextbox.ReadOnly = true;
+            this.AIDTabTextbox.Size = new System.Drawing.Size(248, 63);
+            this.AIDTabTextbox.TabIndex = 9;
+            // 
             // PersonDataEditorMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2791,6 +2813,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.height2NumberBox)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.AssetIDTab.ResumeLayout(false);
+            this.AssetIDTab.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
@@ -3013,5 +3036,7 @@
         private System.Windows.Forms.NumericUpDown part1FaceIDNumbox;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox AIDTabTextbox;
+        private System.Windows.Forms.Label label52;
     }
 }

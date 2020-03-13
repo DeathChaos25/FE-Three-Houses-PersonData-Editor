@@ -16,6 +16,17 @@ namespace ThreeHousesPersonDataEditor
 
     public partial class PersonDataEditorMain : Form
     {
+        //fix flickering/ghosting issues when swapping between tabs
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
+                return cp;
+            }
+        }
+
         private PersonDataFile currentPersonData;
         private PersonDataFile currentPersonDataCopy;
         public PersonDataEditorMain()
@@ -807,6 +818,16 @@ namespace ThreeHousesPersonDataEditor
             sothisFusionAIDNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].sothisFusedID;
             ngplusHair.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].ngplusHair;
             altFaceIDNumbox.Value = currentPersonData.AssetID[assetIDListbox.SelectedIndex].altFaceID;
+
+            AIDTabTextbox.Text = "";
+            for (int i = 0; i < currentPersonData.Character.Count; i++)
+            {
+                if (currentPersonData.Character[i].assetID == assetIDListbox.SelectedIndex)
+                {
+                    AIDTabTextbox.Text += (characterListBox.Items[i].ToString() + "\r\n");
+                }
+            }
+            Console.WriteLine("Current Index: " + assetIDListbox.SelectedIndex.ToString());
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -23,6 +23,8 @@ namespace ThreeHousesPersonDataEditor
         public List<CharacterBlocks> Character { get; set; }
         public AssetIDBlock AssetIDSection { get; set; }
         public List<AssetIDBlock> AssetID { get; set; }
+        public VoiceIDBlock VoiceIDSection { get; set; }
+        public List<VoiceIDBlock> VoiceID { get; set; }
 
         public void ReadPersonData(string fixed_persondata_path)
         {
@@ -50,29 +52,40 @@ namespace ThreeHousesPersonDataEditor
                         SectionMagic[i] = fixed_persondata.ReadUInt32();
                         SectionBlockCount[i] = fixed_persondata.ReadUInt32();
                         SectionBlockSize[i] = fixed_persondata.ReadUInt32();
-                    }
-
-                    // Section 0 is Character Block, data such as base stats and growths
-                    fixed_persondata.Seek(SectionPointers[0], SeekOrigin.Begin);
-                    fixed_persondata.SeekCurrent(0x40);  //skip header cus we already stored info
-                    Character = new List<CharacterBlocks>();
-                    for (int i = 0; i < SectionBlockCount[0]; i++)
-                    {
-                        CharacterSection = new CharacterBlocks();
-                        CharacterSection.Read(fixed_persondata);
-                        Character.Add(CharacterSection);
-                    }
-
-                    // Section 1 is Asset ID data
-                    fixed_persondata.Seek(SectionPointers[1], SeekOrigin.Begin);
-                    fixed_persondata.SeekCurrent(0x40);  //skip header cus we already stored info
-
-                    AssetID = new List<AssetIDBlock>();
-                    for (int i = 0; i < SectionBlockCount[1]; i++)
-                    {
-                        AssetIDSection = new AssetIDBlock();
-                        AssetIDSection.Read(fixed_persondata);
-                        AssetID.Add(AssetIDSection);
+                        fixed_persondata.SeekCurrent(0x34);//skip padding
+                        switch(i)
+                        {
+                            case 0:
+                                // Section 0 is Character Block, data such as base stats and growths
+                                Character = new List<CharacterBlocks>();
+                                for (int j = 0; j < SectionBlockCount[i]; j++)
+                                {
+                                    CharacterSection = new CharacterBlocks();
+                                    CharacterSection.Read(fixed_persondata);
+                                    Character.Add(CharacterSection);
+                                }
+                                break;
+                            case 1:
+                                // Section 1 is Asset ID, data such as 3D models used, character portraits, etc
+                                AssetID = new List<AssetIDBlock>();
+                                for (int j = 0; j < SectionBlockCount[i]; j++)
+                                {
+                                    AssetIDSection = new AssetIDBlock();
+                                    AssetIDSection.Read(fixed_persondata);
+                                    AssetID.Add(AssetIDSection);
+                                }
+                                break;
+                            case 2:
+                                // Section 2 is Void ID, ties voice sets to the voice ID used in the Asset ID
+                                VoiceID = new List<VoiceIDBlock>();
+                                for (int j = 0; j < SectionBlockCount[i]; j++)
+                                {
+                                    VoiceIDSection = new VoiceIDBlock();
+                                    VoiceIDSection.Read(fixed_persondata);
+                                    VoiceID.Add(VoiceIDSection);
+                                }
+                                break;
+                        }
                     }
                 }
             }
@@ -98,23 +111,29 @@ namespace ThreeHousesPersonDataEditor
                 fixed_persondata.WriteUInt32(SectionBlockCount[i]);
                 fixed_persondata.WriteUInt32(SectionBlockSize[i]);
                 fixed_persondata.WritePadding(0x34);
-                if (i == 0)
+                switch(i)
                 {
-                    foreach (var character in Character)
-                    {
-                        character.Write(fixed_persondata);
-                    }
-                }
-                else if (i == 1)
-                {
-                    foreach (var assetid in AssetID)
-                    {
-                        assetid.Write(fixed_persondata);
-                    }
-                }
-                else
-                {
-                    fixed_persondata.WritePadding(SectionBlockCount[i] * SectionBlockSize[i]);
+                    case 0:
+                        foreach (var character in Character)
+                        {
+                            character.Write(fixed_persondata);
+                        }
+                        break;
+                    case 1:
+                        foreach (var assetid in AssetID)
+                        {
+                            assetid.Write(fixed_persondata);
+                        }
+                        break;
+                    case 2:
+                        foreach (var voiceid in VoiceID)
+                        {
+                            voiceid.Write(fixed_persondata);
+                        }
+                        break;
+                    default:
+                        fixed_persondata.WritePadding(SectionBlockCount[i] * SectionBlockSize[i]);
+                        break;
                 }
             }
         }
