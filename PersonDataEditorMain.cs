@@ -39,7 +39,7 @@ namespace ThreeHousesPersonDataEditor
         public string filePath { get; set; }
         public string nameOfFile { get; set; }
 
-        string[] SectionNames = new string[] { "Character Data", "Asset IDs", "Voice IDs", "Skill Levels", "Spell Learnset", "Skill Learnset", "Starting Inventory", "Combat Arts Learnset", "Support Bonuses", "Support Bonuses", "Support List", "Budding Talents", "Generic Learnset", "Faculty Teachings", "Seminar Teachings", "Character Goals", "Portrait IDs", "Enemy Personal Skills" };
+        string[] SectionNames = new string[] { "Character Data", "Asset IDs", "Voice IDs", "Starting Weapon Ranks/Combat Assets", "Spell Learnset", "Skill Learnset", "Starting Inventory", "Combat Arts Learnset", "Support Bonuses", "Support Bonuses", "Support List", "Budding Talents", "Generic Learnset", "Faculty Teachings", "Seminar Teachings", "Character Goals", "Portrait IDs", "Enemy Personal Skills" };
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())

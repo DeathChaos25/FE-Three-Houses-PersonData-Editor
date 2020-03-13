@@ -25,6 +25,8 @@ namespace ThreeHousesPersonDataEditor
         public List<AssetIDBlock> AssetID { get; set; }
         public VoiceIDBlock VoiceIDSection { get; set; }
         public List<VoiceIDBlock> VoiceID { get; set; }
+        public List<byte> SectionBytes { get; set; }
+        public List<List<byte>> OtherSections { get; set; }
 
         public void ReadPersonData(string fixed_persondata_path)
         {
@@ -33,8 +35,19 @@ namespace ThreeHousesPersonDataEditor
             SectionMagic = new uint[20];
             SectionBlockCount = new uint[20];
             SectionBlockSize = new uint[20];
+            byte nullByte = 0;
             using (EndianBinaryReader fixed_persondata = new EndianBinaryReader(fixed_persondata_path, Endianness.Little))
             {
+                //fill used sections with dummy data as they will not be read from List
+                //this is temporary code and will be removed once all section classes are done
+                SectionBytes = new List<byte>();
+                SectionBytes.Add(nullByte);
+
+                OtherSections = new List<List<byte>>();
+                OtherSections.Add(SectionBytes);
+                OtherSections.Add(SectionBytes);
+                OtherSections.Add(SectionBytes);
+
                 numOfPointers = fixed_persondata.ReadUInt32();
                 if (numOfPointers == 18)
                 {
@@ -53,6 +66,7 @@ namespace ThreeHousesPersonDataEditor
                         SectionBlockCount[i] = fixed_persondata.ReadUInt32();
                         SectionBlockSize[i] = fixed_persondata.ReadUInt32();
                         fixed_persondata.SeekCurrent(0x34);//skip padding
+
                         switch(i)
                         {
                             case 0:
@@ -84,6 +98,10 @@ namespace ThreeHousesPersonDataEditor
                                     VoiceIDSection.Read(fixed_persondata);
                                     VoiceID.Add(VoiceIDSection);
                                 }
+                                break;
+                            default:
+                                SectionBytes = fixed_persondata.ReadByteList(Convert.ToInt32(SectionBlockCount[i] * SectionBlockSize[i]));
+                                OtherSections.Add(SectionBytes);
                                 break;
                         }
                     }
@@ -132,7 +150,7 @@ namespace ThreeHousesPersonDataEditor
                         }
                         break;
                     default:
-                        fixed_persondata.WritePadding(SectionBlockCount[i] * SectionBlockSize[i]);
+                        fixed_persondata.WriteBytes(OtherSections[i]);
                         break;
                 }
             }
