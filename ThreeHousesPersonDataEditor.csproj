@@ -79,6 +79,7 @@
     <Compile Include="PersonData\PersonDataFile.cs" />
     <Compile Include="PersonData\Sections\AssetIDBlock.cs" />
     <Compile Include="PersonData\Sections\CharacterBlocks.cs" />
+    <Compile Include="PersonData\Sections\DefaultWpnRanksAndCombatAssets.cs" />
     <Compile Include="PersonData\Sections\VoiceIDBlock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

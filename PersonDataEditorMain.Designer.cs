@@ -49,6 +49,7 @@
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.CharacterBlocksTab = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.statsTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -149,6 +150,54 @@
             this.unk0x31NumBox = new System.Windows.Forms.NumericUpDown();
             this.paddingNumBox = new System.Windows.Forms.NumericUpDown();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.wpnProfGroupbox = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.FaithProfCombobox = new System.Windows.Forms.ComboBox();
+            this.BowProfCombobox = new System.Windows.Forms.ComboBox();
+            this.BrawlingProfCombobox = new System.Windows.Forms.ComboBox();
+            this.LanceProfCombobox = new System.Windows.Forms.ComboBox();
+            this.AxeProfCombobox = new System.Windows.Forms.ComboBox();
+            this.AuthorityProfCombobox = new System.Windows.Forms.ComboBox();
+            this.ArmorProfCombobox = new System.Windows.Forms.ComboBox();
+            this.ReasonProfCombobox = new System.Windows.Forms.ComboBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.FlyingProfCombobox = new System.Windows.Forms.ComboBox();
+            this.SwordProfCombobox = new System.Windows.Forms.ComboBox();
+            this.RidingProfCombobox = new System.Windows.Forms.ComboBox();
+            this.wpnRanksGroupbox = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.defaultFlyingCombobox = new System.Windows.Forms.ComboBox();
+            this.defaultRidingCombobox = new System.Windows.Forms.ComboBox();
+            this.defaultArmorCombobox = new System.Windows.Forms.ComboBox();
+            this.defaultAuthorityCombobox = new System.Windows.Forms.ComboBox();
+            this.defaultFaithCombobox = new System.Windows.Forms.ComboBox();
+            this.defaultReasonCombobox = new System.Windows.Forms.ComboBox();
+            this.defaultBrawlingCombobox = new System.Windows.Forms.ComboBox();
+            this.defaultBowCombobox = new System.Windows.Forms.ComboBox();
+            this.defaultAxeCombobox = new System.Windows.Forms.ComboBox();
+            this.defaultLanceCombobox = new System.Windows.Forms.ComboBox();
+            this.defaultSwordCombobox = new System.Windows.Forms.ComboBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.facePicBox = new System.Windows.Forms.PictureBox();
@@ -169,6 +218,10 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.characterListBox = new System.Windows.Forms.ListBox();
             this.AssetIDTab = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.assetIDListbox = new System.Windows.Forms.ListBox();
+            this.AIDTabTextbox = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label51 = new System.Windows.Forms.Label();
@@ -193,7 +246,6 @@
             this.part1BodyNumbox = new System.Windows.Forms.NumericUpDown();
             this.part1FaceIDNumbox = new System.Windows.Forms.NumericUpDown();
             this.label43 = new System.Windows.Forms.Label();
-            this.assetIDListbox = new System.Windows.Forms.ListBox();
             this.VoiceIDTab = new System.Windows.Forms.TabPage();
             this.SkillLevelsTab = new System.Windows.Forms.TabPage();
             this.SpellLearnsetTab = new System.Windows.Forms.TabPage();
@@ -220,9 +272,27 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.PointersListBox = new System.Windows.Forms.ListBox();
             this.numOfPointersLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label52 = new System.Windows.Forms.Label();
-            this.AIDTabTextbox = new System.Windows.Forms.TextBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.preCertClassCombobox1 = new System.Windows.Forms.ComboBox();
+            this.preCertClassCombobox2 = new System.Windows.Forms.ComboBox();
+            this.preCertClassCombobox3 = new System.Windows.Forms.ComboBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.part1ClassCombobox = new System.Windows.Forms.ComboBox();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.part2ClassCombobox1 = new System.Windows.Forms.ComboBox();
+            this.part2ClassCombobox2 = new System.Windows.Forms.ComboBox();
+            this.part2ClassCombobox3 = new System.Windows.Forms.ComboBox();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.unitColorCombobox = new System.Windows.Forms.ComboBox();
+            this.CombatAssetsGroupbox = new System.Windows.Forms.GroupBox();
+            this.combatassetothergroupbox = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.unk0x0numbox = new System.Windows.Forms.NumericUpDown();
+            this.unk0x8numbox = new System.Windows.Forms.NumericUpDown();
+            this.preCertClassCombobox4 = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.CharacterBlocksTab.SuspendLayout();
@@ -284,6 +354,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.unk0x2ENumBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unk0x31NumBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paddingNumBox)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.wpnProfGroupbox.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            this.wpnRanksGroupbox.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.facePicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.birthDayNumberBox)).BeginInit();
@@ -293,6 +391,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.height2NumberBox)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.AssetIDTab.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ngplusHair)).BeginInit();
@@ -311,6 +410,16 @@
             this.MiscInfoTab.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            this.CombatAssetsGroupbox.SuspendLayout();
+            this.combatassetothergroupbox.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.unk0x0numbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unk0x8numbox)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -504,6 +613,16 @@
             this.CharacterBlocksTab.Size = new System.Drawing.Size(706, 440);
             this.CharacterBlocksTab.TabIndex = 0;
             this.CharacterBlocksTab.Text = "Characters";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(520, 117);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Reset Selected Character Stats";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // statsTab
             // 
@@ -1844,20 +1963,869 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.wpnProfGroupbox);
+            this.tabPage3.Controls.Add(this.wpnRanksGroupbox);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(509, 287);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Spells";
+            this.tabPage3.Text = "Weapon Ranks";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // wpnProfGroupbox
+            // 
+            this.wpnProfGroupbox.Controls.Add(this.tableLayoutPanel8);
+            this.wpnProfGroupbox.Location = new System.Drawing.Point(6, 135);
+            this.wpnProfGroupbox.Name = "wpnProfGroupbox";
+            this.wpnProfGroupbox.Size = new System.Drawing.Size(503, 126);
+            this.wpnProfGroupbox.TabIndex = 1;
+            this.wpnProfGroupbox.TabStop = false;
+            this.wpnProfGroupbox.Text = "Weapon Proficiencies";
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
+            this.tableLayoutPanel8.ColumnCount = 11;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel8.Controls.Add(this.FaithProfCombobox, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.BowProfCombobox, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.BrawlingProfCombobox, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.LanceProfCombobox, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.AxeProfCombobox, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.AuthorityProfCombobox, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.ArmorProfCombobox, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.ReasonProfCombobox, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox12, 10, 0);
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox13, 9, 0);
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox14, 8, 0);
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox15, 7, 0);
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox16, 6, 0);
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox17, 5, 0);
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox18, 4, 0);
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox19, 3, 0);
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox20, 2, 0);
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox21, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox22, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.SwordProfCombobox, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.RidingProfCombobox, 8, 1);
+            this.tableLayoutPanel8.Controls.Add(this.FlyingProfCombobox, 10, 1);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 2;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(491, 100);
+            this.tableLayoutPanel8.TabIndex = 0;
+            // 
+            // FaithProfCombobox
+            // 
+            this.FaithProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FaithProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FaithProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.FaithProfCombobox.FormattingEnabled = true;
+            this.FaithProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.FaithProfCombobox.Location = new System.Drawing.Point(268, 64);
+            this.FaithProfCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.FaithProfCombobox.Name = "FaithProfCombobox";
+            this.FaithProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.FaithProfCombobox.TabIndex = 20;
+            this.FaithProfCombobox.SelectedIndexChanged += new System.EventHandler(this.FaithProfCombobox_SelectedIndexChanged);
+            // 
+            // BowProfCombobox
+            // 
+            this.BowProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BowProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BowProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.BowProfCombobox.FormattingEnabled = true;
+            this.BowProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.BowProfCombobox.Location = new System.Drawing.Point(136, 64);
+            this.BowProfCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.BowProfCombobox.Name = "BowProfCombobox";
+            this.BowProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.BowProfCombobox.TabIndex = 19;
+            this.BowProfCombobox.SelectedIndexChanged += new System.EventHandler(this.BowProfCombobox_SelectedIndexChanged);
+            // 
+            // BrawlingProfCombobox
+            // 
+            this.BrawlingProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BrawlingProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BrawlingProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.BrawlingProfCombobox.FormattingEnabled = true;
+            this.BrawlingProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.BrawlingProfCombobox.Location = new System.Drawing.Point(180, 64);
+            this.BrawlingProfCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.BrawlingProfCombobox.Name = "BrawlingProfCombobox";
+            this.BrawlingProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.BrawlingProfCombobox.TabIndex = 18;
+            this.BrawlingProfCombobox.SelectedIndexChanged += new System.EventHandler(this.BrawlingProfCombobox_SelectedIndexChanged);
+            // 
+            // LanceProfCombobox
+            // 
+            this.LanceProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LanceProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.LanceProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.LanceProfCombobox.FormattingEnabled = true;
+            this.LanceProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.LanceProfCombobox.Location = new System.Drawing.Point(48, 64);
+            this.LanceProfCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.LanceProfCombobox.Name = "LanceProfCombobox";
+            this.LanceProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.LanceProfCombobox.TabIndex = 17;
+            this.LanceProfCombobox.SelectedIndexChanged += new System.EventHandler(this.LanceProfCombobox_SelectedIndexChanged);
+            // 
+            // AxeProfCombobox
+            // 
+            this.AxeProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AxeProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AxeProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.AxeProfCombobox.FormattingEnabled = true;
+            this.AxeProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.AxeProfCombobox.Location = new System.Drawing.Point(92, 64);
+            this.AxeProfCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.AxeProfCombobox.Name = "AxeProfCombobox";
+            this.AxeProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.AxeProfCombobox.TabIndex = 14;
+            this.AxeProfCombobox.SelectedIndexChanged += new System.EventHandler(this.AxeProfCombobox_SelectedIndexChanged);
+            // 
+            // AuthorityProfCombobox
+            // 
+            this.AuthorityProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AuthorityProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AuthorityProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.AuthorityProfCombobox.FormattingEnabled = true;
+            this.AuthorityProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.AuthorityProfCombobox.Location = new System.Drawing.Point(312, 64);
+            this.AuthorityProfCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.AuthorityProfCombobox.Name = "AuthorityProfCombobox";
+            this.AuthorityProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.AuthorityProfCombobox.TabIndex = 13;
+            this.AuthorityProfCombobox.SelectedIndexChanged += new System.EventHandler(this.AuthorityProfCombobox_SelectedIndexChanged);
+            // 
+            // ArmorProfCombobox
+            // 
+            this.ArmorProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ArmorProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ArmorProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.ArmorProfCombobox.FormattingEnabled = true;
+            this.ArmorProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.ArmorProfCombobox.Location = new System.Drawing.Point(356, 64);
+            this.ArmorProfCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.ArmorProfCombobox.Name = "ArmorProfCombobox";
+            this.ArmorProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.ArmorProfCombobox.TabIndex = 12;
+            this.ArmorProfCombobox.SelectedIndexChanged += new System.EventHandler(this.ArmorProfCombobox_SelectedIndexChanged);
+            // 
+            // ReasonProfCombobox
+            // 
+            this.ReasonProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ReasonProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ReasonProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.ReasonProfCombobox.FormattingEnabled = true;
+            this.ReasonProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.ReasonProfCombobox.Location = new System.Drawing.Point(224, 64);
+            this.ReasonProfCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.ReasonProfCombobox.Name = "ReasonProfCombobox";
+            this.ReasonProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.ReasonProfCombobox.TabIndex = 11;
+            this.ReasonProfCombobox.SelectedIndexChanged += new System.EventHandler(this.ReasonProfCombobox_SelectedIndexChanged);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.InitialImage")));
+            this.pictureBox12.Location = new System.Drawing.Point(451, 11);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 10;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox13.InitialImage")));
+            this.pictureBox13.Location = new System.Drawing.Point(405, 11);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 9;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox14.InitialImage")));
+            this.pictureBox14.Location = new System.Drawing.Point(361, 11);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 8;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox15.InitialImage")));
+            this.pictureBox15.Location = new System.Drawing.Point(317, 11);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 7;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox16.InitialImage")));
+            this.pictureBox16.Location = new System.Drawing.Point(273, 11);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 6;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.InitialImage")));
+            this.pictureBox17.Location = new System.Drawing.Point(229, 11);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 5;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.InitialImage")));
+            this.pictureBox18.Location = new System.Drawing.Point(185, 11);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 4;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
+            this.pictureBox19.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox19.InitialImage")));
+            this.pictureBox19.Location = new System.Drawing.Point(141, 11);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox19.TabIndex = 3;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
+            this.pictureBox20.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox20.InitialImage")));
+            this.pictureBox20.Location = new System.Drawing.Point(97, 11);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox20.TabIndex = 2;
+            this.pictureBox20.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
+            this.pictureBox21.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox21.InitialImage")));
+            this.pictureBox21.Location = new System.Drawing.Point(53, 11);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox21.TabIndex = 1;
+            this.pictureBox21.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
+            this.pictureBox22.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox22.InitialImage")));
+            this.pictureBox22.Location = new System.Drawing.Point(9, 11);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox22.TabIndex = 0;
+            this.pictureBox22.TabStop = false;
+            // 
+            // FlyingProfCombobox
+            // 
+            this.FlyingProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FlyingProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FlyingProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.FlyingProfCombobox.FormattingEnabled = true;
+            this.FlyingProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.FlyingProfCombobox.Location = new System.Drawing.Point(446, 64);
+            this.FlyingProfCombobox.Margin = new System.Windows.Forms.Padding(1);
+            this.FlyingProfCombobox.Name = "FlyingProfCombobox";
+            this.FlyingProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.FlyingProfCombobox.TabIndex = 15;
+            this.FlyingProfCombobox.SelectedIndexChanged += new System.EventHandler(this.FlyingProfCombobox_SelectedIndexChanged);
+            // 
+            // SwordProfCombobox
+            // 
+            this.SwordProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SwordProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SwordProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.SwordProfCombobox.FormattingEnabled = true;
+            this.SwordProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.SwordProfCombobox.Location = new System.Drawing.Point(4, 64);
+            this.SwordProfCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.SwordProfCombobox.Name = "SwordProfCombobox";
+            this.SwordProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.SwordProfCombobox.TabIndex = 1;
+            this.SwordProfCombobox.SelectedIndexChanged += new System.EventHandler(this.SwordProfCombobox_SelectedIndexChanged);
+            // 
+            // RidingProfCombobox
+            // 
+            this.RidingProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.RidingProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RidingProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.RidingProfCombobox.FormattingEnabled = true;
+            this.RidingProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.RidingProfCombobox.Location = new System.Drawing.Point(400, 64);
+            this.RidingProfCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.RidingProfCombobox.Name = "RidingProfCombobox";
+            this.RidingProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.RidingProfCombobox.TabIndex = 16;
+            this.RidingProfCombobox.SelectedIndexChanged += new System.EventHandler(this.RidingProfCombobox_SelectedIndexChanged);
+            // 
+            // wpnRanksGroupbox
+            // 
+            this.wpnRanksGroupbox.Controls.Add(this.tableLayoutPanel7);
+            this.wpnRanksGroupbox.Location = new System.Drawing.Point(3, 3);
+            this.wpnRanksGroupbox.Name = "wpnRanksGroupbox";
+            this.wpnRanksGroupbox.Size = new System.Drawing.Size(503, 126);
+            this.wpnRanksGroupbox.TabIndex = 0;
+            this.wpnRanksGroupbox.TabStop = false;
+            this.wpnRanksGroupbox.Text = "Default Weapon Ranks";
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
+            this.tableLayoutPanel7.ColumnCount = 11;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel7.Controls.Add(this.defaultFlyingCombobox, 10, 1);
+            this.tableLayoutPanel7.Controls.Add(this.defaultRidingCombobox, 9, 1);
+            this.tableLayoutPanel7.Controls.Add(this.defaultArmorCombobox, 8, 1);
+            this.tableLayoutPanel7.Controls.Add(this.defaultAuthorityCombobox, 7, 1);
+            this.tableLayoutPanel7.Controls.Add(this.defaultReasonCombobox, 5, 1);
+            this.tableLayoutPanel7.Controls.Add(this.defaultBrawlingCombobox, 4, 1);
+            this.tableLayoutPanel7.Controls.Add(this.defaultBowCombobox, 3, 1);
+            this.tableLayoutPanel7.Controls.Add(this.defaultAxeCombobox, 2, 1);
+            this.tableLayoutPanel7.Controls.Add(this.defaultLanceCombobox, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.defaultSwordCombobox, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox11, 10, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox10, 9, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox9, 8, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox8, 7, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox7, 6, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox6, 5, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox5, 4, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox4, 3, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox3, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox2, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.defaultFaithCombobox, 6, 1);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 2;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(491, 100);
+            this.tableLayoutPanel7.TabIndex = 0;
+            // 
+            // defaultFlyingCombobox
+            // 
+            this.defaultFlyingCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultFlyingCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultFlyingCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.defaultFlyingCombobox.FormattingEnabled = true;
+            this.defaultFlyingCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultFlyingCombobox.Location = new System.Drawing.Point(446, 64);
+            this.defaultFlyingCombobox.Name = "defaultFlyingCombobox";
+            this.defaultFlyingCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultFlyingCombobox.TabIndex = 20;
+            this.defaultFlyingCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultFlyingCombobox_SelectedIndexChanged);
+            // 
+            // defaultRidingCombobox
+            // 
+            this.defaultRidingCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultRidingCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultRidingCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.defaultRidingCombobox.FormattingEnabled = true;
+            this.defaultRidingCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultRidingCombobox.Location = new System.Drawing.Point(400, 64);
+            this.defaultRidingCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.defaultRidingCombobox.Name = "defaultRidingCombobox";
+            this.defaultRidingCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultRidingCombobox.TabIndex = 19;
+            this.defaultRidingCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultRidingCombobox_SelectedIndexChanged);
+            // 
+            // defaultArmorCombobox
+            // 
+            this.defaultArmorCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultArmorCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultArmorCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.defaultArmorCombobox.FormattingEnabled = true;
+            this.defaultArmorCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultArmorCombobox.Location = new System.Drawing.Point(356, 64);
+            this.defaultArmorCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.defaultArmorCombobox.Name = "defaultArmorCombobox";
+            this.defaultArmorCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultArmorCombobox.TabIndex = 18;
+            this.defaultArmorCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultArmorCombobox_SelectedIndexChanged);
+            // 
+            // defaultAuthorityCombobox
+            // 
+            this.defaultAuthorityCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultAuthorityCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultAuthorityCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.defaultAuthorityCombobox.FormattingEnabled = true;
+            this.defaultAuthorityCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultAuthorityCombobox.Location = new System.Drawing.Point(312, 64);
+            this.defaultAuthorityCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.defaultAuthorityCombobox.Name = "defaultAuthorityCombobox";
+            this.defaultAuthorityCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultAuthorityCombobox.TabIndex = 17;
+            this.defaultAuthorityCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultAuthorityCombobox_SelectedIndexChanged);
+            // 
+            // defaultFaithCombobox
+            // 
+            this.defaultFaithCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultFaithCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultFaithCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.defaultFaithCombobox.FormattingEnabled = true;
+            this.defaultFaithCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultFaithCombobox.Location = new System.Drawing.Point(268, 64);
+            this.defaultFaithCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.defaultFaithCombobox.Name = "defaultFaithCombobox";
+            this.defaultFaithCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultFaithCombobox.TabIndex = 16;
+            this.defaultFaithCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultFaithCombobox_SelectedIndexChanged);
+            // 
+            // defaultReasonCombobox
+            // 
+            this.defaultReasonCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultReasonCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultReasonCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.defaultReasonCombobox.FormattingEnabled = true;
+            this.defaultReasonCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultReasonCombobox.Location = new System.Drawing.Point(224, 64);
+            this.defaultReasonCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.defaultReasonCombobox.Name = "defaultReasonCombobox";
+            this.defaultReasonCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultReasonCombobox.TabIndex = 15;
+            this.defaultReasonCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultReasonCombobox_SelectedIndexChanged);
+            // 
+            // defaultBrawlingCombobox
+            // 
+            this.defaultBrawlingCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultBrawlingCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultBrawlingCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.defaultBrawlingCombobox.FormattingEnabled = true;
+            this.defaultBrawlingCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultBrawlingCombobox.Location = new System.Drawing.Point(180, 64);
+            this.defaultBrawlingCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.defaultBrawlingCombobox.Name = "defaultBrawlingCombobox";
+            this.defaultBrawlingCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultBrawlingCombobox.TabIndex = 14;
+            this.defaultBrawlingCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultBrawlingCombobox_SelectedIndexChanged);
+            // 
+            // defaultBowCombobox
+            // 
+            this.defaultBowCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultBowCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultBowCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.defaultBowCombobox.FormattingEnabled = true;
+            this.defaultBowCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultBowCombobox.Location = new System.Drawing.Point(136, 64);
+            this.defaultBowCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.defaultBowCombobox.Name = "defaultBowCombobox";
+            this.defaultBowCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultBowCombobox.TabIndex = 13;
+            this.defaultBowCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultBowCombobox_SelectedIndexChanged);
+            // 
+            // defaultAxeCombobox
+            // 
+            this.defaultAxeCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultAxeCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultAxeCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.defaultAxeCombobox.FormattingEnabled = true;
+            this.defaultAxeCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultAxeCombobox.Location = new System.Drawing.Point(92, 64);
+            this.defaultAxeCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.defaultAxeCombobox.Name = "defaultAxeCombobox";
+            this.defaultAxeCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultAxeCombobox.TabIndex = 12;
+            this.defaultAxeCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultAxeCombobox_SelectedIndexChanged);
+            // 
+            // defaultLanceCombobox
+            // 
+            this.defaultLanceCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultLanceCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultLanceCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.defaultLanceCombobox.FormattingEnabled = true;
+            this.defaultLanceCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultLanceCombobox.Location = new System.Drawing.Point(48, 64);
+            this.defaultLanceCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.defaultLanceCombobox.Name = "defaultLanceCombobox";
+            this.defaultLanceCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultLanceCombobox.TabIndex = 11;
+            this.defaultLanceCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultLanceCombobox_SelectedIndexChanged);
+            // 
+            // defaultSwordCombobox
+            // 
+            this.defaultSwordCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultSwordCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultSwordCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.defaultSwordCombobox.FormattingEnabled = true;
+            this.defaultSwordCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultSwordCombobox.Location = new System.Drawing.Point(4, 64);
+            this.defaultSwordCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.defaultSwordCombobox.Name = "defaultSwordCombobox";
+            this.defaultSwordCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultSwordCombobox.TabIndex = 1;
+            this.defaultSwordCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultSwordCombobox_SelectedIndexChanged);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.InitialImage")));
+            this.pictureBox11.Location = new System.Drawing.Point(451, 11);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 10;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.InitialImage")));
+            this.pictureBox10.Location = new System.Drawing.Point(405, 11);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 9;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.InitialImage")));
+            this.pictureBox9.Location = new System.Drawing.Point(361, 11);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 8;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.InitialImage")));
+            this.pictureBox8.Location = new System.Drawing.Point(317, 11);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 7;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.InitialImage")));
+            this.pictureBox7.Location = new System.Drawing.Point(273, 11);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.InitialImage")));
+            this.pictureBox6.Location = new System.Drawing.Point(229, 11);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
+            this.pictureBox5.Location = new System.Drawing.Point(185, 11);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
+            this.pictureBox4.Location = new System.Drawing.Point(141, 11);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
+            this.pictureBox3.Location = new System.Drawing.Point(97, 11);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(53, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(9, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.CombatAssetsGroupbox);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(509, 287);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Combat Arts";
+            this.tabPage4.Text = "Combat Assets";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // groupBox4
@@ -1905,6 +2873,7 @@
             // 
             // allegianceComboBox
             // 
+            this.allegianceComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.allegianceComboBox.FormattingEnabled = true;
             this.allegianceComboBox.Location = new System.Drawing.Point(158, 71);
             this.allegianceComboBox.Name = "allegianceComboBox";
@@ -1923,6 +2892,7 @@
             // 
             // classComboBox
             // 
+            this.classComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.classComboBox.FormattingEnabled = true;
             this.classComboBox.Location = new System.Drawing.Point(158, 44);
             this.classComboBox.Name = "classComboBox";
@@ -2064,18 +3034,56 @@
             // 
             // AssetIDTab
             // 
+            this.AssetIDTab.Controls.Add(this.groupBox10);
             this.AssetIDTab.Controls.Add(this.AIDTabTextbox);
             this.AssetIDTab.Controls.Add(this.label52);
             this.AssetIDTab.Controls.Add(this.groupBox9);
             this.AssetIDTab.Controls.Add(this.groupBox8);
             this.AssetIDTab.Controls.Add(this.groupBox7);
-            this.AssetIDTab.Controls.Add(this.assetIDListbox);
             this.AssetIDTab.Location = new System.Drawing.Point(4, 22);
             this.AssetIDTab.Name = "AssetIDTab";
             this.AssetIDTab.Size = new System.Drawing.Size(706, 440);
             this.AssetIDTab.TabIndex = 2;
             this.AssetIDTab.Text = "Asset ID";
             this.AssetIDTab.UseVisualStyleBackColor = true;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.assetIDListbox);
+            this.groupBox10.Location = new System.Drawing.Point(3, 4);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(120, 426);
+            this.groupBox10.TabIndex = 10;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Asset IDs";
+            // 
+            // assetIDListbox
+            // 
+            this.assetIDListbox.FormattingEnabled = true;
+            this.assetIDListbox.Location = new System.Drawing.Point(6, 19);
+            this.assetIDListbox.Name = "assetIDListbox";
+            this.assetIDListbox.Size = new System.Drawing.Size(108, 394);
+            this.assetIDListbox.TabIndex = 0;
+            this.assetIDListbox.SelectedIndexChanged += new System.EventHandler(this.assetIDListbox_SelectedIndexChanged);
+            // 
+            // AIDTabTextbox
+            // 
+            this.AIDTabTextbox.Location = new System.Drawing.Point(230, 367);
+            this.AIDTabTextbox.Multiline = true;
+            this.AIDTabTextbox.Name = "AIDTabTextbox";
+            this.AIDTabTextbox.ReadOnly = true;
+            this.AIDTabTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.AIDTabTextbox.Size = new System.Drawing.Size(248, 63);
+            this.AIDTabTextbox.TabIndex = 9;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(175, 370);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(49, 13);
+            this.label52.TabIndex = 4;
+            this.label52.Text = "Used by:";
             // 
             // groupBox9
             // 
@@ -2194,11 +3202,11 @@
             // 
             this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(67, 38);
+            this.label50.Location = new System.Drawing.Point(57, 38);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(115, 13);
+            this.label50.Size = new System.Drawing.Size(135, 13);
             this.label50.TabIndex = 10;
-            this.label50.Text = "Post Sothis Fusion AID";
+            this.label50.Text = "Post Sothis Fusion Face ID";
             // 
             // groupBox8
             // 
@@ -2442,15 +3450,6 @@
             this.label43.Size = new System.Drawing.Size(65, 13);
             this.label43.TabIndex = 3;
             this.label43.Text = "Head Model";
-            // 
-            // assetIDListbox
-            // 
-            this.assetIDListbox.FormattingEnabled = true;
-            this.assetIDListbox.Location = new System.Drawing.Point(3, 4);
-            this.assetIDListbox.Name = "assetIDListbox";
-            this.assetIDListbox.Size = new System.Drawing.Size(120, 433);
-            this.assetIDListbox.TabIndex = 0;
-            this.assetIDListbox.SelectedIndexChanged += new System.EventHandler(this.assetIDListbox_SelectedIndexChanged);
             // 
             // VoiceIDTab
             // 
@@ -2696,33 +3695,271 @@
             this.numOfPointersLabel.TabIndex = 0;
             this.numOfPointersLabel.Text = "Number of Pointers: 0";
             // 
-            // button1
+            // groupBox11
             // 
-            this.button1.Location = new System.Drawing.Point(520, 117);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Reset Selected Character Stats";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.groupBox11.Controls.Add(this.preCertClassCombobox4);
+            this.groupBox11.Controls.Add(this.preCertClassCombobox3);
+            this.groupBox11.Controls.Add(this.preCertClassCombobox2);
+            this.groupBox11.Controls.Add(this.preCertClassCombobox1);
+            this.groupBox11.Location = new System.Drawing.Point(212, 24);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(194, 134);
+            this.groupBox11.TabIndex = 0;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Pre-Certified Classes";
             // 
-            // label52
+            // preCertClassCombobox1
             // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(175, 370);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(49, 13);
-            this.label52.TabIndex = 4;
-            this.label52.Text = "Used by:";
+            this.preCertClassCombobox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.preCertClassCombobox1.FormattingEnabled = true;
+            this.preCertClassCombobox1.Location = new System.Drawing.Point(6, 19);
+            this.preCertClassCombobox1.Name = "preCertClassCombobox1";
+            this.preCertClassCombobox1.Size = new System.Drawing.Size(174, 21);
+            this.preCertClassCombobox1.TabIndex = 3;
+            this.preCertClassCombobox1.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox1_SelectedIndexChanged);
             // 
-            // AIDTabTextbox
+            // preCertClassCombobox2
             // 
-            this.AIDTabTextbox.Location = new System.Drawing.Point(230, 367);
-            this.AIDTabTextbox.Multiline = true;
-            this.AIDTabTextbox.Name = "AIDTabTextbox";
-            this.AIDTabTextbox.ReadOnly = true;
-            this.AIDTabTextbox.Size = new System.Drawing.Size(248, 63);
-            this.AIDTabTextbox.TabIndex = 9;
+            this.preCertClassCombobox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.preCertClassCombobox2.FormattingEnabled = true;
+            this.preCertClassCombobox2.Location = new System.Drawing.Point(6, 46);
+            this.preCertClassCombobox2.Name = "preCertClassCombobox2";
+            this.preCertClassCombobox2.Size = new System.Drawing.Size(174, 21);
+            this.preCertClassCombobox2.TabIndex = 4;
+            this.preCertClassCombobox2.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox2_SelectedIndexChanged);
+            // 
+            // preCertClassCombobox3
+            // 
+            this.preCertClassCombobox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.preCertClassCombobox3.FormattingEnabled = true;
+            this.preCertClassCombobox3.Location = new System.Drawing.Point(6, 73);
+            this.preCertClassCombobox3.Name = "preCertClassCombobox3";
+            this.preCertClassCombobox3.Size = new System.Drawing.Size(174, 21);
+            this.preCertClassCombobox3.TabIndex = 5;
+            this.preCertClassCombobox3.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox3_SelectedIndexChanged);
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.groupBox14);
+            this.groupBox12.Controls.Add(this.groupBox13);
+            this.groupBox12.Location = new System.Drawing.Point(6, 19);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(200, 183);
+            this.groupBox12.TabIndex = 1;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Assigned Classes";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.part1ClassCombobox);
+            this.groupBox13.Location = new System.Drawing.Point(6, 19);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(187, 48);
+            this.groupBox13.TabIndex = 0;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Part 1";
+            // 
+            // part1ClassCombobox
+            // 
+            this.part1ClassCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.part1ClassCombobox.FormattingEnabled = true;
+            this.part1ClassCombobox.Location = new System.Drawing.Point(5, 19);
+            this.part1ClassCombobox.Name = "part1ClassCombobox";
+            this.part1ClassCombobox.Size = new System.Drawing.Size(174, 21);
+            this.part1ClassCombobox.TabIndex = 6;
+            this.part1ClassCombobox.SelectedIndexChanged += new System.EventHandler(this.part1ClassCombobox_SelectedIndexChanged);
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.part2ClassCombobox3);
+            this.groupBox14.Controls.Add(this.part2ClassCombobox2);
+            this.groupBox14.Controls.Add(this.part2ClassCombobox1);
+            this.groupBox14.Location = new System.Drawing.Point(7, 72);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(187, 105);
+            this.groupBox14.TabIndex = 7;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Part 2";
+            // 
+            // part2ClassCombobox1
+            // 
+            this.part2ClassCombobox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.part2ClassCombobox1.FormattingEnabled = true;
+            this.part2ClassCombobox1.Location = new System.Drawing.Point(5, 19);
+            this.part2ClassCombobox1.Name = "part2ClassCombobox1";
+            this.part2ClassCombobox1.Size = new System.Drawing.Size(174, 21);
+            this.part2ClassCombobox1.TabIndex = 6;
+            this.part2ClassCombobox1.SelectedIndexChanged += new System.EventHandler(this.part2ClassCombobox1_SelectedIndexChanged);
+            // 
+            // part2ClassCombobox2
+            // 
+            this.part2ClassCombobox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.part2ClassCombobox2.FormattingEnabled = true;
+            this.part2ClassCombobox2.Location = new System.Drawing.Point(6, 46);
+            this.part2ClassCombobox2.Name = "part2ClassCombobox2";
+            this.part2ClassCombobox2.Size = new System.Drawing.Size(174, 21);
+            this.part2ClassCombobox2.TabIndex = 7;
+            this.part2ClassCombobox2.SelectedIndexChanged += new System.EventHandler(this.part2ClassCombobox2_SelectedIndexChanged);
+            // 
+            // part2ClassCombobox3
+            // 
+            this.part2ClassCombobox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.part2ClassCombobox3.FormattingEnabled = true;
+            this.part2ClassCombobox3.Location = new System.Drawing.Point(5, 73);
+            this.part2ClassCombobox3.Name = "part2ClassCombobox3";
+            this.part2ClassCombobox3.Size = new System.Drawing.Size(174, 21);
+            this.part2ClassCombobox3.TabIndex = 8;
+            this.part2ClassCombobox3.SelectedIndexChanged += new System.EventHandler(this.part2ClassCombobox3_SelectedIndexChanged);
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.unitColorCombobox);
+            this.groupBox15.Location = new System.Drawing.Point(6, 212);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(197, 63);
+            this.groupBox15.TabIndex = 2;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Unit Color";
+            // 
+            // unitColorCombobox
+            // 
+            this.unitColorCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.unitColorCombobox.FormattingEnabled = true;
+            this.unitColorCombobox.Items.AddRange(new object[] {
+            "White and Red",
+            "Red",
+            "Blue",
+            "Yellow",
+            "Black and Red",
+            "Green",
+            "White and Red",
+            "Byleth",
+            "Red",
+            "Brown (male) or Pink (female)",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Gray and Blue (male) or Purple (female)",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Yuri (Purple)",
+            "Constance (Red and Pink)"});
+            this.unitColorCombobox.Location = new System.Drawing.Point(6, 19);
+            this.unitColorCombobox.Name = "unitColorCombobox";
+            this.unitColorCombobox.Size = new System.Drawing.Size(184, 21);
+            this.unitColorCombobox.TabIndex = 0;
+            this.unitColorCombobox.SelectedIndexChanged += new System.EventHandler(this.unitColorCombobox_SelectedIndexChanged);
+            // 
+            // CombatAssetsGroupbox
+            // 
+            this.CombatAssetsGroupbox.Controls.Add(this.combatassetothergroupbox);
+            this.CombatAssetsGroupbox.Controls.Add(this.groupBox12);
+            this.CombatAssetsGroupbox.Controls.Add(this.groupBox11);
+            this.CombatAssetsGroupbox.Controls.Add(this.groupBox15);
+            this.CombatAssetsGroupbox.Location = new System.Drawing.Point(3, 3);
+            this.CombatAssetsGroupbox.Name = "CombatAssetsGroupbox";
+            this.CombatAssetsGroupbox.Size = new System.Drawing.Size(499, 281);
+            this.CombatAssetsGroupbox.TabIndex = 3;
+            this.CombatAssetsGroupbox.TabStop = false;
+            // 
+            // combatassetothergroupbox
+            // 
+            this.combatassetothergroupbox.Controls.Add(this.tableLayoutPanel9);
+            this.combatassetothergroupbox.Location = new System.Drawing.Point(212, 164);
+            this.combatassetothergroupbox.Name = "combatassetothergroupbox";
+            this.combatassetothergroupbox.Size = new System.Drawing.Size(194, 111);
+            this.combatassetothergroupbox.TabIndex = 3;
+            this.combatassetothergroupbox.TabStop = false;
+            this.combatassetothergroupbox.Text = "Other";
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
+            this.tableLayoutPanel9.ColumnCount = 2;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.Controls.Add(this.unk0x8numbox, 1, 1);
+            this.tableLayoutPanel9.Controls.Add(this.label53, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label54, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.unk0x0numbox, 1, 0);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 2;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(182, 86);
+            this.tableLayoutPanel9.TabIndex = 0;
+            // 
+            // label53
+            // 
+            this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(22, 15);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(48, 13);
+            this.label53.TabIndex = 0;
+            this.label53.Text = "unk_0x0";
+            // 
+            // label54
+            // 
+            this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(22, 57);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(48, 13);
+            this.label54.TabIndex = 1;
+            this.label54.Text = "unk_0x8";
+            // 
+            // unk0x0numbox
+            // 
+            this.unk0x0numbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x0numbox.Location = new System.Drawing.Point(95, 12);
+            this.unk0x0numbox.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.unk0x0numbox.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+            this.unk0x0numbox.Name = "unk0x0numbox";
+            this.unk0x0numbox.Size = new System.Drawing.Size(82, 20);
+            this.unk0x0numbox.TabIndex = 2;
+            this.unk0x0numbox.ValueChanged += new System.EventHandler(this.unk0x0numbox_ValueChanged);
+            // 
+            // unk0x8numbox
+            // 
+            this.unk0x8numbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x8numbox.Location = new System.Drawing.Point(95, 54);
+            this.unk0x8numbox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.unk0x8numbox.Name = "unk0x8numbox";
+            this.unk0x8numbox.Size = new System.Drawing.Size(82, 20);
+            this.unk0x8numbox.TabIndex = 3;
+            this.unk0x8numbox.ValueChanged += new System.EventHandler(this.unk0x8numbox_ValueChanged);
+            // 
+            // preCertClassCombobox4
+            // 
+            this.preCertClassCombobox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.preCertClassCombobox4.FormattingEnabled = true;
+            this.preCertClassCombobox4.Location = new System.Drawing.Point(6, 100);
+            this.preCertClassCombobox4.Name = "preCertClassCombobox4";
+            this.preCertClassCombobox4.Size = new System.Drawing.Size(174, 21);
+            this.preCertClassCombobox4.TabIndex = 6;
+            this.preCertClassCombobox4.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox4_SelectedIndexChanged);
             // 
             // PersonDataEditorMain
             // 
@@ -2803,6 +4040,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.unk0x2ENumBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unk0x31NumBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paddingNumBox)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.wpnProfGroupbox.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            this.wpnRanksGroupbox.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage4.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.facePicBox)).EndInit();
@@ -2814,6 +4079,7 @@
             this.groupBox3.ResumeLayout(false);
             this.AssetIDTab.ResumeLayout(false);
             this.AssetIDTab.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
@@ -2837,6 +4103,17 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox15.ResumeLayout(false);
+            this.CombatAssetsGroupbox.ResumeLayout(false);
+            this.combatassetothergroupbox.ResumeLayout(false);
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.unk0x0numbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unk0x8numbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3038,5 +4315,75 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox AIDTabTextbox;
         private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox wpnRanksGroupbox;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.ComboBox defaultFlyingCombobox;
+        private System.Windows.Forms.ComboBox defaultRidingCombobox;
+        private System.Windows.Forms.ComboBox defaultArmorCombobox;
+        private System.Windows.Forms.ComboBox defaultAuthorityCombobox;
+        private System.Windows.Forms.ComboBox defaultFaithCombobox;
+        private System.Windows.Forms.ComboBox defaultReasonCombobox;
+        private System.Windows.Forms.ComboBox defaultBrawlingCombobox;
+        private System.Windows.Forms.ComboBox defaultBowCombobox;
+        private System.Windows.Forms.ComboBox defaultAxeCombobox;
+        private System.Windows.Forms.ComboBox defaultLanceCombobox;
+        private System.Windows.Forms.ComboBox defaultSwordCombobox;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox wpnProfGroupbox;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.ComboBox SwordProfCombobox;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pictureBox20;
+        private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Windows.Forms.ComboBox FaithProfCombobox;
+        private System.Windows.Forms.ComboBox BowProfCombobox;
+        private System.Windows.Forms.ComboBox BrawlingProfCombobox;
+        private System.Windows.Forms.ComboBox LanceProfCombobox;
+        private System.Windows.Forms.ComboBox AxeProfCombobox;
+        private System.Windows.Forms.ComboBox AuthorityProfCombobox;
+        private System.Windows.Forms.ComboBox ArmorProfCombobox;
+        private System.Windows.Forms.ComboBox ReasonProfCombobox;
+        private System.Windows.Forms.ComboBox FlyingProfCombobox;
+        private System.Windows.Forms.ComboBox RidingProfCombobox;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.ComboBox preCertClassCombobox3;
+        private System.Windows.Forms.ComboBox preCertClassCombobox2;
+        private System.Windows.Forms.ComboBox preCertClassCombobox1;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.ComboBox part2ClassCombobox3;
+        private System.Windows.Forms.ComboBox part2ClassCombobox2;
+        private System.Windows.Forms.ComboBox part2ClassCombobox1;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.ComboBox part1ClassCombobox;
+        private System.Windows.Forms.GroupBox CombatAssetsGroupbox;
+        private System.Windows.Forms.GroupBox combatassetothergroupbox;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.ComboBox unitColorCombobox;
+        private System.Windows.Forms.NumericUpDown unk0x8numbox;
+        private System.Windows.Forms.NumericUpDown unk0x0numbox;
+        private System.Windows.Forms.ComboBox preCertClassCombobox4;
     }
 }

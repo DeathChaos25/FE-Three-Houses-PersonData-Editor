@@ -132,6 +132,25 @@ namespace ThreeHousesPersonDataEditor
                 for (int i = 0; i <= 100; i++)
                 {
                     classComboBox.Items.Add(msgDataNames[i + 3453]);
+                    preCertClassCombobox1.Items.Add(msgDataNames[i + 3453]);
+                    preCertClassCombobox2.Items.Add(msgDataNames[i + 3453]);
+                    preCertClassCombobox3.Items.Add(msgDataNames[i + 3453]);
+                    preCertClassCombobox4.Items.Add(msgDataNames[i + 3453]);
+                    part1ClassCombobox.Items.Add(msgDataNames[i + 3453]);
+                    part2ClassCombobox1.Items.Add(msgDataNames[i + 3453]);
+                    part2ClassCombobox2.Items.Add(msgDataNames[i + 3453]);
+                    part2ClassCombobox3.Items.Add(msgDataNames[i + 3453]);
+                }
+                for (int i = 0; i < 256- classComboBox.Items.Count; i++)
+                {
+                    preCertClassCombobox1.Items.Add("-----------");
+                    preCertClassCombobox2.Items.Add("-----------");
+                    preCertClassCombobox3.Items.Add("-----------");
+                    preCertClassCombobox4.Items.Add("-----------");
+                    part1ClassCombobox.Items.Add("-----------");
+                    part2ClassCombobox1.Items.Add("-----------");
+                    part2ClassCombobox2.Items.Add("-----------");
+                    part2ClassCombobox3.Items.Add("-----------");
                 }
 
                 //read List for allegiances
@@ -227,6 +246,14 @@ namespace ThreeHousesPersonDataEditor
             crest1ComboBox.Items.Clear();
             crest2ComboBox.Items.Clear();
             battalionComboBox.Items.Clear();
+            preCertClassCombobox1.Items.Clear();
+            preCertClassCombobox2.Items.Clear();
+            preCertClassCombobox3.Items.Clear();
+            preCertClassCombobox4.Items.Clear();
+            part1ClassCombobox.Items.Clear();
+            part2ClassCombobox1.Items.Clear();
+            part2ClassCombobox2.Items.Clear();
+            part2ClassCombobox3.Items.Clear();
             characterListBox.Items.Clear();
         }
 
@@ -329,6 +356,54 @@ namespace ThreeHousesPersonDataEditor
             saveDataIDNumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].saveDataID;
             bodyTypeNumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].bodyType;
             nonCombatAnimNumBox.Value = currentPersonData.Character[characterListBox.SelectedIndex].nonCombatAnimSet;
+
+            if (currentPersonData.Character[characterListBox.SelectedIndex].saveDataID != -1 && currentPersonData.Character[characterListBox.SelectedIndex].saveDataID < currentPersonData.WeaponRanks.Count)
+            {
+                wpnRanksGroupbox.Visible = true;
+                wpnProfGroupbox.Visible = true;
+                CombatAssetsGroupbox.Visible = true;
+                defaultSwordCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultSwordRank;
+                defaultLanceCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultLanceRank;
+                defaultAxeCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultAxeRank;
+                defaultBowCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultBowRank;
+                defaultBrawlingCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultBrawlingRank;
+                defaultReasonCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultReasonRank;
+                defaultFaithCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultFaithRank;
+                defaultAuthorityCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultAuthorityRank;
+                defaultArmorCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultArmorRank;
+                defaultRidingCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultRidingRank;
+                defaultFlyingCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultFlyingRank;
+
+                SwordProfCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Swordaffinity - 1;
+                LanceProfCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Lanceaffinity - 1;
+                AxeProfCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Axeaffinity - 1;
+                BowProfCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Bowaffinity - 1;
+                BrawlingProfCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Brawlingaffinity - 1;
+                ReasonProfCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Reasonaffinity - 1;
+                FaithProfCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Faithaffinity - 1;
+                AuthorityProfCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Authorityaffinity - 1;
+                ArmorProfCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Armoraffinity - 1;
+                RidingProfCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Ridingaffinity - 1;
+                FlyingProfCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Flyingaffinity - 1;
+
+                unk0x0numbox.Value = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].unk_0x0;
+                unk0x8numbox.Value = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].unk_0x8;
+                preCertClassCombobox1.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].certifiedClass1;
+                preCertClassCombobox2.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].certifiedClass2;
+                preCertClassCombobox3.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].certifiedClass3;
+                preCertClassCombobox4.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].certifiedClass4;
+                part1ClassCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].part1Class;
+                part2ClassCombobox1.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].part2Class1;
+                part2ClassCombobox2.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].part2Class2;
+                part2ClassCombobox3.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].part2Class3;
+                unitColorCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].charColor;
+            }
+            else
+            {
+                wpnRanksGroupbox.Visible = false;
+                wpnProfGroupbox.Visible = false;
+                CombatAssetsGroupbox.Visible = false;
+            }
         }
 
         private void height1NumberBox_ValueChanged(object sender, EventArgs e)
@@ -623,32 +698,42 @@ namespace ThreeHousesPersonDataEditor
 
         private void saveFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (EndianBinaryWriter fixed_persondata = new EndianBinaryWriter(File.Open(filePath, FileMode.Create, FileAccess.Write), Endianness.Little))
+            if (File.Exists(filePath))
             {
-                currentPersonData.WritePersonData(fixed_persondata);
-                MessageBox.Show("File saved to: " + filePath, "File saved");
+                using (EndianBinaryWriter fixed_persondata = new EndianBinaryWriter(File.Open(filePath, FileMode.Create, FileAccess.Write), Endianness.Little))
+                {
+                    currentPersonData.WritePersonData(fixed_persondata);
+                    MessageBox.Show("File saved to: " + filePath, "File saved");
+                }
             }
+            else
+                MessageBox.Show("No file is open.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void saveFileAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog saveFileDialog1 = new SaveFileDialog())
+            if (File.Exists(filePath))
             {
-                saveFileDialog1.Filter = "fixed_persondata.bin (*.bin)|*.bin|All files (*.*)|*.*";
-                saveFileDialog1.FilterIndex = 1;
-                saveFileDialog1.RestoreDirectory = true;
-
-                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                using (SaveFileDialog saveFileDialog1 = new SaveFileDialog())
                 {
-                    var savePath = saveFileDialog1.FileName;
-                    using (EndianBinaryWriter fixed_persondata = new EndianBinaryWriter(File.Open(savePath, FileMode.Create, FileAccess.Write), Endianness.Little))
+                    saveFileDialog1.Filter = "fixed_persondata.bin (*.bin)|*.bin|All files (*.*)|*.*";
+                    saveFileDialog1.FilterIndex = 1;
+                    saveFileDialog1.RestoreDirectory = true;
+
+                    if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        filePath = savePath; //now the Save File option writes here too
-                        currentPersonData.WritePersonData(fixed_persondata);
-                        MessageBox.Show("File saved to: " + savePath, "File saved");
+                        var savePath = saveFileDialog1.FileName;
+                        using (EndianBinaryWriter fixed_persondata = new EndianBinaryWriter(File.Open(savePath, FileMode.Create, FileAccess.Write), Endianness.Little))
+                        {
+                            filePath = savePath; //now the Save File option writes here too
+                            currentPersonData.WritePersonData(fixed_persondata);
+                            MessageBox.Show("File saved to: " + savePath, "File saved");
+                        }
                     }
                 }
             }
+            else
+                MessageBox.Show("No file is open.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
@@ -837,6 +922,171 @@ namespace ThreeHousesPersonDataEditor
             currentPersonData.Character[characterListBox.SelectedIndex] = currentPersonDataCopy.Character[characterListBox.SelectedIndex];
             DisplayCurrentCharacter();
             MessageBox.Show("The currently selected character has been reset!", "Reset Complete");
+        }
+
+        private void defaultSwordCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultSwordRank = Convert.ToByte(defaultSwordCombobox.SelectedIndex);
+        }
+
+        private void defaultLanceCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultLanceRank = Convert.ToByte(defaultLanceCombobox.SelectedIndex);
+        }
+
+        private void defaultAxeCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultAxeRank = Convert.ToByte(defaultAxeCombobox.SelectedIndex);
+        }
+
+        private void defaultBowCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultBowRank = Convert.ToByte(defaultBowCombobox.SelectedIndex);
+        }
+
+        private void defaultBrawlingCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultBrawlingRank = Convert.ToByte(defaultBrawlingCombobox.SelectedIndex);
+        }
+
+        private void defaultReasonCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultReasonRank = Convert.ToByte(defaultReasonCombobox.SelectedIndex);
+        }
+
+        private void defaultFaithCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultFaithRank = Convert.ToByte(defaultFaithCombobox.SelectedIndex);
+        }
+
+        private void defaultAuthorityCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultAuthorityRank = Convert.ToByte(defaultAuthorityCombobox.SelectedIndex);
+        }
+
+        private void defaultArmorCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultArmorRank = Convert.ToByte(defaultArmorCombobox.SelectedIndex);
+        }
+
+        private void defaultRidingCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultRidingRank = Convert.ToByte(defaultRidingCombobox.SelectedIndex);
+        }
+
+        private void defaultFlyingCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultFlyingRank = Convert.ToByte(defaultFlyingCombobox.SelectedIndex);
+        }
+
+        private void SwordProfCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Swordaffinity = Convert.ToByte(SwordProfCombobox.SelectedIndex + 1);
+        }
+
+        private void LanceProfCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Lanceaffinity = Convert.ToByte(LanceProfCombobox.SelectedIndex + 1);
+        }
+
+        private void AxeProfCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Axeaffinity = Convert.ToByte(AxeProfCombobox.SelectedIndex + 1);
+        }
+
+        private void BowProfCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Bowaffinity = Convert.ToByte(BowProfCombobox.SelectedIndex + 1);
+        }
+
+        private void BrawlingProfCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Brawlingaffinity = Convert.ToByte(BrawlingProfCombobox.SelectedIndex + 1);
+        }
+
+        private void ReasonProfCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Reasonaffinity = Convert.ToByte(ReasonProfCombobox.SelectedIndex + 1);
+        }
+
+        private void FaithProfCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Faithaffinity = Convert.ToByte(FaithProfCombobox.SelectedIndex + 1);
+        }
+
+        private void AuthorityProfCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Authorityaffinity = Convert.ToByte(AuthorityProfCombobox.SelectedIndex + 1);
+        }
+
+        private void ArmorProfCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Armoraffinity = Convert.ToByte(ArmorProfCombobox.SelectedIndex + 1);
+        }
+
+        private void RidingProfCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Ridingaffinity = Convert.ToByte(RidingProfCombobox.SelectedIndex + 1);
+        }
+
+        private void FlyingProfCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Flyingaffinity = Convert.ToByte(FlyingProfCombobox.SelectedIndex + 1);
+        }
+
+        private void part1ClassCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].part1Class = Convert.ToByte(part1ClassCombobox.SelectedIndex);
+        }
+
+        private void part2ClassCombobox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].part2Class1 = Convert.ToByte(part2ClassCombobox1.SelectedIndex);
+        }
+
+        private void part2ClassCombobox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].part2Class2 = Convert.ToByte(part2ClassCombobox2.SelectedIndex);
+        }
+
+        private void part2ClassCombobox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].part2Class3 = Convert.ToByte(part2ClassCombobox3.SelectedIndex);
+        }
+
+        private void preCertClassCombobox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].certifiedClass1 = Convert.ToByte(preCertClassCombobox1.SelectedIndex);
+        }
+
+        private void preCertClassCombobox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].certifiedClass2 = Convert.ToByte(preCertClassCombobox2.SelectedIndex);
+        }
+
+        private void preCertClassCombobox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].certifiedClass3 = Convert.ToByte(preCertClassCombobox3.SelectedIndex);
+        }
+
+        private void preCertClassCombobox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].certifiedClass4 = Convert.ToByte(preCertClassCombobox4.SelectedIndex);
+        }
+
+        private void unk0x0numbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].unk_0x0 = Convert.ToInt16(unk0x0numbox.Value);
+        }
+
+        private void unk0x8numbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].unk_0x8 = Convert.ToByte(unk0x8numbox.Value);
+        }
+
+        private void unitColorCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].charColor = Convert.ToByte(unitColorCombobox.SelectedIndex);
         }
     }
 }

@@ -25,6 +25,8 @@ namespace ThreeHousesPersonDataEditor
         public List<AssetIDBlock> AssetID { get; set; }
         public VoiceIDBlock VoiceIDSection { get; set; }
         public List<VoiceIDBlock> VoiceID { get; set; }
+        public DefaultWpnRanksAndCombatAssets WeaponRanksSection { get; set; }
+        public List<DefaultWpnRanksAndCombatAssets> WeaponRanks { get; set; }
         public List<byte> SectionBytes { get; set; }
         public List<List<byte>> OtherSections { get; set; }
 
@@ -44,6 +46,7 @@ namespace ThreeHousesPersonDataEditor
                 SectionBytes.Add(nullByte);
 
                 OtherSections = new List<List<byte>>();
+                OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
@@ -99,6 +102,16 @@ namespace ThreeHousesPersonDataEditor
                                     VoiceID.Add(VoiceIDSection);
                                 }
                                 break;
+                            case 3:
+                                // Section 3 is default weapon ranks, and combat related assets
+                                WeaponRanks = new List<DefaultWpnRanksAndCombatAssets>();
+                                for (int j = 0; j < SectionBlockCount[i]; j++)
+                                {
+                                    WeaponRanksSection = new DefaultWpnRanksAndCombatAssets();
+                                    WeaponRanksSection.Read(fixed_persondata);
+                                    WeaponRanks.Add(WeaponRanksSection);
+                                }
+                                break;
                             default:
                                 SectionBytes = fixed_persondata.ReadByteList(Convert.ToInt32(SectionBlockCount[i] * SectionBlockSize[i]));
                                 OtherSections.Add(SectionBytes);
@@ -147,6 +160,12 @@ namespace ThreeHousesPersonDataEditor
                         foreach (var voiceid in VoiceID)
                         {
                             voiceid.Write(fixed_persondata);
+                        }
+                        break;
+                    case 3:
+                        foreach (var weaponrank in WeaponRanks)
+                        {
+                            weaponrank.Write(fixed_persondata);
                         }
                         break;
                     default:
