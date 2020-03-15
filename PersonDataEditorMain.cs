@@ -60,7 +60,7 @@ namespace ThreeHousesPersonDataEditor
                     characterListBox.Items.Clear();
 
                     //Read the contents of the file into a stream
-                    var fileStream = openFileDialog.OpenFile();
+                    //var fileStream = openFileDialog.OpenFile();
                     currentPersonData = new PersonDataFile();
                     currentPersonData.ReadPersonData(filePath);
 
@@ -69,8 +69,10 @@ namespace ThreeHousesPersonDataEditor
                     {
                         if (tabControl1.TabPages.Contains(CharacterBlocksTab) == false)
                         {
+                            tabControl1.Visible = true;
                             tabControl1.TabPages.Add(CharacterBlocksTab);
                             tabControl1.TabPages.Add(AssetIDTab);
+                            tabControl1.TabPages.Add(VoiceIDTab);
                             tabControl1.TabPages.Add(MiscInfoTab);
                         }
                         for (int i = 0; i < currentPersonData.numOfPointers; i++)
@@ -85,6 +87,10 @@ namespace ThreeHousesPersonDataEditor
                         for (int i = 0; i < currentPersonData.SectionBlockCount[1]; i++)
                         {
                             assetIDListbox.Items.Add("Asset ID #" + i.ToString());
+                        }
+                        for (int i = 0; i < currentPersonData.SectionBlockCount[2]; i++)
+                        {
+                            voiceIDListbox.Items.Add("VoiceID #" + i.ToString());
                         }
                     }
                     else
@@ -153,7 +159,37 @@ namespace ThreeHousesPersonDataEditor
                     part2ClassCombobox3.Items.Add("-----------");
                 }
 
-                //read List for allegiances
+                for(int i = 0; i < 54; i++)
+                {
+                    FaithSpellCombobox1.Items.Add(msgDataNames[i + 7836]);
+                    FaithSpellCombobox2.Items.Add(msgDataNames[i + 7836]);
+                    FaithSpellCombobox3.Items.Add(msgDataNames[i + 7836]);
+                    FaithSpellCombobox4.Items.Add(msgDataNames[i + 7836]);
+                    FaithSpellCombobox5.Items.Add(msgDataNames[i + 7836]);
+
+                    reasonSpellCombobox1.Items.Add(msgDataNames[i + 7836]);
+                    reasonSpellCombobox2.Items.Add(msgDataNames[i + 7836]);
+                    reasonSpellCombobox3.Items.Add(msgDataNames[i + 7836]);
+                    reasonSpellCombobox4.Items.Add(msgDataNames[i + 7836]);
+                    reasonSpellCombobox5.Items.Add(msgDataNames[i + 7836]);
+                }
+
+                for (int i = 0; i < 202; i++)
+                {
+                    FaithSpellCombobox1.Items.Add("-----------");
+                    FaithSpellCombobox2.Items.Add("-----------");
+                    FaithSpellCombobox3.Items.Add("-----------");
+                    FaithSpellCombobox4.Items.Add("-----------");
+                    FaithSpellCombobox5.Items.Add("-----------");
+
+                    reasonSpellCombobox1.Items.Add("-----------");
+                    reasonSpellCombobox2.Items.Add("-----------");
+                    reasonSpellCombobox3.Items.Add("-----------");
+                    reasonSpellCombobox4.Items.Add("-----------");
+                    reasonSpellCombobox5.Items.Add("-----------");
+                }
+
+                    //read List for allegiances
                 for (int i = 0; i <= 30; i++)
                 {
                     allegianceComboBox.Items.Add(msgDataNames[i + 9498]);
@@ -205,12 +241,14 @@ namespace ThreeHousesPersonDataEditor
             //Hide Tabs to prevent data being set
             tabControl1.TabPages.Remove(CharacterBlocksTab);
             tabControl1.TabPages.Remove(AssetIDTab);
+            tabControl1.TabPages.Remove(VoiceIDTab);
             tabControl1.TabPages.Remove(MiscInfoTab);
             characterListBox.Items.Clear();
             assetIDListbox.Items.Clear();
         }
         private void PersonDataEditorMain_Load(object sender, EventArgs e)
         {
+            tabControl1.Visible = false;
             //Hide Tabs to prevent data being set
             tabControl1.TabPages.Remove(CharacterBlocksTab);
             tabControl1.TabPages.Remove(MiscInfoTab);
@@ -222,15 +260,9 @@ namespace ThreeHousesPersonDataEditor
             tabControl1.TabPages.Remove(SupportBonuses1Tab);
             tabControl1.TabPages.Remove(SupportBonuses2Tab);
             tabControl1.TabPages.Remove(SupportListTab);
-            tabControl1.TabPages.Remove(StartingInventoryTab);
             tabControl1.TabPages.Remove(SeminarTeachingTab);
             tabControl1.TabPages.Remove(FacultyTeachingTab);
-            tabControl1.TabPages.Remove(SpellLearnsetTab);
-            tabControl1.TabPages.Remove(SkillLearnsetTab);
-            tabControl1.TabPages.Remove(SkillLevelsTab);
             tabControl1.TabPages.Remove(CharacterGoalsTab);
-            tabControl1.TabPages.Remove(BuddingTalentsTab);
-            tabControl1.TabPages.Remove(CombatArtsTab);
             tabControl1.TabPages.Remove(GenericLearnsetTab);
             tabControl1.TabPages.Remove(EnemyPersonalSkillTab);
 
@@ -255,6 +287,18 @@ namespace ThreeHousesPersonDataEditor
             part2ClassCombobox2.Items.Clear();
             part2ClassCombobox3.Items.Clear();
             characterListBox.Items.Clear();
+
+            FaithSpellCombobox1.Items.Clear();
+            FaithSpellCombobox2.Items.Clear();
+            FaithSpellCombobox3.Items.Clear();
+            FaithSpellCombobox4.Items.Clear();
+            FaithSpellCombobox5.Items.Clear();
+
+            reasonSpellCombobox1.Items.Clear();
+            reasonSpellCombobox2.Items.Clear();
+            reasonSpellCombobox3.Items.Clear();
+            reasonSpellCombobox4.Items.Clear();
+            reasonSpellCombobox5.Items.Clear();
         }
 
         private void characterListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -362,6 +406,7 @@ namespace ThreeHousesPersonDataEditor
                 wpnRanksGroupbox.Visible = true;
                 wpnProfGroupbox.Visible = true;
                 CombatAssetsGroupbox.Visible = true;
+                spelllistgroupbox.Visible = true;
                 defaultSwordCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultSwordRank;
                 defaultLanceCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultLanceRank;
                 defaultAxeCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultAxeRank;
@@ -397,12 +442,37 @@ namespace ThreeHousesPersonDataEditor
                 part2ClassCombobox2.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].part2Class2;
                 part2ClassCombobox3.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].part2Class3;
                 unitColorCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].charColor;
+
+                reasonSpellCombobox1.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonSpell1;
+                reasonSpellCombobox2.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonSpell2;
+                reasonSpellCombobox3.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonSpell3;
+                reasonSpellCombobox4.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonSpell4;
+                reasonSpellCombobox5.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonSpell5;
+
+                FaithSpellCombobox1.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithSpell1;
+                FaithSpellCombobox2.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithSpell2;
+                FaithSpellCombobox3.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithSpell3;
+                FaithSpellCombobox4.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithSpell4;
+                FaithSpellCombobox5.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithSpell5;
+
+                ReasonRankCombobox1.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonRank1;
+                ReasonRankCombobox2.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonRank2;
+                ReasonRankCombobox3.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonRank3;
+                ReasonRankCombobox4.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonRank4;
+                ReasonRankCombobox5.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonRank5;
+
+                FaithRankCombobox1.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank1;
+                FaithRankCombobox2.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank2;
+                FaithRankCombobox3.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank3;
+                FaithRankCombobox4.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank4;
+                FaithRankCombobox5.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank5;
             }
             else
             {
                 wpnRanksGroupbox.Visible = false;
                 wpnProfGroupbox.Visible = false;
                 CombatAssetsGroupbox.Visible = false;
+                spelllistgroupbox.Visible = false;
             }
         }
 
@@ -912,7 +982,7 @@ namespace ThreeHousesPersonDataEditor
                     AIDTabTextbox.Text += (characterListBox.Items[i].ToString() + "\r\n");
                 }
             }
-            Console.WriteLine("Current Index: " + assetIDListbox.SelectedIndex.ToString());
+            //Console.WriteLine("Current Index: " + assetIDListbox.SelectedIndex.ToString());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -1087,6 +1157,143 @@ namespace ThreeHousesPersonDataEditor
         private void unitColorCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].charColor = Convert.ToByte(unitColorCombobox.SelectedIndex);
+        }
+
+        private void voiceIDListbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            mainVoiceIDNumbox.Value = currentPersonData.VoiceID[voiceIDListbox.SelectedIndex].VoiceID;
+            altVoiceIDNumbox1.Value = currentPersonData.VoiceID[voiceIDListbox.SelectedIndex].altVoiceID1;
+            altVoiceIDNumbox2.Value = currentPersonData.VoiceID[voiceIDListbox.SelectedIndex].altVoiceID2;
+            altVoiceIDNumbox3.Value = currentPersonData.VoiceID[voiceIDListbox.SelectedIndex].altVoiceID3;
+
+            voiceIDTexbox.Text = "";
+            for (int i = 0; i < currentPersonData.Character.Count; i++)
+            {
+                if (currentPersonData.Character[i].voiceID == voiceIDListbox.SelectedIndex)
+                {
+                    voiceIDTexbox.Text += (characterListBox.Items[i].ToString() + "\r\n");
+                }
+            }
+        }
+
+        private void mainVoiceIDNumbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.VoiceID[voiceIDListbox.SelectedIndex].VoiceID = Decimal.ToInt16(mainVoiceIDNumbox.Value);
+        }
+
+        private void altVoiceIDNumbox1_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.VoiceID[voiceIDListbox.SelectedIndex].altVoiceID1 = Decimal.ToInt16(altVoiceIDNumbox1.Value);
+        }
+
+        private void altVoiceIDNumbox2_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.VoiceID[voiceIDListbox.SelectedIndex].altVoiceID2 = Decimal.ToInt16(altVoiceIDNumbox2.Value);
+        }
+
+        private void altVoiceIDNumbox3_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.VoiceID[voiceIDListbox.SelectedIndex].altVoiceID3 = Decimal.ToInt16(altVoiceIDNumbox3.Value);
+        }
+
+        private void reasonSpellCombobox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonSpell1 = Decimal.ToByte(reasonSpellCombobox1.SelectedIndex);
+        }
+
+        private void reasonSpellCombobox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonSpell2 = Decimal.ToByte(reasonSpellCombobox2.SelectedIndex);
+        }
+
+        private void reasonSpellCombobox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonSpell3 = Decimal.ToByte(reasonSpellCombobox3.SelectedIndex);
+        }
+
+        private void reasonSpellCombobox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonSpell4 = Decimal.ToByte(reasonSpellCombobox4.SelectedIndex);
+        }
+
+        private void reasonSpellCombobox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonSpell5 = Decimal.ToByte(reasonSpellCombobox5.SelectedIndex);
+        }
+
+        private void FaithSpellCombobox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithSpell1 = Decimal.ToByte(FaithSpellCombobox1.SelectedIndex);
+        }
+
+        private void FaithSpellCombobox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithSpell2 = Decimal.ToByte(FaithSpellCombobox2.SelectedIndex);
+        }
+
+        private void FaithSpellCombobox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithSpell3 = Decimal.ToByte(FaithSpellCombobox3.SelectedIndex);
+        }
+
+        private void FaithSpellCombobox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithSpell4 = Decimal.ToByte(FaithSpellCombobox4.SelectedIndex);
+        }
+
+        private void FaithSpellCombobox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithSpell5 = Decimal.ToByte(FaithSpellCombobox5.SelectedIndex);
+        }
+
+        private void FaithRankCombobox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank1 = Decimal.ToByte(FaithRankCombobox1.SelectedIndex);
+        }
+
+        private void FaithRankCombobox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank2 = Decimal.ToByte(FaithRankCombobox2.SelectedIndex);
+        }
+
+        private void FaithRankCombobox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank3 = Decimal.ToByte(FaithRankCombobox3.SelectedIndex);
+        }
+
+        private void FaithRankCombobox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank4 = Decimal.ToByte(FaithRankCombobox4.SelectedIndex);
+        }
+
+        private void FaithRankCombobox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank5 = Decimal.ToByte(FaithRankCombobox5.SelectedIndex);
+        }
+
+        private void ReasonRankCombobox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonRank1 = Decimal.ToByte(ReasonRankCombobox1.SelectedIndex);
+        }
+
+        private void ReasonRankCombobox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonRank2 = Decimal.ToByte(ReasonRankCombobox2.SelectedIndex);
+        }
+
+        private void ReasonRankCombobox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonRank3 = Decimal.ToByte(ReasonRankCombobox3.SelectedIndex);
+        }
+
+        private void ReasonRankCombobox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonRank4 = Decimal.ToByte(ReasonRankCombobox4.SelectedIndex);
+        }
+
+        private void ReasonRankCombobox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonRank5 = Decimal.ToByte(ReasonRankCombobox5.SelectedIndex);
         }
     }
 }

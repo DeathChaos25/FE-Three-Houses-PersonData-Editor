@@ -171,16 +171,15 @@
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.FlyingProfCombobox = new System.Windows.Forms.ComboBox();
             this.SwordProfCombobox = new System.Windows.Forms.ComboBox();
             this.RidingProfCombobox = new System.Windows.Forms.ComboBox();
+            this.FlyingProfCombobox = new System.Windows.Forms.ComboBox();
             this.wpnRanksGroupbox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.defaultFlyingCombobox = new System.Windows.Forms.ComboBox();
             this.defaultRidingCombobox = new System.Windows.Forms.ComboBox();
             this.defaultArmorCombobox = new System.Windows.Forms.ComboBox();
             this.defaultAuthorityCombobox = new System.Windows.Forms.ComboBox();
-            this.defaultFaithCombobox = new System.Windows.Forms.ComboBox();
             this.defaultReasonCombobox = new System.Windows.Forms.ComboBox();
             this.defaultBrawlingCombobox = new System.Windows.Forms.ComboBox();
             this.defaultBowCombobox = new System.Windows.Forms.ComboBox();
@@ -198,7 +197,55 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.defaultFaithCombobox = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.CombatAssetsGroupbox = new System.Windows.Forms.GroupBox();
+            this.combatassetothergroupbox = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.unk0x8numbox = new System.Windows.Forms.NumericUpDown();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.unk0x0numbox = new System.Windows.Forms.NumericUpDown();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.part2ClassCombobox3 = new System.Windows.Forms.ComboBox();
+            this.part2ClassCombobox2 = new System.Windows.Forms.ComboBox();
+            this.part2ClassCombobox1 = new System.Windows.Forms.ComboBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.part1ClassCombobox = new System.Windows.Forms.ComboBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.preCertClassCombobox4 = new System.Windows.Forms.ComboBox();
+            this.preCertClassCombobox3 = new System.Windows.Forms.ComboBox();
+            this.preCertClassCombobox2 = new System.Windows.Forms.ComboBox();
+            this.preCertClassCombobox1 = new System.Windows.Forms.ComboBox();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.unitColorCombobox = new System.Windows.Forms.ComboBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.spelllistgroupbox = new System.Windows.Forms.GroupBox();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.FaithRankCombobox5 = new System.Windows.Forms.ComboBox();
+            this.FaithRankCombobox4 = new System.Windows.Forms.ComboBox();
+            this.FaithRankCombobox3 = new System.Windows.Forms.ComboBox();
+            this.FaithRankCombobox2 = new System.Windows.Forms.ComboBox();
+            this.FaithRankCombobox1 = new System.Windows.Forms.ComboBox();
+            this.FaithSpellCombobox1 = new System.Windows.Forms.ComboBox();
+            this.FaithSpellCombobox2 = new System.Windows.Forms.ComboBox();
+            this.FaithSpellCombobox3 = new System.Windows.Forms.ComboBox();
+            this.FaithSpellCombobox4 = new System.Windows.Forms.ComboBox();
+            this.FaithSpellCombobox5 = new System.Windows.Forms.ComboBox();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.ReasonRankCombobox5 = new System.Windows.Forms.ComboBox();
+            this.ReasonRankCombobox4 = new System.Windows.Forms.ComboBox();
+            this.ReasonRankCombobox3 = new System.Windows.Forms.ComboBox();
+            this.ReasonRankCombobox2 = new System.Windows.Forms.ComboBox();
+            this.ReasonRankCombobox1 = new System.Windows.Forms.ComboBox();
+            this.reasonSpellCombobox1 = new System.Windows.Forms.ComboBox();
+            this.reasonSpellCombobox2 = new System.Windows.Forms.ComboBox();
+            this.reasonSpellCombobox3 = new System.Windows.Forms.ComboBox();
+            this.reasonSpellCombobox4 = new System.Windows.Forms.ComboBox();
+            this.reasonSpellCombobox5 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.facePicBox = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -218,7 +265,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.characterListBox = new System.Windows.Forms.ListBox();
             this.AssetIDTab = new System.Windows.Forms.TabPage();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.assetIDListbox = new System.Windows.Forms.ListBox();
             this.AIDTabTextbox = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
@@ -247,15 +294,23 @@
             this.part1FaceIDNumbox = new System.Windows.Forms.NumericUpDown();
             this.label43 = new System.Windows.Forms.Label();
             this.VoiceIDTab = new System.Windows.Forms.TabPage();
-            this.SkillLevelsTab = new System.Windows.Forms.TabPage();
-            this.SpellLearnsetTab = new System.Windows.Forms.TabPage();
-            this.SkillLearnsetTab = new System.Windows.Forms.TabPage();
-            this.StartingInventoryTab = new System.Windows.Forms.TabPage();
-            this.CombatArtsTab = new System.Windows.Forms.TabPage();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.voiceIDTexbox = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.lablemainvvoiceset = new System.Windows.Forms.Label();
+            this.mainVoiceIDNumbox = new System.Windows.Forms.NumericUpDown();
+            this.altVoiceIDNumbox1 = new System.Windows.Forms.NumericUpDown();
+            this.altVoiceIDNumbox2 = new System.Windows.Forms.NumericUpDown();
+            this.altVoiceIDNumbox3 = new System.Windows.Forms.NumericUpDown();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.voiceIDListbox = new System.Windows.Forms.ListBox();
             this.SupportBonuses1Tab = new System.Windows.Forms.TabPage();
             this.SupportBonuses2Tab = new System.Windows.Forms.TabPage();
             this.SupportListTab = new System.Windows.Forms.TabPage();
-            this.BuddingTalentsTab = new System.Windows.Forms.TabPage();
             this.GenericLearnsetTab = new System.Windows.Forms.TabPage();
             this.FacultyTeachingTab = new System.Windows.Forms.TabPage();
             this.SeminarTeachingTab = new System.Windows.Forms.TabPage();
@@ -272,27 +327,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.PointersListBox = new System.Windows.Forms.ListBox();
             this.numOfPointersLabel = new System.Windows.Forms.Label();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.preCertClassCombobox1 = new System.Windows.Forms.ComboBox();
-            this.preCertClassCombobox2 = new System.Windows.Forms.ComboBox();
-            this.preCertClassCombobox3 = new System.Windows.Forms.ComboBox();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.part1ClassCombobox = new System.Windows.Forms.ComboBox();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.part2ClassCombobox1 = new System.Windows.Forms.ComboBox();
-            this.part2ClassCombobox2 = new System.Windows.Forms.ComboBox();
-            this.part2ClassCombobox3 = new System.Windows.Forms.ComboBox();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.unitColorCombobox = new System.Windows.Forms.ComboBox();
-            this.CombatAssetsGroupbox = new System.Windows.Forms.GroupBox();
-            this.combatassetothergroupbox = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.unk0x0numbox = new System.Windows.Forms.NumericUpDown();
-            this.unk0x8numbox = new System.Windows.Forms.NumericUpDown();
-            this.preCertClassCombobox4 = new System.Windows.Forms.ComboBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.CharacterBlocksTab.SuspendLayout();
@@ -382,6 +417,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage4.SuspendLayout();
+            this.CombatAssetsGroupbox.SuspendLayout();
+            this.combatassetothergroupbox.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.unk0x8numbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unk0x0numbox)).BeginInit();
+            this.groupBox12.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.spelllistgroupbox.SuspendLayout();
+            this.groupBox19.SuspendLayout();
+            this.tableLayoutPanel12.SuspendLayout();
+            this.groupBox18.SuspendLayout();
+            this.tableLayoutPanel11.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.facePicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.birthDayNumberBox)).BeginInit();
@@ -391,7 +442,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.height2NumberBox)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.AssetIDTab.SuspendLayout();
-            this.groupBox10.SuspendLayout();
+            this.groupBox20.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ngplusHair)).BeginInit();
@@ -407,19 +458,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.part1HeadNumbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.part1BodyNumbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.part1FaceIDNumbox)).BeginInit();
+            this.VoiceIDTab.SuspendLayout();
+            this.groupBox17.SuspendLayout();
+            this.tableLayoutPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mainVoiceIDNumbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.altVoiceIDNumbox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.altVoiceIDNumbox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.altVoiceIDNumbox3)).BeginInit();
+            this.groupBox16.SuspendLayout();
             this.MiscInfoTab.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            this.groupBox13.SuspendLayout();
-            this.groupBox14.SuspendLayout();
-            this.groupBox15.SuspendLayout();
-            this.CombatAssetsGroupbox.SuspendLayout();
-            this.combatassetothergroupbox.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unk0x0numbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unk0x8numbox)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -578,15 +627,9 @@
             this.tabControl1.Controls.Add(this.CharacterBlocksTab);
             this.tabControl1.Controls.Add(this.AssetIDTab);
             this.tabControl1.Controls.Add(this.VoiceIDTab);
-            this.tabControl1.Controls.Add(this.SkillLevelsTab);
-            this.tabControl1.Controls.Add(this.SpellLearnsetTab);
-            this.tabControl1.Controls.Add(this.SkillLearnsetTab);
-            this.tabControl1.Controls.Add(this.StartingInventoryTab);
-            this.tabControl1.Controls.Add(this.CombatArtsTab);
             this.tabControl1.Controls.Add(this.SupportBonuses1Tab);
             this.tabControl1.Controls.Add(this.SupportBonuses2Tab);
             this.tabControl1.Controls.Add(this.SupportListTab);
-            this.tabControl1.Controls.Add(this.BuddingTalentsTab);
             this.tabControl1.Controls.Add(this.GenericLearnsetTab);
             this.tabControl1.Controls.Add(this.FacultyTeachingTab);
             this.tabControl1.Controls.Add(this.SeminarTeachingTab);
@@ -602,7 +645,7 @@
             // 
             // CharacterBlocksTab
             // 
-            this.CharacterBlocksTab.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CharacterBlocksTab.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.CharacterBlocksTab.Controls.Add(this.button1);
             this.CharacterBlocksTab.Controls.Add(this.statsTab);
             this.CharacterBlocksTab.Controls.Add(this.groupBox4);
@@ -616,11 +659,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(520, 117);
+            this.button1.Location = new System.Drawing.Point(628, 117);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 23);
+            this.button1.Size = new System.Drawing.Size(70, 23);
             this.button1.TabIndex = 16;
-            this.button1.Text = "Reset Selected Character Stats";
+            this.button1.Text = "Reset Stats";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -630,6 +673,7 @@
             this.statsTab.Controls.Add(this.tabPage2);
             this.statsTab.Controls.Add(this.tabPage3);
             this.statsTab.Controls.Add(this.tabPage4);
+            this.statsTab.Controls.Add(this.tabPage5);
             this.statsTab.Location = new System.Drawing.Point(183, 121);
             this.statsTab.Name = "statsTab";
             this.statsTab.SelectedIndex = 0;
@@ -2295,23 +2339,6 @@
             this.pictureBox22.TabIndex = 0;
             this.pictureBox22.TabStop = false;
             // 
-            // FlyingProfCombobox
-            // 
-            this.FlyingProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.FlyingProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.FlyingProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
-            this.FlyingProfCombobox.FormattingEnabled = true;
-            this.FlyingProfCombobox.Items.AddRange(new object[] {
-            "↓↓↓",
-            "---",
-            "↑↑↑"});
-            this.FlyingProfCombobox.Location = new System.Drawing.Point(446, 64);
-            this.FlyingProfCombobox.Margin = new System.Windows.Forms.Padding(1);
-            this.FlyingProfCombobox.Name = "FlyingProfCombobox";
-            this.FlyingProfCombobox.Size = new System.Drawing.Size(38, 20);
-            this.FlyingProfCombobox.TabIndex = 15;
-            this.FlyingProfCombobox.SelectedIndexChanged += new System.EventHandler(this.FlyingProfCombobox_SelectedIndexChanged);
-            // 
             // SwordProfCombobox
             // 
             this.SwordProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -2345,6 +2372,23 @@
             this.RidingProfCombobox.Size = new System.Drawing.Size(38, 20);
             this.RidingProfCombobox.TabIndex = 16;
             this.RidingProfCombobox.SelectedIndexChanged += new System.EventHandler(this.RidingProfCombobox_SelectedIndexChanged);
+            // 
+            // FlyingProfCombobox
+            // 
+            this.FlyingProfCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FlyingProfCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FlyingProfCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.FlyingProfCombobox.FormattingEnabled = true;
+            this.FlyingProfCombobox.Items.AddRange(new object[] {
+            "↓↓↓",
+            "---",
+            "↑↑↑"});
+            this.FlyingProfCombobox.Location = new System.Drawing.Point(446, 64);
+            this.FlyingProfCombobox.Margin = new System.Windows.Forms.Padding(1);
+            this.FlyingProfCombobox.Name = "FlyingProfCombobox";
+            this.FlyingProfCombobox.Size = new System.Drawing.Size(38, 20);
+            this.FlyingProfCombobox.TabIndex = 15;
+            this.FlyingProfCombobox.SelectedIndexChanged += new System.EventHandler(this.FlyingProfCombobox_SelectedIndexChanged);
             // 
             // wpnRanksGroupbox
             // 
@@ -2503,32 +2547,6 @@
             this.defaultAuthorityCombobox.Size = new System.Drawing.Size(38, 20);
             this.defaultAuthorityCombobox.TabIndex = 17;
             this.defaultAuthorityCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultAuthorityCombobox_SelectedIndexChanged);
-            // 
-            // defaultFaithCombobox
-            // 
-            this.defaultFaithCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.defaultFaithCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.defaultFaithCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
-            this.defaultFaithCombobox.FormattingEnabled = true;
-            this.defaultFaithCombobox.Items.AddRange(new object[] {
-            "E",
-            "E+",
-            "D",
-            "D+",
-            "C",
-            "C+",
-            "B",
-            "B+",
-            "A",
-            "A+",
-            "S",
-            "S+"});
-            this.defaultFaithCombobox.Location = new System.Drawing.Point(268, 64);
-            this.defaultFaithCombobox.Margin = new System.Windows.Forms.Padding(0);
-            this.defaultFaithCombobox.Name = "defaultFaithCombobox";
-            this.defaultFaithCombobox.Size = new System.Drawing.Size(38, 20);
-            this.defaultFaithCombobox.TabIndex = 16;
-            this.defaultFaithCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultFaithCombobox_SelectedIndexChanged);
             // 
             // defaultReasonCombobox
             // 
@@ -2818,6 +2836,32 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // defaultFaithCombobox
+            // 
+            this.defaultFaithCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.defaultFaithCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.defaultFaithCombobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
+            this.defaultFaithCombobox.FormattingEnabled = true;
+            this.defaultFaithCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.defaultFaithCombobox.Location = new System.Drawing.Point(268, 64);
+            this.defaultFaithCombobox.Margin = new System.Windows.Forms.Padding(0);
+            this.defaultFaithCombobox.Name = "defaultFaithCombobox";
+            this.defaultFaithCombobox.Size = new System.Drawing.Size(38, 20);
+            this.defaultFaithCombobox.TabIndex = 16;
+            this.defaultFaithCombobox.SelectedIndexChanged += new System.EventHandler(this.defaultFaithCombobox_SelectedIndexChanged);
+            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.CombatAssetsGroupbox);
@@ -2828,9 +2872,724 @@
             this.tabPage4.Text = "Combat Assets";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // CombatAssetsGroupbox
+            // 
+            this.CombatAssetsGroupbox.Controls.Add(this.combatassetothergroupbox);
+            this.CombatAssetsGroupbox.Controls.Add(this.groupBox12);
+            this.CombatAssetsGroupbox.Controls.Add(this.groupBox11);
+            this.CombatAssetsGroupbox.Controls.Add(this.groupBox15);
+            this.CombatAssetsGroupbox.Location = new System.Drawing.Point(3, 3);
+            this.CombatAssetsGroupbox.Name = "CombatAssetsGroupbox";
+            this.CombatAssetsGroupbox.Size = new System.Drawing.Size(499, 281);
+            this.CombatAssetsGroupbox.TabIndex = 3;
+            this.CombatAssetsGroupbox.TabStop = false;
+            // 
+            // combatassetothergroupbox
+            // 
+            this.combatassetothergroupbox.Controls.Add(this.tableLayoutPanel9);
+            this.combatassetothergroupbox.Location = new System.Drawing.Point(212, 164);
+            this.combatassetothergroupbox.Name = "combatassetothergroupbox";
+            this.combatassetothergroupbox.Size = new System.Drawing.Size(194, 111);
+            this.combatassetothergroupbox.TabIndex = 3;
+            this.combatassetothergroupbox.TabStop = false;
+            this.combatassetothergroupbox.Text = "Other";
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
+            this.tableLayoutPanel9.ColumnCount = 2;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.Controls.Add(this.unk0x8numbox, 1, 1);
+            this.tableLayoutPanel9.Controls.Add(this.label53, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label54, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.unk0x0numbox, 1, 0);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 2;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(182, 86);
+            this.tableLayoutPanel9.TabIndex = 0;
+            // 
+            // unk0x8numbox
+            // 
+            this.unk0x8numbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x8numbox.Location = new System.Drawing.Point(95, 54);
+            this.unk0x8numbox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.unk0x8numbox.Name = "unk0x8numbox";
+            this.unk0x8numbox.Size = new System.Drawing.Size(82, 20);
+            this.unk0x8numbox.TabIndex = 3;
+            this.unk0x8numbox.ValueChanged += new System.EventHandler(this.unk0x8numbox_ValueChanged);
+            // 
+            // label53
+            // 
+            this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(22, 15);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(48, 13);
+            this.label53.TabIndex = 0;
+            this.label53.Text = "unk_0x0";
+            // 
+            // label54
+            // 
+            this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(22, 57);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(48, 13);
+            this.label54.TabIndex = 1;
+            this.label54.Text = "unk_0x8";
+            // 
+            // unk0x0numbox
+            // 
+            this.unk0x0numbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.unk0x0numbox.Location = new System.Drawing.Point(95, 12);
+            this.unk0x0numbox.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.unk0x0numbox.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+            this.unk0x0numbox.Name = "unk0x0numbox";
+            this.unk0x0numbox.Size = new System.Drawing.Size(82, 20);
+            this.unk0x0numbox.TabIndex = 2;
+            this.unk0x0numbox.ValueChanged += new System.EventHandler(this.unk0x0numbox_ValueChanged);
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.groupBox14);
+            this.groupBox12.Controls.Add(this.groupBox13);
+            this.groupBox12.Location = new System.Drawing.Point(6, 19);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(200, 183);
+            this.groupBox12.TabIndex = 1;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Assigned Classes";
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.part2ClassCombobox3);
+            this.groupBox14.Controls.Add(this.part2ClassCombobox2);
+            this.groupBox14.Controls.Add(this.part2ClassCombobox1);
+            this.groupBox14.Location = new System.Drawing.Point(7, 72);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(187, 105);
+            this.groupBox14.TabIndex = 7;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Part 2";
+            // 
+            // part2ClassCombobox3
+            // 
+            this.part2ClassCombobox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.part2ClassCombobox3.FormattingEnabled = true;
+            this.part2ClassCombobox3.Location = new System.Drawing.Point(5, 73);
+            this.part2ClassCombobox3.Name = "part2ClassCombobox3";
+            this.part2ClassCombobox3.Size = new System.Drawing.Size(174, 21);
+            this.part2ClassCombobox3.TabIndex = 8;
+            this.part2ClassCombobox3.SelectedIndexChanged += new System.EventHandler(this.part2ClassCombobox3_SelectedIndexChanged);
+            // 
+            // part2ClassCombobox2
+            // 
+            this.part2ClassCombobox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.part2ClassCombobox2.FormattingEnabled = true;
+            this.part2ClassCombobox2.Location = new System.Drawing.Point(6, 46);
+            this.part2ClassCombobox2.Name = "part2ClassCombobox2";
+            this.part2ClassCombobox2.Size = new System.Drawing.Size(174, 21);
+            this.part2ClassCombobox2.TabIndex = 7;
+            this.part2ClassCombobox2.SelectedIndexChanged += new System.EventHandler(this.part2ClassCombobox2_SelectedIndexChanged);
+            // 
+            // part2ClassCombobox1
+            // 
+            this.part2ClassCombobox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.part2ClassCombobox1.FormattingEnabled = true;
+            this.part2ClassCombobox1.Location = new System.Drawing.Point(5, 19);
+            this.part2ClassCombobox1.Name = "part2ClassCombobox1";
+            this.part2ClassCombobox1.Size = new System.Drawing.Size(174, 21);
+            this.part2ClassCombobox1.TabIndex = 6;
+            this.part2ClassCombobox1.SelectedIndexChanged += new System.EventHandler(this.part2ClassCombobox1_SelectedIndexChanged);
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.part1ClassCombobox);
+            this.groupBox13.Location = new System.Drawing.Point(6, 19);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(187, 48);
+            this.groupBox13.TabIndex = 0;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Part 1";
+            // 
+            // part1ClassCombobox
+            // 
+            this.part1ClassCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.part1ClassCombobox.FormattingEnabled = true;
+            this.part1ClassCombobox.Location = new System.Drawing.Point(5, 19);
+            this.part1ClassCombobox.Name = "part1ClassCombobox";
+            this.part1ClassCombobox.Size = new System.Drawing.Size(174, 21);
+            this.part1ClassCombobox.TabIndex = 6;
+            this.part1ClassCombobox.SelectedIndexChanged += new System.EventHandler(this.part1ClassCombobox_SelectedIndexChanged);
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.preCertClassCombobox4);
+            this.groupBox11.Controls.Add(this.preCertClassCombobox3);
+            this.groupBox11.Controls.Add(this.preCertClassCombobox2);
+            this.groupBox11.Controls.Add(this.preCertClassCombobox1);
+            this.groupBox11.Location = new System.Drawing.Point(212, 24);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(194, 134);
+            this.groupBox11.TabIndex = 0;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Pre-Certified Classes";
+            // 
+            // preCertClassCombobox4
+            // 
+            this.preCertClassCombobox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.preCertClassCombobox4.FormattingEnabled = true;
+            this.preCertClassCombobox4.Location = new System.Drawing.Point(6, 100);
+            this.preCertClassCombobox4.Name = "preCertClassCombobox4";
+            this.preCertClassCombobox4.Size = new System.Drawing.Size(174, 21);
+            this.preCertClassCombobox4.TabIndex = 6;
+            this.preCertClassCombobox4.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox4_SelectedIndexChanged);
+            // 
+            // preCertClassCombobox3
+            // 
+            this.preCertClassCombobox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.preCertClassCombobox3.FormattingEnabled = true;
+            this.preCertClassCombobox3.Location = new System.Drawing.Point(6, 73);
+            this.preCertClassCombobox3.Name = "preCertClassCombobox3";
+            this.preCertClassCombobox3.Size = new System.Drawing.Size(174, 21);
+            this.preCertClassCombobox3.TabIndex = 5;
+            this.preCertClassCombobox3.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox3_SelectedIndexChanged);
+            // 
+            // preCertClassCombobox2
+            // 
+            this.preCertClassCombobox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.preCertClassCombobox2.FormattingEnabled = true;
+            this.preCertClassCombobox2.Location = new System.Drawing.Point(6, 46);
+            this.preCertClassCombobox2.Name = "preCertClassCombobox2";
+            this.preCertClassCombobox2.Size = new System.Drawing.Size(174, 21);
+            this.preCertClassCombobox2.TabIndex = 4;
+            this.preCertClassCombobox2.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox2_SelectedIndexChanged);
+            // 
+            // preCertClassCombobox1
+            // 
+            this.preCertClassCombobox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.preCertClassCombobox1.FormattingEnabled = true;
+            this.preCertClassCombobox1.Location = new System.Drawing.Point(6, 19);
+            this.preCertClassCombobox1.Name = "preCertClassCombobox1";
+            this.preCertClassCombobox1.Size = new System.Drawing.Size(174, 21);
+            this.preCertClassCombobox1.TabIndex = 3;
+            this.preCertClassCombobox1.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox1_SelectedIndexChanged);
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.unitColorCombobox);
+            this.groupBox15.Location = new System.Drawing.Point(6, 212);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(197, 63);
+            this.groupBox15.TabIndex = 2;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Unit Color";
+            // 
+            // unitColorCombobox
+            // 
+            this.unitColorCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.unitColorCombobox.FormattingEnabled = true;
+            this.unitColorCombobox.Items.AddRange(new object[] {
+            "White and Red",
+            "Red",
+            "Blue",
+            "Yellow",
+            "Black and Red",
+            "Green",
+            "White and Red",
+            "Byleth",
+            "Red",
+            "Brown (male) or Pink (female)",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Gray and Blue (male) or Purple (female)",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Null",
+            "Yuri (Purple)",
+            "Constance (Red and Pink)"});
+            this.unitColorCombobox.Location = new System.Drawing.Point(6, 19);
+            this.unitColorCombobox.Name = "unitColorCombobox";
+            this.unitColorCombobox.Size = new System.Drawing.Size(184, 21);
+            this.unitColorCombobox.TabIndex = 0;
+            this.unitColorCombobox.SelectedIndexChanged += new System.EventHandler(this.unitColorCombobox_SelectedIndexChanged);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tabPage5.Controls.Add(this.spelllistgroupbox);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(509, 287);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Spells";
+            // 
+            // spelllistgroupbox
+            // 
+            this.spelllistgroupbox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.spelllistgroupbox.Controls.Add(this.groupBox19);
+            this.spelllistgroupbox.Controls.Add(this.groupBox18);
+            this.spelllistgroupbox.Location = new System.Drawing.Point(3, 3);
+            this.spelllistgroupbox.Name = "spelllistgroupbox";
+            this.spelllistgroupbox.Size = new System.Drawing.Size(499, 275);
+            this.spelllistgroupbox.TabIndex = 0;
+            this.spelllistgroupbox.TabStop = false;
+            this.spelllistgroupbox.Text = "Character Spell List";
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.tableLayoutPanel12);
+            this.groupBox19.Location = new System.Drawing.Point(250, 19);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(243, 250);
+            this.groupBox19.TabIndex = 1;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Faith";
+            // 
+            // tableLayoutPanel12
+            // 
+            this.tableLayoutPanel12.ColumnCount = 2;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel12.Controls.Add(this.FaithRankCombobox5, 1, 4);
+            this.tableLayoutPanel12.Controls.Add(this.FaithRankCombobox4, 1, 3);
+            this.tableLayoutPanel12.Controls.Add(this.FaithRankCombobox3, 1, 2);
+            this.tableLayoutPanel12.Controls.Add(this.FaithRankCombobox2, 1, 1);
+            this.tableLayoutPanel12.Controls.Add(this.FaithRankCombobox1, 1, 0);
+            this.tableLayoutPanel12.Controls.Add(this.FaithSpellCombobox1, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.FaithSpellCombobox2, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.FaithSpellCombobox3, 0, 2);
+            this.tableLayoutPanel12.Controls.Add(this.FaithSpellCombobox4, 0, 3);
+            this.tableLayoutPanel12.Controls.Add(this.FaithSpellCombobox5, 0, 4);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(6, 13);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 5;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(231, 225);
+            this.tableLayoutPanel12.TabIndex = 1;
+            // 
+            // FaithRankCombobox5
+            // 
+            this.FaithRankCombobox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FaithRankCombobox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FaithRankCombobox5.FormattingEnabled = true;
+            this.FaithRankCombobox5.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.FaithRankCombobox5.Location = new System.Drawing.Point(118, 192);
+            this.FaithRankCombobox5.Name = "FaithRankCombobox5";
+            this.FaithRankCombobox5.Size = new System.Drawing.Size(109, 21);
+            this.FaithRankCombobox5.TabIndex = 9;
+            this.FaithRankCombobox5.SelectedIndexChanged += new System.EventHandler(this.FaithRankCombobox5_SelectedIndexChanged);
+            // 
+            // FaithRankCombobox4
+            // 
+            this.FaithRankCombobox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FaithRankCombobox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FaithRankCombobox4.FormattingEnabled = true;
+            this.FaithRankCombobox4.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.FaithRankCombobox4.Location = new System.Drawing.Point(118, 147);
+            this.FaithRankCombobox4.Name = "FaithRankCombobox4";
+            this.FaithRankCombobox4.Size = new System.Drawing.Size(109, 21);
+            this.FaithRankCombobox4.TabIndex = 8;
+            this.FaithRankCombobox4.SelectedIndexChanged += new System.EventHandler(this.FaithRankCombobox4_SelectedIndexChanged);
+            // 
+            // FaithRankCombobox3
+            // 
+            this.FaithRankCombobox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FaithRankCombobox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FaithRankCombobox3.FormattingEnabled = true;
+            this.FaithRankCombobox3.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.FaithRankCombobox3.Location = new System.Drawing.Point(118, 102);
+            this.FaithRankCombobox3.Name = "FaithRankCombobox3";
+            this.FaithRankCombobox3.Size = new System.Drawing.Size(109, 21);
+            this.FaithRankCombobox3.TabIndex = 7;
+            this.FaithRankCombobox3.SelectedIndexChanged += new System.EventHandler(this.FaithRankCombobox3_SelectedIndexChanged);
+            // 
+            // FaithRankCombobox2
+            // 
+            this.FaithRankCombobox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FaithRankCombobox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FaithRankCombobox2.FormattingEnabled = true;
+            this.FaithRankCombobox2.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.FaithRankCombobox2.Location = new System.Drawing.Point(118, 57);
+            this.FaithRankCombobox2.Name = "FaithRankCombobox2";
+            this.FaithRankCombobox2.Size = new System.Drawing.Size(109, 21);
+            this.FaithRankCombobox2.TabIndex = 6;
+            this.FaithRankCombobox2.SelectedIndexChanged += new System.EventHandler(this.FaithRankCombobox2_SelectedIndexChanged);
+            // 
+            // FaithRankCombobox1
+            // 
+            this.FaithRankCombobox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FaithRankCombobox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FaithRankCombobox1.FormattingEnabled = true;
+            this.FaithRankCombobox1.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.FaithRankCombobox1.Location = new System.Drawing.Point(118, 12);
+            this.FaithRankCombobox1.Name = "FaithRankCombobox1";
+            this.FaithRankCombobox1.Size = new System.Drawing.Size(109, 21);
+            this.FaithRankCombobox1.TabIndex = 5;
+            this.FaithRankCombobox1.SelectedIndexChanged += new System.EventHandler(this.FaithRankCombobox1_SelectedIndexChanged);
+            // 
+            // FaithSpellCombobox1
+            // 
+            this.FaithSpellCombobox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FaithSpellCombobox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FaithSpellCombobox1.FormattingEnabled = true;
+            this.FaithSpellCombobox1.Location = new System.Drawing.Point(3, 12);
+            this.FaithSpellCombobox1.Name = "FaithSpellCombobox1";
+            this.FaithSpellCombobox1.Size = new System.Drawing.Size(109, 21);
+            this.FaithSpellCombobox1.TabIndex = 0;
+            this.FaithSpellCombobox1.SelectedIndexChanged += new System.EventHandler(this.FaithSpellCombobox1_SelectedIndexChanged);
+            // 
+            // FaithSpellCombobox2
+            // 
+            this.FaithSpellCombobox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FaithSpellCombobox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FaithSpellCombobox2.FormattingEnabled = true;
+            this.FaithSpellCombobox2.Location = new System.Drawing.Point(3, 57);
+            this.FaithSpellCombobox2.Name = "FaithSpellCombobox2";
+            this.FaithSpellCombobox2.Size = new System.Drawing.Size(109, 21);
+            this.FaithSpellCombobox2.TabIndex = 1;
+            this.FaithSpellCombobox2.SelectedIndexChanged += new System.EventHandler(this.FaithSpellCombobox2_SelectedIndexChanged);
+            // 
+            // FaithSpellCombobox3
+            // 
+            this.FaithSpellCombobox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FaithSpellCombobox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FaithSpellCombobox3.FormattingEnabled = true;
+            this.FaithSpellCombobox3.Location = new System.Drawing.Point(3, 102);
+            this.FaithSpellCombobox3.Name = "FaithSpellCombobox3";
+            this.FaithSpellCombobox3.Size = new System.Drawing.Size(109, 21);
+            this.FaithSpellCombobox3.TabIndex = 2;
+            this.FaithSpellCombobox3.SelectedIndexChanged += new System.EventHandler(this.FaithSpellCombobox3_SelectedIndexChanged);
+            // 
+            // FaithSpellCombobox4
+            // 
+            this.FaithSpellCombobox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FaithSpellCombobox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FaithSpellCombobox4.FormattingEnabled = true;
+            this.FaithSpellCombobox4.Location = new System.Drawing.Point(3, 147);
+            this.FaithSpellCombobox4.Name = "FaithSpellCombobox4";
+            this.FaithSpellCombobox4.Size = new System.Drawing.Size(109, 21);
+            this.FaithSpellCombobox4.TabIndex = 3;
+            this.FaithSpellCombobox4.SelectedIndexChanged += new System.EventHandler(this.FaithSpellCombobox4_SelectedIndexChanged);
+            // 
+            // FaithSpellCombobox5
+            // 
+            this.FaithSpellCombobox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.FaithSpellCombobox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.FaithSpellCombobox5.FormattingEnabled = true;
+            this.FaithSpellCombobox5.Location = new System.Drawing.Point(3, 192);
+            this.FaithSpellCombobox5.Name = "FaithSpellCombobox5";
+            this.FaithSpellCombobox5.Size = new System.Drawing.Size(109, 21);
+            this.FaithSpellCombobox5.TabIndex = 4;
+            this.FaithSpellCombobox5.SelectedIndexChanged += new System.EventHandler(this.FaithSpellCombobox5_SelectedIndexChanged);
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.tableLayoutPanel11);
+            this.groupBox18.Location = new System.Drawing.Point(6, 19);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(243, 250);
+            this.groupBox18.TabIndex = 0;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Reason";
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.ColumnCount = 2;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel11.Controls.Add(this.ReasonRankCombobox5, 1, 4);
+            this.tableLayoutPanel11.Controls.Add(this.ReasonRankCombobox4, 1, 3);
+            this.tableLayoutPanel11.Controls.Add(this.ReasonRankCombobox3, 1, 2);
+            this.tableLayoutPanel11.Controls.Add(this.ReasonRankCombobox2, 1, 1);
+            this.tableLayoutPanel11.Controls.Add(this.ReasonRankCombobox1, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(this.reasonSpellCombobox1, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.reasonSpellCombobox2, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.reasonSpellCombobox3, 0, 2);
+            this.tableLayoutPanel11.Controls.Add(this.reasonSpellCombobox4, 0, 3);
+            this.tableLayoutPanel11.Controls.Add(this.reasonSpellCombobox5, 0, 4);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 5;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(231, 225);
+            this.tableLayoutPanel11.TabIndex = 0;
+            // 
+            // ReasonRankCombobox5
+            // 
+            this.ReasonRankCombobox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ReasonRankCombobox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ReasonRankCombobox5.FormattingEnabled = true;
+            this.ReasonRankCombobox5.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.ReasonRankCombobox5.Location = new System.Drawing.Point(118, 192);
+            this.ReasonRankCombobox5.Name = "ReasonRankCombobox5";
+            this.ReasonRankCombobox5.Size = new System.Drawing.Size(109, 21);
+            this.ReasonRankCombobox5.TabIndex = 9;
+            this.ReasonRankCombobox5.SelectedIndexChanged += new System.EventHandler(this.ReasonRankCombobox5_SelectedIndexChanged);
+            // 
+            // ReasonRankCombobox4
+            // 
+            this.ReasonRankCombobox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ReasonRankCombobox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ReasonRankCombobox4.FormattingEnabled = true;
+            this.ReasonRankCombobox4.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.ReasonRankCombobox4.Location = new System.Drawing.Point(118, 147);
+            this.ReasonRankCombobox4.Name = "ReasonRankCombobox4";
+            this.ReasonRankCombobox4.Size = new System.Drawing.Size(109, 21);
+            this.ReasonRankCombobox4.TabIndex = 8;
+            this.ReasonRankCombobox4.SelectedIndexChanged += new System.EventHandler(this.ReasonRankCombobox4_SelectedIndexChanged);
+            // 
+            // ReasonRankCombobox3
+            // 
+            this.ReasonRankCombobox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ReasonRankCombobox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ReasonRankCombobox3.FormattingEnabled = true;
+            this.ReasonRankCombobox3.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.ReasonRankCombobox3.Location = new System.Drawing.Point(118, 102);
+            this.ReasonRankCombobox3.Name = "ReasonRankCombobox3";
+            this.ReasonRankCombobox3.Size = new System.Drawing.Size(109, 21);
+            this.ReasonRankCombobox3.TabIndex = 7;
+            this.ReasonRankCombobox3.SelectedIndexChanged += new System.EventHandler(this.ReasonRankCombobox3_SelectedIndexChanged);
+            // 
+            // ReasonRankCombobox2
+            // 
+            this.ReasonRankCombobox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ReasonRankCombobox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ReasonRankCombobox2.FormattingEnabled = true;
+            this.ReasonRankCombobox2.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.ReasonRankCombobox2.Location = new System.Drawing.Point(118, 57);
+            this.ReasonRankCombobox2.Name = "ReasonRankCombobox2";
+            this.ReasonRankCombobox2.Size = new System.Drawing.Size(109, 21);
+            this.ReasonRankCombobox2.TabIndex = 6;
+            this.ReasonRankCombobox2.SelectedIndexChanged += new System.EventHandler(this.ReasonRankCombobox2_SelectedIndexChanged);
+            // 
+            // ReasonRankCombobox1
+            // 
+            this.ReasonRankCombobox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ReasonRankCombobox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ReasonRankCombobox1.FormattingEnabled = true;
+            this.ReasonRankCombobox1.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.ReasonRankCombobox1.Location = new System.Drawing.Point(118, 12);
+            this.ReasonRankCombobox1.Name = "ReasonRankCombobox1";
+            this.ReasonRankCombobox1.Size = new System.Drawing.Size(109, 21);
+            this.ReasonRankCombobox1.TabIndex = 5;
+            this.ReasonRankCombobox1.SelectedIndexChanged += new System.EventHandler(this.ReasonRankCombobox1_SelectedIndexChanged);
+            // 
+            // reasonSpellCombobox1
+            // 
+            this.reasonSpellCombobox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reasonSpellCombobox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reasonSpellCombobox1.FormattingEnabled = true;
+            this.reasonSpellCombobox1.Location = new System.Drawing.Point(3, 12);
+            this.reasonSpellCombobox1.Name = "reasonSpellCombobox1";
+            this.reasonSpellCombobox1.Size = new System.Drawing.Size(109, 21);
+            this.reasonSpellCombobox1.TabIndex = 0;
+            this.reasonSpellCombobox1.SelectedIndexChanged += new System.EventHandler(this.reasonSpellCombobox1_SelectedIndexChanged);
+            // 
+            // reasonSpellCombobox2
+            // 
+            this.reasonSpellCombobox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reasonSpellCombobox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reasonSpellCombobox2.FormattingEnabled = true;
+            this.reasonSpellCombobox2.Location = new System.Drawing.Point(3, 57);
+            this.reasonSpellCombobox2.Name = "reasonSpellCombobox2";
+            this.reasonSpellCombobox2.Size = new System.Drawing.Size(109, 21);
+            this.reasonSpellCombobox2.TabIndex = 1;
+            this.reasonSpellCombobox2.SelectedIndexChanged += new System.EventHandler(this.reasonSpellCombobox2_SelectedIndexChanged);
+            // 
+            // reasonSpellCombobox3
+            // 
+            this.reasonSpellCombobox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reasonSpellCombobox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reasonSpellCombobox3.FormattingEnabled = true;
+            this.reasonSpellCombobox3.Location = new System.Drawing.Point(3, 102);
+            this.reasonSpellCombobox3.Name = "reasonSpellCombobox3";
+            this.reasonSpellCombobox3.Size = new System.Drawing.Size(109, 21);
+            this.reasonSpellCombobox3.TabIndex = 2;
+            this.reasonSpellCombobox3.SelectedIndexChanged += new System.EventHandler(this.reasonSpellCombobox3_SelectedIndexChanged);
+            // 
+            // reasonSpellCombobox4
+            // 
+            this.reasonSpellCombobox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reasonSpellCombobox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reasonSpellCombobox4.FormattingEnabled = true;
+            this.reasonSpellCombobox4.Location = new System.Drawing.Point(3, 147);
+            this.reasonSpellCombobox4.Name = "reasonSpellCombobox4";
+            this.reasonSpellCombobox4.Size = new System.Drawing.Size(109, 21);
+            this.reasonSpellCombobox4.TabIndex = 3;
+            this.reasonSpellCombobox4.SelectedIndexChanged += new System.EventHandler(this.reasonSpellCombobox4_SelectedIndexChanged);
+            // 
+            // reasonSpellCombobox5
+            // 
+            this.reasonSpellCombobox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.reasonSpellCombobox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reasonSpellCombobox5.FormattingEnabled = true;
+            this.reasonSpellCombobox5.Location = new System.Drawing.Point(3, 192);
+            this.reasonSpellCombobox5.Name = "reasonSpellCombobox5";
+            this.reasonSpellCombobox5.Size = new System.Drawing.Size(109, 21);
+            this.reasonSpellCombobox5.TabIndex = 4;
+            this.reasonSpellCombobox5.SelectedIndexChanged += new System.EventHandler(this.reasonSpellCombobox5_SelectedIndexChanged);
+            // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.facePicBox);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.allegianceComboBox);
@@ -3034,7 +3793,8 @@
             // 
             // AssetIDTab
             // 
-            this.AssetIDTab.Controls.Add(this.groupBox10);
+            this.AssetIDTab.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AssetIDTab.Controls.Add(this.groupBox20);
             this.AssetIDTab.Controls.Add(this.AIDTabTextbox);
             this.AssetIDTab.Controls.Add(this.label52);
             this.AssetIDTab.Controls.Add(this.groupBox9);
@@ -3045,17 +3805,16 @@
             this.AssetIDTab.Size = new System.Drawing.Size(706, 440);
             this.AssetIDTab.TabIndex = 2;
             this.AssetIDTab.Text = "Asset ID";
-            this.AssetIDTab.UseVisualStyleBackColor = true;
             // 
-            // groupBox10
+            // groupBox20
             // 
-            this.groupBox10.Controls.Add(this.assetIDListbox);
-            this.groupBox10.Location = new System.Drawing.Point(3, 4);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(120, 426);
-            this.groupBox10.TabIndex = 10;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Asset IDs";
+            this.groupBox20.Controls.Add(this.assetIDListbox);
+            this.groupBox20.Location = new System.Drawing.Point(3, 4);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(120, 433);
+            this.groupBox20.TabIndex = 10;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "Asset IDs";
             // 
             // assetIDListbox
             // 
@@ -3453,57 +4212,206 @@
             // 
             // VoiceIDTab
             // 
+            this.VoiceIDTab.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.VoiceIDTab.Controls.Add(this.groupBox17);
+            this.VoiceIDTab.Controls.Add(this.groupBox16);
             this.VoiceIDTab.Location = new System.Drawing.Point(4, 22);
             this.VoiceIDTab.Name = "VoiceIDTab";
             this.VoiceIDTab.Size = new System.Drawing.Size(706, 440);
             this.VoiceIDTab.TabIndex = 3;
             this.VoiceIDTab.Text = "Voice ID";
-            this.VoiceIDTab.UseVisualStyleBackColor = true;
             // 
-            // SkillLevelsTab
+            // groupBox17
             // 
-            this.SkillLevelsTab.Location = new System.Drawing.Point(4, 22);
-            this.SkillLevelsTab.Name = "SkillLevelsTab";
-            this.SkillLevelsTab.Size = new System.Drawing.Size(706, 440);
-            this.SkillLevelsTab.TabIndex = 4;
-            this.SkillLevelsTab.Text = "Spell/Skill Learn Lv";
-            this.SkillLevelsTab.UseVisualStyleBackColor = true;
+            this.groupBox17.Controls.Add(this.label58);
+            this.groupBox17.Controls.Add(this.voiceIDTexbox);
+            this.groupBox17.Controls.Add(this.tableLayoutPanel10);
+            this.groupBox17.Location = new System.Drawing.Point(143, 3);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(366, 249);
+            this.groupBox17.TabIndex = 1;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Voice Set";
             // 
-            // SpellLearnsetTab
+            // label58
             // 
-            this.SpellLearnsetTab.Location = new System.Drawing.Point(4, 22);
-            this.SpellLearnsetTab.Name = "SpellLearnsetTab";
-            this.SpellLearnsetTab.Size = new System.Drawing.Size(706, 440);
-            this.SpellLearnsetTab.TabIndex = 5;
-            this.SpellLearnsetTab.Text = "Spells Learned";
-            this.SpellLearnsetTab.UseVisualStyleBackColor = true;
+            this.label58.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(128, 172);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(49, 13);
+            this.label58.TabIndex = 8;
+            this.label58.Text = "Used by:";
             // 
-            // SkillLearnsetTab
+            // voiceIDTexbox
             // 
-            this.SkillLearnsetTab.Location = new System.Drawing.Point(4, 22);
-            this.SkillLearnsetTab.Name = "SkillLearnsetTab";
-            this.SkillLearnsetTab.Size = new System.Drawing.Size(706, 440);
-            this.SkillLearnsetTab.TabIndex = 6;
-            this.SkillLearnsetTab.Text = "Skills Learned";
-            this.SkillLearnsetTab.UseVisualStyleBackColor = true;
+            this.voiceIDTexbox.Location = new System.Drawing.Point(183, 172);
+            this.voiceIDTexbox.Multiline = true;
+            this.voiceIDTexbox.Name = "voiceIDTexbox";
+            this.voiceIDTexbox.ReadOnly = true;
+            this.voiceIDTexbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.voiceIDTexbox.Size = new System.Drawing.Size(177, 71);
+            this.voiceIDTexbox.TabIndex = 1;
             // 
-            // StartingInventoryTab
+            // tableLayoutPanel10
             // 
-            this.StartingInventoryTab.Location = new System.Drawing.Point(4, 22);
-            this.StartingInventoryTab.Name = "StartingInventoryTab";
-            this.StartingInventoryTab.Size = new System.Drawing.Size(706, 440);
-            this.StartingInventoryTab.TabIndex = 7;
-            this.StartingInventoryTab.Text = "Starting Weapons";
-            this.StartingInventoryTab.UseVisualStyleBackColor = true;
+            this.tableLayoutPanel10.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
+            this.tableLayoutPanel10.ColumnCount = 2;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel10.Controls.Add(this.label57, 0, 3);
+            this.tableLayoutPanel10.Controls.Add(this.label56, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.label55, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.lablemainvvoiceset, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.mainVoiceIDNumbox, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.altVoiceIDNumbox1, 1, 1);
+            this.tableLayoutPanel10.Controls.Add(this.altVoiceIDNumbox2, 1, 2);
+            this.tableLayoutPanel10.Controls.Add(this.altVoiceIDNumbox3, 1, 3);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 4;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(354, 147);
+            this.tableLayoutPanel10.TabIndex = 0;
             // 
-            // CombatArtsTab
+            // label57
             // 
-            this.CombatArtsTab.Location = new System.Drawing.Point(4, 22);
-            this.CombatArtsTab.Name = "CombatArtsTab";
-            this.CombatArtsTab.Size = new System.Drawing.Size(706, 440);
-            this.CombatArtsTab.TabIndex = 8;
-            this.CombatArtsTab.Text = "Combat Arts";
-            this.CombatArtsTab.UseVisualStyleBackColor = true;
+            this.label57.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(64, 121);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(49, 13);
+            this.label57.TabIndex = 8;
+            this.label57.Text = "Alternate";
+            // 
+            // label56
+            // 
+            this.label56.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(64, 85);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(49, 13);
+            this.label56.TabIndex = 7;
+            this.label56.Text = "Alternate";
+            // 
+            // label55
+            // 
+            this.label55.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(64, 49);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(49, 13);
+            this.label55.TabIndex = 6;
+            this.label55.Text = "Alternate";
+            // 
+            // lablemainvvoiceset
+            // 
+            this.lablemainvvoiceset.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lablemainvvoiceset.AutoSize = true;
+            this.lablemainvvoiceset.Location = new System.Drawing.Point(74, 13);
+            this.lablemainvvoiceset.Name = "lablemainvvoiceset";
+            this.lablemainvvoiceset.Size = new System.Drawing.Size(30, 13);
+            this.lablemainvvoiceset.TabIndex = 2;
+            this.lablemainvvoiceset.Text = "Main";
+            // 
+            // mainVoiceIDNumbox
+            // 
+            this.mainVoiceIDNumbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mainVoiceIDNumbox.Location = new System.Drawing.Point(204, 9);
+            this.mainVoiceIDNumbox.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.mainVoiceIDNumbox.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+            this.mainVoiceIDNumbox.Name = "mainVoiceIDNumbox";
+            this.mainVoiceIDNumbox.Size = new System.Drawing.Size(120, 20);
+            this.mainVoiceIDNumbox.TabIndex = 2;
+            this.mainVoiceIDNumbox.ValueChanged += new System.EventHandler(this.mainVoiceIDNumbox_ValueChanged);
+            // 
+            // altVoiceIDNumbox1
+            // 
+            this.altVoiceIDNumbox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.altVoiceIDNumbox1.Location = new System.Drawing.Point(204, 45);
+            this.altVoiceIDNumbox1.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.altVoiceIDNumbox1.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+            this.altVoiceIDNumbox1.Name = "altVoiceIDNumbox1";
+            this.altVoiceIDNumbox1.Size = new System.Drawing.Size(120, 20);
+            this.altVoiceIDNumbox1.TabIndex = 3;
+            this.altVoiceIDNumbox1.ValueChanged += new System.EventHandler(this.altVoiceIDNumbox1_ValueChanged);
+            // 
+            // altVoiceIDNumbox2
+            // 
+            this.altVoiceIDNumbox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.altVoiceIDNumbox2.Location = new System.Drawing.Point(204, 81);
+            this.altVoiceIDNumbox2.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.altVoiceIDNumbox2.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+            this.altVoiceIDNumbox2.Name = "altVoiceIDNumbox2";
+            this.altVoiceIDNumbox2.Size = new System.Drawing.Size(120, 20);
+            this.altVoiceIDNumbox2.TabIndex = 4;
+            this.altVoiceIDNumbox2.ValueChanged += new System.EventHandler(this.altVoiceIDNumbox2_ValueChanged);
+            // 
+            // altVoiceIDNumbox3
+            // 
+            this.altVoiceIDNumbox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.altVoiceIDNumbox3.Location = new System.Drawing.Point(204, 117);
+            this.altVoiceIDNumbox3.Maximum = new decimal(new int[] {
+            32767,
+            0,
+            0,
+            0});
+            this.altVoiceIDNumbox3.Minimum = new decimal(new int[] {
+            32768,
+            0,
+            0,
+            -2147483648});
+            this.altVoiceIDNumbox3.Name = "altVoiceIDNumbox3";
+            this.altVoiceIDNumbox3.Size = new System.Drawing.Size(120, 20);
+            this.altVoiceIDNumbox3.TabIndex = 5;
+            this.altVoiceIDNumbox3.ValueChanged += new System.EventHandler(this.altVoiceIDNumbox3_ValueChanged);
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.voiceIDListbox);
+            this.groupBox16.Location = new System.Drawing.Point(3, 3);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(134, 434);
+            this.groupBox16.TabIndex = 0;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Voice IDs";
+            // 
+            // voiceIDListbox
+            // 
+            this.voiceIDListbox.FormattingEnabled = true;
+            this.voiceIDListbox.Location = new System.Drawing.Point(6, 19);
+            this.voiceIDListbox.Name = "voiceIDListbox";
+            this.voiceIDListbox.Size = new System.Drawing.Size(120, 407);
+            this.voiceIDListbox.TabIndex = 0;
+            this.voiceIDListbox.SelectedIndexChanged += new System.EventHandler(this.voiceIDListbox_SelectedIndexChanged);
             // 
             // SupportBonuses1Tab
             // 
@@ -3512,7 +4420,6 @@
             this.SupportBonuses1Tab.Size = new System.Drawing.Size(706, 440);
             this.SupportBonuses1Tab.TabIndex = 9;
             this.SupportBonuses1Tab.Text = "Support Bonuses";
-            this.SupportBonuses1Tab.UseVisualStyleBackColor = true;
             // 
             // SupportBonuses2Tab
             // 
@@ -3521,7 +4428,6 @@
             this.SupportBonuses2Tab.Size = new System.Drawing.Size(706, 440);
             this.SupportBonuses2Tab.TabIndex = 10;
             this.SupportBonuses2Tab.Text = "Support Bonuses";
-            this.SupportBonuses2Tab.UseVisualStyleBackColor = true;
             // 
             // SupportListTab
             // 
@@ -3530,16 +4436,6 @@
             this.SupportListTab.Size = new System.Drawing.Size(706, 440);
             this.SupportListTab.TabIndex = 11;
             this.SupportListTab.Text = "Support List";
-            this.SupportListTab.UseVisualStyleBackColor = true;
-            // 
-            // BuddingTalentsTab
-            // 
-            this.BuddingTalentsTab.Location = new System.Drawing.Point(4, 22);
-            this.BuddingTalentsTab.Name = "BuddingTalentsTab";
-            this.BuddingTalentsTab.Size = new System.Drawing.Size(706, 440);
-            this.BuddingTalentsTab.TabIndex = 12;
-            this.BuddingTalentsTab.Text = "Budding Talents";
-            this.BuddingTalentsTab.UseVisualStyleBackColor = true;
             // 
             // GenericLearnsetTab
             // 
@@ -3548,7 +4444,6 @@
             this.GenericLearnsetTab.Size = new System.Drawing.Size(706, 440);
             this.GenericLearnsetTab.TabIndex = 13;
             this.GenericLearnsetTab.Text = "Generic Skills";
-            this.GenericLearnsetTab.UseVisualStyleBackColor = true;
             // 
             // FacultyTeachingTab
             // 
@@ -3557,7 +4452,6 @@
             this.FacultyTeachingTab.Size = new System.Drawing.Size(706, 440);
             this.FacultyTeachingTab.TabIndex = 14;
             this.FacultyTeachingTab.Text = "Faculty Teaching";
-            this.FacultyTeachingTab.UseVisualStyleBackColor = true;
             // 
             // SeminarTeachingTab
             // 
@@ -3566,7 +4460,6 @@
             this.SeminarTeachingTab.Size = new System.Drawing.Size(706, 440);
             this.SeminarTeachingTab.TabIndex = 15;
             this.SeminarTeachingTab.Text = "Seminar Teaching";
-            this.SeminarTeachingTab.UseVisualStyleBackColor = true;
             // 
             // CharacterGoalsTab
             // 
@@ -3575,7 +4468,6 @@
             this.CharacterGoalsTab.Size = new System.Drawing.Size(706, 440);
             this.CharacterGoalsTab.TabIndex = 16;
             this.CharacterGoalsTab.Text = "Goals";
-            this.CharacterGoalsTab.UseVisualStyleBackColor = true;
             // 
             // PortraitIDTab
             // 
@@ -3584,7 +4476,6 @@
             this.PortraitIDTab.Size = new System.Drawing.Size(706, 440);
             this.PortraitIDTab.TabIndex = 17;
             this.PortraitIDTab.Text = "Portrait ID";
-            this.PortraitIDTab.UseVisualStyleBackColor = true;
             // 
             // EnemyPersonalSkillTab
             // 
@@ -3593,11 +4484,10 @@
             this.EnemyPersonalSkillTab.Size = new System.Drawing.Size(706, 440);
             this.EnemyPersonalSkillTab.TabIndex = 18;
             this.EnemyPersonalSkillTab.Text = "Enemy Personal Skl";
-            this.EnemyPersonalSkillTab.UseVisualStyleBackColor = true;
             // 
             // MiscInfoTab
             // 
-            this.MiscInfoTab.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.MiscInfoTab.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.MiscInfoTab.Controls.Add(this.groupBox2);
             this.MiscInfoTab.Controls.Add(this.groupBox1);
             this.MiscInfoTab.Controls.Add(this.numOfPointersLabel);
@@ -3695,271 +4585,13 @@
             this.numOfPointersLabel.TabIndex = 0;
             this.numOfPointersLabel.Text = "Number of Pointers: 0";
             // 
-            // groupBox11
+            // groupBox10
             // 
-            this.groupBox11.Controls.Add(this.preCertClassCombobox4);
-            this.groupBox11.Controls.Add(this.preCertClassCombobox3);
-            this.groupBox11.Controls.Add(this.preCertClassCombobox2);
-            this.groupBox11.Controls.Add(this.preCertClassCombobox1);
-            this.groupBox11.Location = new System.Drawing.Point(212, 24);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(194, 134);
-            this.groupBox11.TabIndex = 0;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Pre-Certified Classes";
-            // 
-            // preCertClassCombobox1
-            // 
-            this.preCertClassCombobox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.preCertClassCombobox1.FormattingEnabled = true;
-            this.preCertClassCombobox1.Location = new System.Drawing.Point(6, 19);
-            this.preCertClassCombobox1.Name = "preCertClassCombobox1";
-            this.preCertClassCombobox1.Size = new System.Drawing.Size(174, 21);
-            this.preCertClassCombobox1.TabIndex = 3;
-            this.preCertClassCombobox1.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox1_SelectedIndexChanged);
-            // 
-            // preCertClassCombobox2
-            // 
-            this.preCertClassCombobox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.preCertClassCombobox2.FormattingEnabled = true;
-            this.preCertClassCombobox2.Location = new System.Drawing.Point(6, 46);
-            this.preCertClassCombobox2.Name = "preCertClassCombobox2";
-            this.preCertClassCombobox2.Size = new System.Drawing.Size(174, 21);
-            this.preCertClassCombobox2.TabIndex = 4;
-            this.preCertClassCombobox2.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox2_SelectedIndexChanged);
-            // 
-            // preCertClassCombobox3
-            // 
-            this.preCertClassCombobox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.preCertClassCombobox3.FormattingEnabled = true;
-            this.preCertClassCombobox3.Location = new System.Drawing.Point(6, 73);
-            this.preCertClassCombobox3.Name = "preCertClassCombobox3";
-            this.preCertClassCombobox3.Size = new System.Drawing.Size(174, 21);
-            this.preCertClassCombobox3.TabIndex = 5;
-            this.preCertClassCombobox3.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox3_SelectedIndexChanged);
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.groupBox14);
-            this.groupBox12.Controls.Add(this.groupBox13);
-            this.groupBox12.Location = new System.Drawing.Point(6, 19);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(200, 183);
-            this.groupBox12.TabIndex = 1;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Assigned Classes";
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.part1ClassCombobox);
-            this.groupBox13.Location = new System.Drawing.Point(6, 19);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(187, 48);
-            this.groupBox13.TabIndex = 0;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Part 1";
-            // 
-            // part1ClassCombobox
-            // 
-            this.part1ClassCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.part1ClassCombobox.FormattingEnabled = true;
-            this.part1ClassCombobox.Location = new System.Drawing.Point(5, 19);
-            this.part1ClassCombobox.Name = "part1ClassCombobox";
-            this.part1ClassCombobox.Size = new System.Drawing.Size(174, 21);
-            this.part1ClassCombobox.TabIndex = 6;
-            this.part1ClassCombobox.SelectedIndexChanged += new System.EventHandler(this.part1ClassCombobox_SelectedIndexChanged);
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.part2ClassCombobox3);
-            this.groupBox14.Controls.Add(this.part2ClassCombobox2);
-            this.groupBox14.Controls.Add(this.part2ClassCombobox1);
-            this.groupBox14.Location = new System.Drawing.Point(7, 72);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(187, 105);
-            this.groupBox14.TabIndex = 7;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Part 2";
-            // 
-            // part2ClassCombobox1
-            // 
-            this.part2ClassCombobox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.part2ClassCombobox1.FormattingEnabled = true;
-            this.part2ClassCombobox1.Location = new System.Drawing.Point(5, 19);
-            this.part2ClassCombobox1.Name = "part2ClassCombobox1";
-            this.part2ClassCombobox1.Size = new System.Drawing.Size(174, 21);
-            this.part2ClassCombobox1.TabIndex = 6;
-            this.part2ClassCombobox1.SelectedIndexChanged += new System.EventHandler(this.part2ClassCombobox1_SelectedIndexChanged);
-            // 
-            // part2ClassCombobox2
-            // 
-            this.part2ClassCombobox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.part2ClassCombobox2.FormattingEnabled = true;
-            this.part2ClassCombobox2.Location = new System.Drawing.Point(6, 46);
-            this.part2ClassCombobox2.Name = "part2ClassCombobox2";
-            this.part2ClassCombobox2.Size = new System.Drawing.Size(174, 21);
-            this.part2ClassCombobox2.TabIndex = 7;
-            this.part2ClassCombobox2.SelectedIndexChanged += new System.EventHandler(this.part2ClassCombobox2_SelectedIndexChanged);
-            // 
-            // part2ClassCombobox3
-            // 
-            this.part2ClassCombobox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.part2ClassCombobox3.FormattingEnabled = true;
-            this.part2ClassCombobox3.Location = new System.Drawing.Point(5, 73);
-            this.part2ClassCombobox3.Name = "part2ClassCombobox3";
-            this.part2ClassCombobox3.Size = new System.Drawing.Size(174, 21);
-            this.part2ClassCombobox3.TabIndex = 8;
-            this.part2ClassCombobox3.SelectedIndexChanged += new System.EventHandler(this.part2ClassCombobox3_SelectedIndexChanged);
-            // 
-            // groupBox15
-            // 
-            this.groupBox15.Controls.Add(this.unitColorCombobox);
-            this.groupBox15.Location = new System.Drawing.Point(6, 212);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(197, 63);
-            this.groupBox15.TabIndex = 2;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Unit Color";
-            // 
-            // unitColorCombobox
-            // 
-            this.unitColorCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.unitColorCombobox.FormattingEnabled = true;
-            this.unitColorCombobox.Items.AddRange(new object[] {
-            "White and Red",
-            "Red",
-            "Blue",
-            "Yellow",
-            "Black and Red",
-            "Green",
-            "White and Red",
-            "Byleth",
-            "Red",
-            "Brown (male) or Pink (female)",
-            "Null",
-            "Null",
-            "Null",
-            "Null",
-            "Null",
-            "Null",
-            "Null",
-            "Gray and Blue (male) or Purple (female)",
-            "Null",
-            "Null",
-            "Null",
-            "Null",
-            "Null",
-            "Null",
-            "Yuri (Purple)",
-            "Constance (Red and Pink)"});
-            this.unitColorCombobox.Location = new System.Drawing.Point(6, 19);
-            this.unitColorCombobox.Name = "unitColorCombobox";
-            this.unitColorCombobox.Size = new System.Drawing.Size(184, 21);
-            this.unitColorCombobox.TabIndex = 0;
-            this.unitColorCombobox.SelectedIndexChanged += new System.EventHandler(this.unitColorCombobox_SelectedIndexChanged);
-            // 
-            // CombatAssetsGroupbox
-            // 
-            this.CombatAssetsGroupbox.Controls.Add(this.combatassetothergroupbox);
-            this.CombatAssetsGroupbox.Controls.Add(this.groupBox12);
-            this.CombatAssetsGroupbox.Controls.Add(this.groupBox11);
-            this.CombatAssetsGroupbox.Controls.Add(this.groupBox15);
-            this.CombatAssetsGroupbox.Location = new System.Drawing.Point(3, 3);
-            this.CombatAssetsGroupbox.Name = "CombatAssetsGroupbox";
-            this.CombatAssetsGroupbox.Size = new System.Drawing.Size(499, 281);
-            this.CombatAssetsGroupbox.TabIndex = 3;
-            this.CombatAssetsGroupbox.TabStop = false;
-            // 
-            // combatassetothergroupbox
-            // 
-            this.combatassetothergroupbox.Controls.Add(this.tableLayoutPanel9);
-            this.combatassetothergroupbox.Location = new System.Drawing.Point(212, 164);
-            this.combatassetothergroupbox.Name = "combatassetothergroupbox";
-            this.combatassetothergroupbox.Size = new System.Drawing.Size(194, 111);
-            this.combatassetothergroupbox.TabIndex = 3;
-            this.combatassetothergroupbox.TabStop = false;
-            this.combatassetothergroupbox.Text = "Other";
-            // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
-            this.tableLayoutPanel9.ColumnCount = 2;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Controls.Add(this.unk0x8numbox, 1, 1);
-            this.tableLayoutPanel9.Controls.Add(this.label53, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.label54, 0, 1);
-            this.tableLayoutPanel9.Controls.Add(this.unk0x0numbox, 1, 0);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(6, 19);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 2;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(182, 86);
-            this.tableLayoutPanel9.TabIndex = 0;
-            // 
-            // label53
-            // 
-            this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(22, 15);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(48, 13);
-            this.label53.TabIndex = 0;
-            this.label53.Text = "unk_0x0";
-            // 
-            // label54
-            // 
-            this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(22, 57);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(48, 13);
-            this.label54.TabIndex = 1;
-            this.label54.Text = "unk_0x8";
-            // 
-            // unk0x0numbox
-            // 
-            this.unk0x0numbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.unk0x0numbox.Location = new System.Drawing.Point(95, 12);
-            this.unk0x0numbox.Maximum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            0});
-            this.unk0x0numbox.Minimum = new decimal(new int[] {
-            32768,
-            0,
-            0,
-            -2147483648});
-            this.unk0x0numbox.Name = "unk0x0numbox";
-            this.unk0x0numbox.Size = new System.Drawing.Size(82, 20);
-            this.unk0x0numbox.TabIndex = 2;
-            this.unk0x0numbox.ValueChanged += new System.EventHandler(this.unk0x0numbox_ValueChanged);
-            // 
-            // unk0x8numbox
-            // 
-            this.unk0x8numbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.unk0x8numbox.Location = new System.Drawing.Point(95, 54);
-            this.unk0x8numbox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.unk0x8numbox.Name = "unk0x8numbox";
-            this.unk0x8numbox.Size = new System.Drawing.Size(82, 20);
-            this.unk0x8numbox.TabIndex = 3;
-            this.unk0x8numbox.ValueChanged += new System.EventHandler(this.unk0x8numbox_ValueChanged);
-            // 
-            // preCertClassCombobox4
-            // 
-            this.preCertClassCombobox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.preCertClassCombobox4.FormattingEnabled = true;
-            this.preCertClassCombobox4.Location = new System.Drawing.Point(6, 100);
-            this.preCertClassCombobox4.Name = "preCertClassCombobox4";
-            this.preCertClassCombobox4.Size = new System.Drawing.Size(174, 21);
-            this.preCertClassCombobox4.TabIndex = 6;
-            this.preCertClassCombobox4.SelectedIndexChanged += new System.EventHandler(this.preCertClassCombobox4_SelectedIndexChanged);
+            this.groupBox10.Location = new System.Drawing.Point(0, 0);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(200, 100);
+            this.groupBox10.TabIndex = 0;
+            this.groupBox10.TabStop = false;
             // 
             // PersonDataEditorMain
             // 
@@ -4068,6 +4700,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage4.ResumeLayout(false);
+            this.CombatAssetsGroupbox.ResumeLayout(false);
+            this.combatassetothergroupbox.ResumeLayout(false);
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.unk0x8numbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unk0x0numbox)).EndInit();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox15.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.spelllistgroupbox.ResumeLayout(false);
+            this.groupBox19.ResumeLayout(false);
+            this.tableLayoutPanel12.ResumeLayout(false);
+            this.groupBox18.ResumeLayout(false);
+            this.tableLayoutPanel11.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.facePicBox)).EndInit();
@@ -4079,7 +4728,7 @@
             this.groupBox3.ResumeLayout(false);
             this.AssetIDTab.ResumeLayout(false);
             this.AssetIDTab.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
+            this.groupBox20.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
@@ -4098,22 +4747,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.part1HeadNumbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.part1BodyNumbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.part1FaceIDNumbox)).EndInit();
+            this.VoiceIDTab.ResumeLayout(false);
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mainVoiceIDNumbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.altVoiceIDNumbox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.altVoiceIDNumbox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.altVoiceIDNumbox3)).EndInit();
+            this.groupBox16.ResumeLayout(false);
             this.MiscInfoTab.ResumeLayout(false);
             this.MiscInfoTab.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox15.ResumeLayout(false);
-            this.CombatAssetsGroupbox.ResumeLayout(false);
-            this.combatassetothergroupbox.ResumeLayout(false);
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unk0x0numbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unk0x8numbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4132,21 +4780,15 @@
         private System.Windows.Forms.TabPage CharacterBlocksTab;
         private System.Windows.Forms.TabPage AssetIDTab;
         private System.Windows.Forms.TabPage VoiceIDTab;
-        private System.Windows.Forms.TabPage SkillLevelsTab;
-        private System.Windows.Forms.TabPage SpellLearnsetTab;
         private System.Windows.Forms.Label totalSizeLabel;
         private System.Windows.Forms.Label pointerLabel;
         private System.Windows.Forms.ListBox PointersListBox;
         private System.Windows.Forms.Label charsectBlockSizeLabel;
         private System.Windows.Forms.Label charsectNumOfBlocksLabel;
         private System.Windows.Forms.Label charsectFileMagicLabel;
-        private System.Windows.Forms.TabPage SkillLearnsetTab;
-        private System.Windows.Forms.TabPage StartingInventoryTab;
-        private System.Windows.Forms.TabPage CombatArtsTab;
         private System.Windows.Forms.TabPage SupportBonuses1Tab;
         private System.Windows.Forms.TabPage SupportBonuses2Tab;
         private System.Windows.Forms.TabPage SupportListTab;
-        private System.Windows.Forms.TabPage BuddingTalentsTab;
         private System.Windows.Forms.TabPage GenericLearnsetTab;
         private System.Windows.Forms.TabPage FacultyTeachingTab;
         private System.Windows.Forms.TabPage SeminarTeachingTab;
@@ -4385,5 +5027,47 @@
         private System.Windows.Forms.NumericUpDown unk0x8numbox;
         private System.Windows.Forms.NumericUpDown unk0x0numbox;
         private System.Windows.Forms.ComboBox preCertClassCombobox4;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.ListBox voiceIDListbox;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.TextBox voiceIDTexbox;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label lablemainvvoiceset;
+        private System.Windows.Forms.NumericUpDown mainVoiceIDNumbox;
+        private System.Windows.Forms.NumericUpDown altVoiceIDNumbox1;
+        private System.Windows.Forms.NumericUpDown altVoiceIDNumbox2;
+        private System.Windows.Forms.NumericUpDown altVoiceIDNumbox3;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.GroupBox spelllistgroupbox;
+        private System.Windows.Forms.GroupBox groupBox19;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
+        private System.Windows.Forms.ComboBox FaithRankCombobox5;
+        private System.Windows.Forms.ComboBox FaithRankCombobox4;
+        private System.Windows.Forms.ComboBox FaithRankCombobox3;
+        private System.Windows.Forms.ComboBox FaithRankCombobox2;
+        private System.Windows.Forms.ComboBox FaithRankCombobox1;
+        private System.Windows.Forms.ComboBox FaithSpellCombobox1;
+        private System.Windows.Forms.ComboBox FaithSpellCombobox2;
+        private System.Windows.Forms.ComboBox FaithSpellCombobox3;
+        private System.Windows.Forms.ComboBox FaithSpellCombobox4;
+        private System.Windows.Forms.ComboBox FaithSpellCombobox5;
+        private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.ComboBox ReasonRankCombobox5;
+        private System.Windows.Forms.ComboBox ReasonRankCombobox4;
+        private System.Windows.Forms.ComboBox ReasonRankCombobox3;
+        private System.Windows.Forms.ComboBox ReasonRankCombobox2;
+        private System.Windows.Forms.ComboBox ReasonRankCombobox1;
+        private System.Windows.Forms.ComboBox reasonSpellCombobox1;
+        private System.Windows.Forms.ComboBox reasonSpellCombobox2;
+        private System.Windows.Forms.ComboBox reasonSpellCombobox3;
+        private System.Windows.Forms.ComboBox reasonSpellCombobox4;
+        private System.Windows.Forms.ComboBox reasonSpellCombobox5;
+        private System.Windows.Forms.GroupBox groupBox20;
+        //private System.Windows.Forms.ListBox assetIDListbox;
     }
 }

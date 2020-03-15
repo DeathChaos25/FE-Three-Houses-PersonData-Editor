@@ -27,6 +27,8 @@ namespace ThreeHousesPersonDataEditor
         public List<VoiceIDBlock> VoiceID { get; set; }
         public DefaultWpnRanksAndCombatAssets WeaponRanksSection { get; set; }
         public List<DefaultWpnRanksAndCombatAssets> WeaponRanks { get; set; }
+        public SpellListBlock SpellListSection { get; set; }
+        public List<SpellListBlock> SpellLists { get; set; }
         public List<byte> SectionBytes { get; set; }
         public List<List<byte>> OtherSections { get; set; }
 
@@ -46,6 +48,7 @@ namespace ThreeHousesPersonDataEditor
                 SectionBytes.Add(nullByte);
 
                 OtherSections = new List<List<byte>>();
+                OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
@@ -112,6 +115,15 @@ namespace ThreeHousesPersonDataEditor
                                     WeaponRanks.Add(WeaponRanksSection);
                                 }
                                 break;
+                            case 4:
+                                SpellLists = new List<SpellListBlock>();
+                                for (int j = 0; j < SectionBlockCount[i]; j++)
+                                {
+                                    SpellListSection = new SpellListBlock();
+                                    SpellListSection.Read(fixed_persondata);
+                                    SpellLists.Add(SpellListSection);
+                                }
+                                break;
                             default:
                                 SectionBytes = fixed_persondata.ReadByteList(Convert.ToInt32(SectionBlockCount[i] * SectionBlockSize[i]));
                                 OtherSections.Add(SectionBytes);
@@ -166,6 +178,12 @@ namespace ThreeHousesPersonDataEditor
                         foreach (var weaponrank in WeaponRanks)
                         {
                             weaponrank.Write(fixed_persondata);
+                        }
+                        break;
+                    case 4:
+                        foreach (var spell in SpellLists)
+                        {
+                            spell.Write(fixed_persondata);
                         }
                         break;
                     default:
