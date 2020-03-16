@@ -1,5 +1,6 @@
 # FE Three Houses PersonData Editor
-WIP GUI Editor for fixed_persondata.bin (update v1.1.0 or later)
+WIP GUI Editor for fixed_persondata.bin (update v1.1.0 or later)  
+DISCLAIMER: While very much in a usable state, it is not complete and in a state I would like for it to be publicly used, lots of bugs need to be ironed out, QoL implemented, code optimizations, etc etc.
 
 ![Program WIP Screenshot](https://cdn.discordapp.com/attachments/377899265424621569/688953959037141009/unknown.png) ![Program WIP Screenshot](https://cdn.discordapp.com/attachments/377899265424621569/688953825402290214/unknown.png)
 ![Program WIP Screenshot](https://cdn.discordapp.com/attachments/377899265424621569/688953595021754403/unknown.png)
