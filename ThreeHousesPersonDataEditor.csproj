@@ -79,6 +79,7 @@
     <Compile Include="PersonData\PersonDataFile.cs" />
     <Compile Include="PersonData\Sections\AssetIDBlock.cs" />
     <Compile Include="PersonData\Sections\CharacterBlocks.cs" />
+    <Compile Include="PersonData\Sections\DefaultWpnBlock.cs" />
     <Compile Include="PersonData\Sections\DefaultWpnRanksAndCombatAssets.cs" />
     <Compile Include="PersonData\Sections\SkillListBlock.cs" />
     <Compile Include="PersonData\Sections\SpellListBlock.cs" />

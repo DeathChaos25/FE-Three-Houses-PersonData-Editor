@@ -33,6 +33,8 @@ namespace ThreeHousesPersonDataEditor
         public List<SkillListBlock> SkillLists { get; set; }
         public List<byte> SectionBytes { get; set; }
         public List<List<byte>> OtherSections { get; set; }
+        public DefaultWpnBlock WeaponsSection { get; set; }
+        public List<DefaultWpnBlock> Weapons { get; set; }
 
         public void ReadPersonData(string fixed_persondata_path)
         {
@@ -50,6 +52,7 @@ namespace ThreeHousesPersonDataEditor
                 SectionBytes.Add(nullByte);
 
                 OtherSections = new List<List<byte>>();
+                OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
@@ -138,6 +141,16 @@ namespace ThreeHousesPersonDataEditor
                                     SkillLists.Add(SkillListSection);
                                 }
                                 break;
+                            case 6:
+                                // Section 6 is default starting inventory
+                                Weapons = new List<DefaultWpnBlock>();
+                                for (int j = 0; j < SectionBlockCount[i]; j++)
+                                {
+                                    WeaponsSection = new DefaultWpnBlock();
+                                    WeaponsSection.Read(fixed_persondata);
+                                    Weapons.Add(WeaponsSection);
+                                }
+                                break;
                             default:
                                 SectionBytes = fixed_persondata.ReadByteList((int)(SectionBlockCount[i] * SectionBlockSize[i]));
                                 OtherSections.Add(SectionBytes);
@@ -204,6 +217,12 @@ namespace ThreeHousesPersonDataEditor
                         foreach (var skill in SkillLists)
                         {
                             skill.Write(fixed_persondata);
+                        }
+                        break;
+                    case 6:
+                        foreach (var wpn in Weapons)
+                        {
+                            wpn.Write(fixed_persondata);
                         }
                         break;
                     default:

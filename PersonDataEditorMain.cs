@@ -158,7 +158,7 @@ namespace ThreeHousesPersonDataEditor
                     part2ClassCombobox2.Items.Add("-----------");
                     part2ClassCombobox3.Items.Add("-----------");
                 }
-
+                // Spell names
                 for(int i = 0; i < 54; i++)
                 {
                     FaithSpellCombobox1.Items.Add(msgDataNames[i + 7836]);
@@ -219,6 +219,36 @@ namespace ThreeHousesPersonDataEditor
                 for (int i = 0; i <= 200; i++)
                 {
                     battalionComboBox.Items.Add(msgDataNames[i + 9096]);
+                }
+                for(int i = 1; i < 1200; i++)
+                {
+                    if (i < 200) //weapons
+                    {
+                        inventoryCombobox1.Items.Add(msgDataNames[i + 3746]);
+                        inventoryCombobox2.Items.Add(msgDataNames[i + 3746]);
+                        inventoryCombobox3.Items.Add(msgDataNames[i + 3746]);
+                        inventoryCombobox4.Items.Add(msgDataNames[i + 3746]);
+                        inventoryCombobox5.Items.Add(msgDataNames[i + 3746]);
+                        inventoryCombobox6.Items.Add(msgDataNames[i + 3746]);
+                    }
+                    else if(i >= 1000) //consumibles
+                    {
+                        inventoryCombobox1.Items.Add(msgDataNames[(i + 4656) - 1000]);
+                        inventoryCombobox2.Items.Add(msgDataNames[(i + 4656) - 1000]);
+                        inventoryCombobox3.Items.Add(msgDataNames[(i + 4656) - 1000]);
+                        inventoryCombobox4.Items.Add(msgDataNames[(i + 4656) - 1000]);
+                        inventoryCombobox5.Items.Add(msgDataNames[(i + 4656) - 1000]);
+                        inventoryCombobox6.Items.Add(msgDataNames[(i + 4656) - 1000]);
+                    }
+                    else
+                    {
+                        inventoryCombobox1.Items.Add("--------------");
+                        inventoryCombobox2.Items.Add("--------------");
+                        inventoryCombobox3.Items.Add("--------------");
+                        inventoryCombobox4.Items.Add("--------------");
+                        inventoryCombobox5.Items.Add("--------------");
+                        inventoryCombobox6.Items.Add("--------------");
+                    }
                 }
                 characterListBox.SelectedIndex = 0;
             }
@@ -421,6 +451,8 @@ namespace ThreeHousesPersonDataEditor
                 spelllistgroupbox.Visible = true;
                 skillListGroupbox.Visible = true;
                 skillsGroupbox.Visible = true;
+                inventoryGroupbox.Visible = true;
+
                 defaultSwordCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultSwordRank;
                 defaultLanceCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultLanceRank;
                 defaultAxeCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultAxeRank;
@@ -480,6 +512,14 @@ namespace ThreeHousesPersonDataEditor
                 FaithRankCombobox3.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank3;
                 FaithRankCombobox4.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank4;
                 FaithRankCombobox5.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank5;
+
+                inventoryCombobox1.SelectedIndex = currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[0];
+                inventoryCombobox2.SelectedIndex = currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[1];
+                inventoryCombobox3.SelectedIndex = currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[2];
+                inventoryCombobox4.SelectedIndex = currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[3];
+                inventoryCombobox5.SelectedIndex = currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[4];
+                inventoryCombobox6.SelectedIndex = currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[5];
+                inventoryFlagsNumbox.Value = currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].wpnFlags;
                 //Resetting displayed skill between characters
                 var curIndx = skillListbox.SelectedIndex;
                 skillListbox.SelectedIndex = -1;
@@ -493,6 +533,7 @@ namespace ThreeHousesPersonDataEditor
                 spelllistgroupbox.Visible = false;
                 skillListGroupbox.Visible = false;
                 skillsGroupbox.Visible = false;
+                inventoryGroupbox.Visible = false;
             }
         }
 
@@ -1364,6 +1405,41 @@ namespace ThreeHousesPersonDataEditor
             SkillCombobox.SelectedIndex = currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].SkillLearned[skillListbox.SelectedIndex];
             part1PersonalCombobox.SelectedIndex = currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].PersonalskillPart1;
             part2PersonalCombobox.SelectedIndex = currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].PersonalskillPart2;
+        }
+
+        private void inventoryCombobox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[0] = Decimal.ToUInt16(inventoryCombobox1.SelectedIndex);
+        }
+
+        private void inventoryCombobox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[1] = Decimal.ToUInt16(inventoryCombobox2.SelectedIndex);
+        }
+
+        private void inventoryCombobox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[2] = Decimal.ToUInt16(inventoryCombobox3.SelectedIndex);
+        }
+
+        private void inventoryCombobox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[3] = Decimal.ToUInt16(inventoryCombobox4.SelectedIndex);
+        }
+
+        private void inventoryCombobox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[4] = Decimal.ToUInt16(inventoryCombobox5.SelectedIndex);
+        }
+
+        private void inventoryCombobox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].Weapons[5] = Decimal.ToUInt16(inventoryCombobox6.SelectedIndex);
+        }
+
+        private void inventoryFlagsNumbox_ValueChanged(object sender, EventArgs e)
+        {
+            currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].wpnFlags = Decimal.ToUInt16(inventoryFlagsNumbox.Value);
         }
     }
 }
