@@ -29,6 +29,8 @@ namespace ThreeHousesPersonDataEditor
         public List<DefaultWpnRanksAndCombatAssets> WeaponRanks { get; set; }
         public SpellListBlock SpellListSection { get; set; }
         public List<SpellListBlock> SpellLists { get; set; }
+        public SkillListBlock SkillListSection { get; set; }
+        public List<SkillListBlock> SkillLists { get; set; }
         public List<byte> SectionBytes { get; set; }
         public List<List<byte>> OtherSections { get; set; }
 
@@ -48,6 +50,7 @@ namespace ThreeHousesPersonDataEditor
                 SectionBytes.Add(nullByte);
 
                 OtherSections = new List<List<byte>>();
+                OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
@@ -116,6 +119,7 @@ namespace ThreeHousesPersonDataEditor
                                 }
                                 break;
                             case 4:
+                                // Section 4 is the character's spell list
                                 SpellLists = new List<SpellListBlock>();
                                 for (int j = 0; j < SectionBlockCount[i]; j++)
                                 {
@@ -124,8 +128,18 @@ namespace ThreeHousesPersonDataEditor
                                     SpellLists.Add(SpellListSection);
                                 }
                                 break;
+                            case 5:
+                                // Section 5 is the character's skill list
+                                SkillLists = new List<SkillListBlock>();
+                                for (int j = 0; j < SectionBlockCount[i]; j++)
+                                {
+                                    SkillListSection = new SkillListBlock();
+                                    SkillListSection.Read(fixed_persondata);
+                                    SkillLists.Add(SkillListSection);
+                                }
+                                break;
                             default:
-                                SectionBytes = fixed_persondata.ReadByteList(Convert.ToInt32(SectionBlockCount[i] * SectionBlockSize[i]));
+                                SectionBytes = fixed_persondata.ReadByteList((int)(SectionBlockCount[i] * SectionBlockSize[i]));
                                 OtherSections.Add(SectionBytes);
                                 break;
                         }
@@ -184,6 +198,12 @@ namespace ThreeHousesPersonDataEditor
                         foreach (var spell in SpellLists)
                         {
                             spell.Write(fixed_persondata);
+                        }
+                        break;
+                    case 5:
+                        foreach (var skill in SkillLists)
+                        {
+                            skill.Write(fixed_persondata);
                         }
                         break;
                     default:

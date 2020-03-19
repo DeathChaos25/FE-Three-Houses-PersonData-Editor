@@ -294,6 +294,7 @@
             this.part1FaceIDNumbox = new System.Windows.Forms.NumericUpDown();
             this.label43 = new System.Windows.Forms.Label();
             this.VoiceIDTab = new System.Windows.Forms.TabPage();
+            this.label59 = new System.Windows.Forms.Label();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.label58 = new System.Windows.Forms.Label();
             this.voiceIDTexbox = new System.Windows.Forms.TextBox();
@@ -328,6 +329,19 @@
             this.PointersListBox = new System.Windows.Forms.ListBox();
             this.numOfPointersLabel = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.skillListGroupbox = new System.Windows.Forms.GroupBox();
+            this.skillListbox = new System.Windows.Forms.ListBox();
+            this.SkillCombobox = new System.Windows.Forms.ComboBox();
+            this.skillRankCombobox = new System.Windows.Forms.ComboBox();
+            this.skillTypeCombobox = new System.Windows.Forms.ComboBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.part2PersonalCombobox = new System.Windows.Forms.ComboBox();
+            this.part1PersonalCombobox = new System.Windows.Forms.ComboBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.skillsGroupbox = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.CharacterBlocksTab.SuspendLayout();
@@ -469,6 +483,9 @@
             this.MiscInfoTab.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.skillListGroupbox.SuspendLayout();
+            this.skillsGroupbox.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -645,7 +662,7 @@
             // 
             // CharacterBlocksTab
             // 
-            this.CharacterBlocksTab.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CharacterBlocksTab.BackColor = System.Drawing.SystemColors.Control;
             this.CharacterBlocksTab.Controls.Add(this.button1);
             this.CharacterBlocksTab.Controls.Add(this.statsTab);
             this.CharacterBlocksTab.Controls.Add(this.groupBox4);
@@ -674,6 +691,7 @@
             this.statsTab.Controls.Add(this.tabPage3);
             this.statsTab.Controls.Add(this.tabPage4);
             this.statsTab.Controls.Add(this.tabPage5);
+            this.statsTab.Controls.Add(this.tabPage6);
             this.statsTab.Location = new System.Drawing.Point(183, 121);
             this.statsTab.Name = "statsTab";
             this.statsTab.SelectedIndex = 0;
@@ -3188,7 +3206,7 @@
             this.tableLayoutPanel12.Controls.Add(this.FaithSpellCombobox3, 0, 2);
             this.tableLayoutPanel12.Controls.Add(this.FaithSpellCombobox4, 0, 3);
             this.tableLayoutPanel12.Controls.Add(this.FaithSpellCombobox5, 0, 4);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(6, 13);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 5;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -3793,7 +3811,7 @@
             // 
             // AssetIDTab
             // 
-            this.AssetIDTab.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AssetIDTab.BackColor = System.Drawing.SystemColors.Control;
             this.AssetIDTab.Controls.Add(this.groupBox20);
             this.AssetIDTab.Controls.Add(this.AIDTabTextbox);
             this.AssetIDTab.Controls.Add(this.label52);
@@ -4212,7 +4230,8 @@
             // 
             // VoiceIDTab
             // 
-            this.VoiceIDTab.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.VoiceIDTab.BackColor = System.Drawing.SystemColors.Control;
+            this.VoiceIDTab.Controls.Add(this.label59);
             this.VoiceIDTab.Controls.Add(this.groupBox17);
             this.VoiceIDTab.Controls.Add(this.groupBox16);
             this.VoiceIDTab.Location = new System.Drawing.Point(4, 22);
@@ -4220,6 +4239,17 @@
             this.VoiceIDTab.Size = new System.Drawing.Size(706, 440);
             this.VoiceIDTab.TabIndex = 3;
             this.VoiceIDTab.Text = "Voice ID";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(146, 255);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(436, 40);
+            this.label59.TabIndex = 2;
+            this.label59.Text = "Disclaimer: What you see here might not always be accurate.\r\nMore research is nee" +
+    "ded on this section.";
             // 
             // groupBox17
             // 
@@ -4487,7 +4517,7 @@
             // 
             // MiscInfoTab
             // 
-            this.MiscInfoTab.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.MiscInfoTab.BackColor = System.Drawing.SystemColors.Control;
             this.MiscInfoTab.Controls.Add(this.groupBox2);
             this.MiscInfoTab.Controls.Add(this.groupBox1);
             this.MiscInfoTab.Controls.Add(this.numOfPointersLabel);
@@ -4592,6 +4622,192 @@
             this.groupBox10.Size = new System.Drawing.Size(200, 100);
             this.groupBox10.TabIndex = 0;
             this.groupBox10.TabStop = false;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.skillsGroupbox);
+            this.tabPage6.Controls.Add(this.skillListGroupbox);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(509, 287);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Skills";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // skillListGroupbox
+            // 
+            this.skillListGroupbox.Controls.Add(this.skillListbox);
+            this.skillListGroupbox.Location = new System.Drawing.Point(3, 3);
+            this.skillListGroupbox.Name = "skillListGroupbox";
+            this.skillListGroupbox.Size = new System.Drawing.Size(102, 281);
+            this.skillListGroupbox.TabIndex = 0;
+            this.skillListGroupbox.TabStop = false;
+            this.skillListGroupbox.Text = "Skill List";
+            // 
+            // skillListbox
+            // 
+            this.skillListbox.FormattingEnabled = true;
+            this.skillListbox.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.skillListbox.Location = new System.Drawing.Point(6, 19);
+            this.skillListbox.Name = "skillListbox";
+            this.skillListbox.Size = new System.Drawing.Size(85, 251);
+            this.skillListbox.TabIndex = 0;
+            this.skillListbox.SelectedIndexChanged += new System.EventHandler(this.skillListbox_SelectedIndexChanged);
+            // 
+            // SkillCombobox
+            // 
+            this.SkillCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SkillCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SkillCombobox.FormattingEnabled = true;
+            this.SkillCombobox.Location = new System.Drawing.Point(6, 19);
+            this.SkillCombobox.Name = "SkillCombobox";
+            this.SkillCombobox.Size = new System.Drawing.Size(226, 21);
+            this.SkillCombobox.TabIndex = 1;
+            this.SkillCombobox.SelectedIndexChanged += new System.EventHandler(this.SkillCombobox_SelectedIndexChanged);
+            // 
+            // skillRankCombobox
+            // 
+            this.skillRankCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.skillRankCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.skillRankCombobox.FormattingEnabled = true;
+            this.skillRankCombobox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.skillRankCombobox.Location = new System.Drawing.Point(150, 94);
+            this.skillRankCombobox.Name = "skillRankCombobox";
+            this.skillRankCombobox.Size = new System.Drawing.Size(82, 21);
+            this.skillRankCombobox.TabIndex = 6;
+            this.skillRankCombobox.SelectedIndexChanged += new System.EventHandler(this.skillRankCombobox_SelectedIndexChanged);
+            // 
+            // skillTypeCombobox
+            // 
+            this.skillTypeCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.skillTypeCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.skillTypeCombobox.FormattingEnabled = true;
+            this.skillTypeCombobox.Items.AddRange(new object[] {
+            "Sword",
+            "Lance",
+            "Axe",
+            "Bow",
+            "Brawling",
+            "Reason",
+            "Faith",
+            "Authority",
+            "Armor",
+            "Riding",
+            "Flying",
+            "-------"});
+            this.skillTypeCombobox.Location = new System.Drawing.Point(6, 94);
+            this.skillTypeCombobox.Name = "skillTypeCombobox";
+            this.skillTypeCombobox.Size = new System.Drawing.Size(109, 21);
+            this.skillTypeCombobox.TabIndex = 7;
+            this.skillTypeCombobox.SelectedIndexChanged += new System.EventHandler(this.skillTypeCombobox_SelectedIndexChanged);
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(6, 78);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(59, 13);
+            this.label60.TabIndex = 8;
+            this.label60.Text = "Skill Type: ";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(147, 78);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(61, 13);
+            this.label61.TabIndex = 9;
+            this.label61.Text = "Skill Rank: ";
+            // 
+            // part2PersonalCombobox
+            // 
+            this.part2PersonalCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.part2PersonalCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.part2PersonalCombobox.FormattingEnabled = true;
+            this.part2PersonalCombobox.Location = new System.Drawing.Point(9, 249);
+            this.part2PersonalCombobox.Name = "part2PersonalCombobox";
+            this.part2PersonalCombobox.Size = new System.Drawing.Size(226, 21);
+            this.part2PersonalCombobox.TabIndex = 10;
+            this.part2PersonalCombobox.SelectedIndexChanged += new System.EventHandler(this.part2PersonalCombobox_SelectedIndexChanged);
+            // 
+            // part1PersonalCombobox
+            // 
+            this.part1PersonalCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.part1PersonalCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.part1PersonalCombobox.FormattingEnabled = true;
+            this.part1PersonalCombobox.Location = new System.Drawing.Point(6, 177);
+            this.part1PersonalCombobox.Name = "part1PersonalCombobox";
+            this.part1PersonalCombobox.Size = new System.Drawing.Size(226, 21);
+            this.part1PersonalCombobox.TabIndex = 11;
+            this.part1PersonalCombobox.SelectedIndexChanged += new System.EventHandler(this.part1PersonalCombobox_SelectedIndexChanged);
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(6, 161);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(101, 13);
+            this.label62.TabIndex = 12;
+            this.label62.Text = "Part 1 Personal Skill";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(6, 233);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(101, 13);
+            this.label63.TabIndex = 13;
+            this.label63.Text = "Part 2 Personal Skill";
+            // 
+            // skillsGroupbox
+            // 
+            this.skillsGroupbox.Controls.Add(this.label63);
+            this.skillsGroupbox.Controls.Add(this.label62);
+            this.skillsGroupbox.Controls.Add(this.part1PersonalCombobox);
+            this.skillsGroupbox.Controls.Add(this.part2PersonalCombobox);
+            this.skillsGroupbox.Controls.Add(this.label61);
+            this.skillsGroupbox.Controls.Add(this.label60);
+            this.skillsGroupbox.Controls.Add(this.skillTypeCombobox);
+            this.skillsGroupbox.Controls.Add(this.skillRankCombobox);
+            this.skillsGroupbox.Controls.Add(this.SkillCombobox);
+            this.skillsGroupbox.Location = new System.Drawing.Point(111, 3);
+            this.skillsGroupbox.Name = "skillsGroupbox";
+            this.skillsGroupbox.Size = new System.Drawing.Size(391, 281);
+            this.skillsGroupbox.TabIndex = 1;
+            this.skillsGroupbox.TabStop = false;
+            this.skillsGroupbox.Text = "Skill";
             // 
             // PersonDataEditorMain
             // 
@@ -4748,6 +4964,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.part1BodyNumbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.part1FaceIDNumbox)).EndInit();
             this.VoiceIDTab.ResumeLayout(false);
+            this.VoiceIDTab.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             this.tableLayoutPanel10.ResumeLayout(false);
@@ -4762,6 +4979,10 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.skillListGroupbox.ResumeLayout(false);
+            this.skillsGroupbox.ResumeLayout(false);
+            this.skillsGroupbox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5068,6 +5289,20 @@
         private System.Windows.Forms.ComboBox reasonSpellCombobox4;
         private System.Windows.Forms.ComboBox reasonSpellCombobox5;
         private System.Windows.Forms.GroupBox groupBox20;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.GroupBox skillListGroupbox;
+        private System.Windows.Forms.ListBox skillListbox;
+        private System.Windows.Forms.GroupBox skillsGroupbox;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.ComboBox part1PersonalCombobox;
+        private System.Windows.Forms.ComboBox part2PersonalCombobox;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.ComboBox skillTypeCombobox;
+        private System.Windows.Forms.ComboBox skillRankCombobox;
+        private System.Windows.Forms.ComboBox SkillCombobox;
         //private System.Windows.Forms.ListBox assetIDListbox;
     }
 }

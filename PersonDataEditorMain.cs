@@ -39,7 +39,7 @@ namespace ThreeHousesPersonDataEditor
         public string filePath { get; set; }
         public string nameOfFile { get; set; }
 
-        string[] SectionNames = new string[] { "Character Data", "Asset IDs", "Voice IDs", "Starting Weapon Ranks/Combat Assets", "Spell Learnset", "Skill Learnset", "Starting Inventory", "Combat Arts Learnset", "Support Bonuses", "Support Bonuses", "Support List", "Budding Talents", "Generic Learnset", "Faculty Teachings", "Seminar Teachings", "Character Goals", "Portrait IDs", "Enemy Personal Skills" };
+        string[] SectionNames = new string[] { "Character Data", "Asset IDs", "Voice IDs", "Weapon Ranks/Combat Assets", "Spell Learnset", "Skill Learnset", "Starting Inventory", "Combat Arts Learnset", "Support Bonuses", "Support Bonuses", "Support List", "Budding Talents", "Generic Learnset", "Faculty Teachings", "Seminar Teachings", "Character Goals", "Portrait IDs", "Enemy Personal Skills" };
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
@@ -189,7 +189,18 @@ namespace ThreeHousesPersonDataEditor
                     reasonSpellCombobox5.Items.Add("-----------");
                 }
 
-                    //read List for allegiances
+                //Skill names
+                for (int i = 0; i < 255; i++)
+                {
+                    SkillCombobox.Items.Add(msgDataNames[i + 7236]);
+                    part1PersonalCombobox.Items.Add(msgDataNames[i + 7236]);
+                    part2PersonalCombobox.Items.Add(msgDataNames[i + 7236]);
+                }
+                SkillCombobox.Items.Add("--------------");
+                part1PersonalCombobox.Items.Add("--------------");
+                part2PersonalCombobox.Items.Add("--------------");
+
+                //read List for allegiances
                 for (int i = 0; i <= 30; i++)
                 {
                     allegianceComboBox.Items.Add(msgDataNames[i + 9498]);
@@ -209,6 +220,7 @@ namespace ThreeHousesPersonDataEditor
                 {
                     battalionComboBox.Items.Add(msgDataNames[i + 9096]);
                 }
+                characterListBox.SelectedIndex = 0;
             }
         }
 
@@ -407,6 +419,8 @@ namespace ThreeHousesPersonDataEditor
                 wpnProfGroupbox.Visible = true;
                 CombatAssetsGroupbox.Visible = true;
                 spelllistgroupbox.Visible = true;
+                skillListGroupbox.Visible = true;
+                skillsGroupbox.Visible = true;
                 defaultSwordCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultSwordRank;
                 defaultLanceCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultLanceRank;
                 defaultAxeCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultAxeRank;
@@ -466,6 +480,10 @@ namespace ThreeHousesPersonDataEditor
                 FaithRankCombobox3.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank3;
                 FaithRankCombobox4.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank4;
                 FaithRankCombobox5.SelectedIndex = currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].FaithRank5;
+                //Resetting displayed skill between characters
+                var curIndx = skillListbox.SelectedIndex;
+                skillListbox.SelectedIndex = -1;
+                skillListbox.SelectedIndex = curIndx;
             }
             else
             {
@@ -473,6 +491,8 @@ namespace ThreeHousesPersonDataEditor
                 wpnProfGroupbox.Visible = false;
                 CombatAssetsGroupbox.Visible = false;
                 spelllistgroupbox.Visible = false;
+                skillListGroupbox.Visible = false;
+                skillsGroupbox.Visible = false;
             }
         }
 
@@ -1294,6 +1314,56 @@ namespace ThreeHousesPersonDataEditor
         private void ReasonRankCombobox5_SelectedIndexChanged(object sender, EventArgs e)
         {
             currentPersonData.SpellLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].ReasonRank5 = Decimal.ToByte(ReasonRankCombobox5.SelectedIndex);
+        }
+
+        private void SkillCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].SkillLearned[skillListbox.SelectedIndex] = Decimal.ToByte(SkillCombobox.SelectedIndex);
+        }
+
+        private void skillRankCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].SkillRank[skillListbox.SelectedIndex] = Decimal.ToByte(skillRankCombobox.SelectedIndex);
+        }
+
+        private void skillTypeCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].SkillType[skillListbox.SelectedIndex] == 11)
+            {
+                currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].SkillType[skillListbox.SelectedIndex] = 255;
+            }
+            else currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].SkillType[skillListbox.SelectedIndex] = Decimal.ToByte(skillTypeCombobox.SelectedIndex);
+        }
+
+        private void skillListbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (skillListbox.SelectedIndex != -1)
+            {
+                DisplayCurrentCharSkills();
+            }
+        }
+        private void part1PersonalCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].PersonalskillPart1 = Decimal.ToByte(part1PersonalCombobox.SelectedIndex);
+        }
+
+        private void part2PersonalCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].PersonalskillPart2 = Decimal.ToByte(part2PersonalCombobox.SelectedIndex);
+        }
+        private void DisplayCurrentCharSkills()
+        {
+            skillRankCombobox.SelectedIndex = currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].SkillRank[skillListbox.SelectedIndex];
+            
+            if (currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].SkillType[skillListbox.SelectedIndex] == 255)
+            {
+                skillTypeCombobox.SelectedIndex = 11; //I dont want to make 255 entries when there only exist single digit valid ones
+            }
+            else skillTypeCombobox.SelectedIndex = currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].SkillType[skillListbox.SelectedIndex];
+
+            SkillCombobox.SelectedIndex = currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].SkillLearned[skillListbox.SelectedIndex];
+            part1PersonalCombobox.SelectedIndex = currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].PersonalskillPart1;
+            part2PersonalCombobox.SelectedIndex = currentPersonData.SkillLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].PersonalskillPart2;
         }
     }
 }
