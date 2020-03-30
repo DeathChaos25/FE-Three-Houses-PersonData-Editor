@@ -35,6 +35,8 @@ namespace ThreeHousesPersonDataEditor
         public List<List<byte>> OtherSections { get; set; }
         public DefaultWpnBlock WeaponsSection { get; set; }
         public List<DefaultWpnBlock> Weapons { get; set; }
+        public CombatArtsBlock CombatArtsSection { get; set; }
+        public List<CombatArtsBlock> CombatArtsLists { get; set; }
 
         public void ReadPersonData(string fixed_persondata_path)
         {
@@ -48,10 +50,12 @@ namespace ThreeHousesPersonDataEditor
             {
                 //fill used sections with dummy data as they will not be read from List
                 //this is temporary code and will be removed once all section classes are done
+                //this is just a really terrible temporary fix so as to not write dummy bytes
                 SectionBytes = new List<byte>();
                 SectionBytes.Add(nullByte);
 
                 OtherSections = new List<List<byte>>();
+                OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
                 OtherSections.Add(SectionBytes);
@@ -151,6 +155,16 @@ namespace ThreeHousesPersonDataEditor
                                     Weapons.Add(WeaponsSection);
                                 }
                                 break;
+                            case 7:
+                                // Section 7 is the character's combat arts list
+                                CombatArtsLists = new List<CombatArtsBlock>();
+                                for (int j = 0; j < SectionBlockCount[i]; j++)
+                                {
+                                    CombatArtsSection = new CombatArtsBlock();
+                                    CombatArtsSection.Read(fixed_persondata);
+                                    CombatArtsLists.Add(CombatArtsSection);
+                                }
+                                break;
                             default:
                                 SectionBytes = fixed_persondata.ReadByteList((int)(SectionBlockCount[i] * SectionBlockSize[i]));
                                 OtherSections.Add(SectionBytes);
@@ -223,6 +237,12 @@ namespace ThreeHousesPersonDataEditor
                         foreach (var wpn in Weapons)
                         {
                             wpn.Write(fixed_persondata);
+                        }
+                        break;
+                    case 7:
+                        foreach (var combatart in CombatArtsLists)
+                        {
+                            combatart.Write(fixed_persondata);
                         }
                         break;
                     default:

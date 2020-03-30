@@ -23,6 +23,10 @@ namespace ThreeHousesPersonDataEditor.PersonData.Sections
             for (int i = 0; i < 20; i++)
             {
                 SkillType[i] = fixed_persondata.ReadByte();
+                if (SkillType[i] == 255)
+                {
+                    SkillType[i] = 11;
+                }
             }
             PersonalskillPart1 = fixed_persondata.ReadByte();
             PersonalskillPart2 = fixed_persondata.ReadByte();
@@ -39,7 +43,11 @@ namespace ThreeHousesPersonDataEditor.PersonData.Sections
         {
             for (int i = 0; i < 20; i++)
             {
-                fixed_persondata.WriteByte(SkillType[i]);
+                if (SkillType[i] == 11)
+                {
+                    fixed_persondata.WriteByte(255);
+                }
+                else fixed_persondata.WriteByte(SkillType[i]);
             }
             fixed_persondata.WriteByte(PersonalskillPart1);
             fixed_persondata.WriteByte(PersonalskillPart2);

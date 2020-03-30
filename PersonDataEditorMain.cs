@@ -250,6 +250,10 @@ namespace ThreeHousesPersonDataEditor
                         inventoryCombobox6.Items.Add("--------------");
                     }
                 }
+                for (int i = 0; i < 80; i++)
+                {
+                    combatArtBox.Items.Add(msgDataNames[i + 6014]);
+                }
                 characterListBox.SelectedIndex = 0;
             }
         }
@@ -341,6 +345,9 @@ namespace ThreeHousesPersonDataEditor
             reasonSpellCombobox3.Items.Clear();
             reasonSpellCombobox4.Items.Clear();
             reasonSpellCombobox5.Items.Clear();
+
+            SkillCombobox.Items.Clear();
+            combatArtBox.Items.Clear();
         }
 
         private void characterListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -452,6 +459,8 @@ namespace ThreeHousesPersonDataEditor
                 skillListGroupbox.Visible = true;
                 skillsGroupbox.Visible = true;
                 inventoryGroupbox.Visible = true;
+                combatArtListGroupbox2.Visible = true;
+                combatArtListGroupbox.Visible = true;
 
                 defaultSwordCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultSwordRank;
                 defaultLanceCombobox.SelectedIndex = currentPersonData.WeaponRanks[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].defaultLanceRank;
@@ -524,6 +533,10 @@ namespace ThreeHousesPersonDataEditor
                 var curIndx = skillListbox.SelectedIndex;
                 skillListbox.SelectedIndex = -1;
                 skillListbox.SelectedIndex = curIndx;
+
+                curIndx = combatArtsListbox.SelectedIndex;
+                combatArtsListbox.SelectedIndex = -1;
+                combatArtsListbox.SelectedIndex = curIndx;
             }
             else
             {
@@ -534,6 +547,8 @@ namespace ThreeHousesPersonDataEditor
                 skillListGroupbox.Visible = false;
                 skillsGroupbox.Visible = false;
                 inventoryGroupbox.Visible = false;
+                combatArtListGroupbox.Visible = false;
+                combatArtListGroupbox2.Visible = false;
             }
         }
 
@@ -1048,11 +1063,16 @@ namespace ThreeHousesPersonDataEditor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            currentPersonDataCopy = new PersonDataFile();
-            currentPersonDataCopy.ReadPersonData(filePath);
-            currentPersonData.Character[characterListBox.SelectedIndex] = currentPersonDataCopy.Character[characterListBox.SelectedIndex];
-            DisplayCurrentCharacter();
-            MessageBox.Show("The currently selected character has been reset!", "Reset Complete");
+            DialogResult result = MessageBox.Show("Note: This will only reset the stats sub-tab and not everything.", "Reset Character stats?", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+
+            if (result == DialogResult.Yes)
+            {
+                currentPersonDataCopy = new PersonDataFile();
+                currentPersonDataCopy.ReadPersonData(filePath);
+                currentPersonData.Character[characterListBox.SelectedIndex] = currentPersonDataCopy.Character[characterListBox.SelectedIndex];
+                DisplayCurrentCharacter();
+                MessageBox.Show("The currently selected character has been reset!", "Reset Complete");
+            }
         }
 
         private void defaultSwordCombobox_SelectedIndexChanged(object sender, EventArgs e)
@@ -1440,6 +1460,32 @@ namespace ThreeHousesPersonDataEditor
         private void inventoryFlagsNumbox_ValueChanged(object sender, EventArgs e)
         {
             currentPersonData.Weapons[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].wpnFlags = Decimal.ToUInt16(inventoryFlagsNumbox.Value);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (combatArtsListbox.SelectedIndex != -1)
+            {
+                combatRankBox.SelectedIndex = currentPersonData.CombatArtsLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].CombatArtRank[combatArtsListbox.SelectedIndex];
+                combatTypeBox.SelectedIndex = currentPersonData.CombatArtsLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].CombatArtType[combatArtsListbox.SelectedIndex];
+                combatArtBox.SelectedIndex = currentPersonData.CombatArtsLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].CombatArtLearned[combatArtsListbox.SelectedIndex];
+            }
+        }
+
+        private void combatTypeBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.CombatArtsLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].CombatArtType[combatArtsListbox.SelectedIndex] = Decimal.ToByte(combatTypeBox.SelectedIndex);
+            Console.WriteLine("Value being written to combat art type :" + currentPersonData.CombatArtsLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].CombatArtType[combatArtsListbox.SelectedIndex]);
+        }
+
+        private void combatArtBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.CombatArtsLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].CombatArtLearned[combatArtsListbox.SelectedIndex] = Decimal.ToByte(combatArtBox.SelectedIndex);
+        }
+
+        private void combatRankBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentPersonData.CombatArtsLists[currentPersonData.Character[characterListBox.SelectedIndex].saveDataID].CombatArtRank[combatArtsListbox.SelectedIndex] = Decimal.ToByte(combatRankBox.SelectedIndex);
         }
     }
 }
