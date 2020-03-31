@@ -1,7 +1,7 @@
 # FE Three Houses PersonData Editor
 WIP GUI Editor for fixed_persondata.bin (update v1.1.0 or later)    
 
-Dependancies:
+Dependencies:
 - .net Framework v4.7.2
 https://dotnet.microsoft.com/download/dotnet-framework/net472
   
@@ -9,8 +9,8 @@ https://dotnet.microsoft.com/download/dotnet-framework/net472
   
 DISCLAIMER: While very much in a usable state, there are a lots of bugs that need to be ironed out, QoL implemented, code optimizations, etc etc.
 
-![Program WIP Screenshot](https://cdn.discordapp.com/attachments/377899265424621569/688953959037141009/unknown.png) ![Program WIP Screenshot](https://cdn.discordapp.com/attachments/377899265424621569/688953825402290214/unknown.png)
-![Program WIP Screenshot](https://cdn.discordapp.com/attachments/377899265424621569/688953595021754403/unknown.png)
+![Program WIP Screenshot](https://cdn.discordapp.com/attachments/377899265424621569/694374819709583410/unknown.png) 
+![Program WIP Screenshot](https://cdn.discordapp.com/attachments/377899265424621569/694378127849422949/unknown.png)
 
 Makes use of (an earlier version of) Amicitia.IO from TGEnigma.
 https://github.com/TGEnigma/Amicitia.IO
@@ -31,7 +31,7 @@ Current Progress:
 ToDo:
 - Implement the rest of the sections
 - Better portrait loading code (currently loads it based on asset ID and only very few are actually implemented)
-- Multi lang support maybe? (Partially done)
+- Full Multi lang support maybe? (Partially support implemented for now)
 - Add a reset button for current highlighted character (done kinda)
 
 Planned Features:  
