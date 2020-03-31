@@ -346,6 +346,15 @@ namespace ThreeHousesPersonDataEditor
             reasonSpellCombobox4.Items.Clear();
             reasonSpellCombobox5.Items.Clear();
 
+            part1PersonalCombobox.Items.Clear();
+            part2PersonalCombobox.Items.Clear();
+            inventoryCombobox1.Items.Clear();
+            inventoryCombobox2.Items.Clear();
+            inventoryCombobox3.Items.Clear();
+            inventoryCombobox4.Items.Clear();
+            inventoryCombobox5.Items.Clear();
+            inventoryCombobox6.Items.Clear();
+
             SkillCombobox.Items.Clear();
             combatArtBox.Items.Clear();
         }
