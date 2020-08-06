@@ -49,7 +49,6 @@
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.CharacterBlocksTab = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.statsTab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -62,15 +61,16 @@
             this.crest1ComboBox = new System.Windows.Forms.ComboBox();
             this.genderComboBox = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.chestSize1NumBox = new System.Windows.Forms.NumericUpDown();
             this.chestSize2NumBox = new System.Windows.Forms.NumericUpDown();
             this.modelScaleNumBox = new System.Windows.Forms.NumericUpDown();
             this.chestWidthScale = new System.Windows.Forms.NumericUpDown();
+            this.chestSize1NumBox = new System.Windows.Forms.NumericUpDown();
             this.label19 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.MaxChaNumBox = new System.Windows.Forms.NumericUpDown();
             this.MaxMovNumBox = new System.Windows.Forms.NumericUpDown();
@@ -270,6 +270,15 @@
             this.inventoryCombobox3 = new System.Windows.Forms.ComboBox();
             this.inventoryCombobox2 = new System.Windows.Forms.ComboBox();
             this.inventoryCombobox1 = new System.Windows.Forms.ComboBox();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.combatArtListGroupbox = new System.Windows.Forms.GroupBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.combatTypeBox = new System.Windows.Forms.ComboBox();
+            this.combatRankBox = new System.Windows.Forms.ComboBox();
+            this.combatArtBox = new System.Windows.Forms.ComboBox();
+            this.combatArtListGroupbox2 = new System.Windows.Forms.GroupBox();
+            this.combatArtsListbox = new System.Windows.Forms.ListBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.facePicBox = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -353,15 +362,6 @@
             this.PointersListBox = new System.Windows.Forms.ListBox();
             this.numOfPointersLabel = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.combatArtListGroupbox = new System.Windows.Forms.GroupBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.combatTypeBox = new System.Windows.Forms.ComboBox();
-            this.combatRankBox = new System.Windows.Forms.ComboBox();
-            this.combatArtBox = new System.Windows.Forms.ComboBox();
-            this.combatArtListGroupbox2 = new System.Windows.Forms.GroupBox();
-            this.combatArtsListbox = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.CharacterBlocksTab.SuspendLayout();
@@ -369,10 +369,10 @@
             this.tabPage1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chestSize1NumBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chestSize2NumBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelScaleNumBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chestWidthScale)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chestSize1NumBox)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MaxChaNumBox)).BeginInit();
@@ -474,6 +474,9 @@
             this.inventoryGroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryFlagsNumbox)).BeginInit();
             this.tableLayoutPanel13.SuspendLayout();
+            this.tabPage8.SuspendLayout();
+            this.combatArtListGroupbox.SuspendLayout();
+            this.combatArtListGroupbox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.facePicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.birthDayNumberBox)).BeginInit();
@@ -510,9 +513,6 @@
             this.MiscInfoTab.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.combatArtListGroupbox.SuspendLayout();
-            this.combatArtListGroupbox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -700,16 +700,6 @@
             this.CharacterBlocksTab.TabIndex = 0;
             this.CharacterBlocksTab.Text = "Characters";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(424, 129);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Reset Stats";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // statsTab
             // 
             this.statsTab.Controls.Add(this.tabPage1);
@@ -839,10 +829,10 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.53846F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.46154F));
-            this.tableLayoutPanel2.Controls.Add(this.chestSize1NumBox, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.chestSize2NumBox, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.modelScaleNumBox, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.chestWidthScale, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.chestSize1NumBox, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(143, 9);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
@@ -850,36 +840,12 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(55, 100);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(75, 100);
             this.tableLayoutPanel2.TabIndex = 49;
-            // 
-            // chestSize1NumBox
-            // 
-            this.chestSize1NumBox.DecimalPlaces = 2;
-            this.chestSize1NumBox.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.chestSize1NumBox.Location = new System.Drawing.Point(3, 3);
-            this.chestSize1NumBox.Maximum = new decimal(new int[] {
-            340,
-            0,
-            0,
-            131072});
-            this.chestSize1NumBox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this.chestSize1NumBox.Name = "chestSize1NumBox";
-            this.chestSize1NumBox.Size = new System.Drawing.Size(46, 20);
-            this.chestSize1NumBox.TabIndex = 43;
-            this.chestSize1NumBox.ValueChanged += new System.EventHandler(this.chestSize1NumBox_ValueChanged);
             // 
             // chestSize2NumBox
             // 
-            this.chestSize2NumBox.DecimalPlaces = 2;
+            this.chestSize2NumBox.DecimalPlaces = 6;
             this.chestSize2NumBox.Increment = new decimal(new int[] {
             1,
             0,
@@ -897,13 +863,13 @@
             0,
             -2147483648});
             this.chestSize2NumBox.Name = "chestSize2NumBox";
-            this.chestSize2NumBox.Size = new System.Drawing.Size(46, 20);
+            this.chestSize2NumBox.Size = new System.Drawing.Size(69, 20);
             this.chestSize2NumBox.TabIndex = 44;
             this.chestSize2NumBox.ValueChanged += new System.EventHandler(this.chestSize2NumBox_ValueChanged);
             // 
             // modelScaleNumBox
             // 
-            this.modelScaleNumBox.DecimalPlaces = 2;
+            this.modelScaleNumBox.DecimalPlaces = 6;
             this.modelScaleNumBox.Increment = new decimal(new int[] {
             1,
             0,
@@ -921,13 +887,13 @@
             0,
             -2147483648});
             this.modelScaleNumBox.Name = "modelScaleNumBox";
-            this.modelScaleNumBox.Size = new System.Drawing.Size(46, 20);
+            this.modelScaleNumBox.Size = new System.Drawing.Size(69, 20);
             this.modelScaleNumBox.TabIndex = 46;
             this.modelScaleNumBox.ValueChanged += new System.EventHandler(this.modelScaleNumBox_ValueChanged);
             // 
             // chestWidthScale
             // 
-            this.chestWidthScale.DecimalPlaces = 2;
+            this.chestWidthScale.DecimalPlaces = 6;
             this.chestWidthScale.Increment = new decimal(new int[] {
             1,
             0,
@@ -945,9 +911,33 @@
             0,
             -2147483648});
             this.chestWidthScale.Name = "chestWidthScale";
-            this.chestWidthScale.Size = new System.Drawing.Size(46, 20);
+            this.chestWidthScale.Size = new System.Drawing.Size(69, 20);
             this.chestWidthScale.TabIndex = 45;
             this.chestWidthScale.ValueChanged += new System.EventHandler(this.chestWidthScale_ValueChanged);
+            // 
+            // chestSize1NumBox
+            // 
+            this.chestSize1NumBox.DecimalPlaces = 6;
+            this.chestSize1NumBox.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.chestSize1NumBox.Location = new System.Drawing.Point(3, 3);
+            this.chestSize1NumBox.Maximum = new decimal(new int[] {
+            340,
+            0,
+            0,
+            131072});
+            this.chestSize1NumBox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.chestSize1NumBox.Name = "chestSize1NumBox";
+            this.chestSize1NumBox.Size = new System.Drawing.Size(69, 20);
+            this.chestSize1NumBox.TabIndex = 43;
+            this.chestSize1NumBox.ValueChanged += new System.EventHandler(this.chestSize1NumBox_ValueChanged);
             // 
             // label19
             // 
@@ -1008,6 +998,16 @@
             this.groupBox5.TabIndex = 14;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Stats";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(424, 129);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Reset Stats";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -1455,7 +1455,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(9, 109);
+            this.label18.Location = new System.Drawing.Point(14, 99);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(27, 13);
             this.label18.TabIndex = 13;
@@ -1464,7 +1464,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(59, 12);
+            this.label6.Location = new System.Drawing.Point(44, 12);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(22, 13);
             this.label6.TabIndex = 1;
@@ -1473,7 +1473,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(3, 76);
+            this.label17.Location = new System.Drawing.Point(0, 66);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 13);
             this.label17.TabIndex = 12;
@@ -1482,7 +1482,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(103, 12);
+            this.label7.Location = new System.Drawing.Point(89, 12);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(20, 13);
             this.label7.TabIndex = 2;
@@ -1491,7 +1491,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(10, 43);
+            this.label16.Location = new System.Drawing.Point(10, 33);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(31, 13);
             this.label16.TabIndex = 11;
@@ -1500,7 +1500,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(143, 12);
+            this.label8.Location = new System.Drawing.Point(134, 12);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(28, 13);
             this.label8.TabIndex = 3;
@@ -1509,7 +1509,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(458, 12);
+            this.label15.Location = new System.Drawing.Point(454, 12);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(26, 13);
             this.label15.TabIndex = 10;
@@ -1518,7 +1518,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(188, 12);
+            this.label9.Location = new System.Drawing.Point(179, 12);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(26, 13);
             this.label9.TabIndex = 4;
@@ -1527,7 +1527,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(416, 12);
+            this.label14.Location = new System.Drawing.Point(406, 12);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(28, 13);
             this.label14.TabIndex = 9;
@@ -1536,7 +1536,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(236, 12);
+            this.label10.Location = new System.Drawing.Point(224, 12);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(26, 13);
             this.label10.TabIndex = 5;
@@ -1545,7 +1545,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(373, 12);
+            this.label13.Location = new System.Drawing.Point(359, 12);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(26, 13);
             this.label13.TabIndex = 8;
@@ -1554,7 +1554,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(282, 12);
+            this.label11.Location = new System.Drawing.Point(269, 12);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(25, 13);
             this.label11.TabIndex = 6;
@@ -1563,7 +1563,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(327, 12);
+            this.label12.Location = new System.Drawing.Point(314, 12);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(24, 13);
             this.label12.TabIndex = 7;
@@ -3973,6 +3973,138 @@
             this.inventoryCombobox1.TabIndex = 2;
             this.inventoryCombobox1.SelectedIndexChanged += new System.EventHandler(this.inventoryCombobox1_SelectedIndexChanged);
             // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.combatArtListGroupbox);
+            this.tabPage8.Controls.Add(this.combatArtListGroupbox2);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(509, 287);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Combat Arts";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // combatArtListGroupbox
+            // 
+            this.combatArtListGroupbox.Controls.Add(this.label67);
+            this.combatArtListGroupbox.Controls.Add(this.label68);
+            this.combatArtListGroupbox.Controls.Add(this.combatTypeBox);
+            this.combatArtListGroupbox.Controls.Add(this.combatRankBox);
+            this.combatArtListGroupbox.Controls.Add(this.combatArtBox);
+            this.combatArtListGroupbox.Location = new System.Drawing.Point(113, 3);
+            this.combatArtListGroupbox.Name = "combatArtListGroupbox";
+            this.combatArtListGroupbox.Size = new System.Drawing.Size(391, 281);
+            this.combatArtListGroupbox.TabIndex = 3;
+            this.combatArtListGroupbox.TabStop = false;
+            this.combatArtListGroupbox.Text = "Combat Art";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(147, 78);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(61, 13);
+            this.label67.TabIndex = 9;
+            this.label67.Text = "Skill Rank: ";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(6, 78);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(59, 13);
+            this.label68.TabIndex = 8;
+            this.label68.Text = "Skill Type: ";
+            // 
+            // combatTypeBox
+            // 
+            this.combatTypeBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.combatTypeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combatTypeBox.FormattingEnabled = true;
+            this.combatTypeBox.Items.AddRange(new object[] {
+            "Sword",
+            "Lance",
+            "Axe",
+            "Bow",
+            "Brawling",
+            "Reason",
+            "Faith",
+            "Authority",
+            "Armor",
+            "Riding",
+            "Flying",
+            "-------"});
+            this.combatTypeBox.Location = new System.Drawing.Point(6, 94);
+            this.combatTypeBox.Name = "combatTypeBox";
+            this.combatTypeBox.Size = new System.Drawing.Size(109, 21);
+            this.combatTypeBox.TabIndex = 7;
+            this.combatTypeBox.SelectedIndexChanged += new System.EventHandler(this.combatTypeBox_SelectedIndexChanged);
+            // 
+            // combatRankBox
+            // 
+            this.combatRankBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.combatRankBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combatRankBox.FormattingEnabled = true;
+            this.combatRankBox.Items.AddRange(new object[] {
+            "E",
+            "E+",
+            "D",
+            "D+",
+            "C",
+            "C+",
+            "B",
+            "B+",
+            "A",
+            "A+",
+            "S",
+            "S+"});
+            this.combatRankBox.Location = new System.Drawing.Point(150, 94);
+            this.combatRankBox.Name = "combatRankBox";
+            this.combatRankBox.Size = new System.Drawing.Size(82, 21);
+            this.combatRankBox.TabIndex = 6;
+            this.combatRankBox.SelectedIndexChanged += new System.EventHandler(this.combatRankBox_SelectedIndexChanged);
+            // 
+            // combatArtBox
+            // 
+            this.combatArtBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.combatArtBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combatArtBox.FormattingEnabled = true;
+            this.combatArtBox.Location = new System.Drawing.Point(6, 19);
+            this.combatArtBox.Name = "combatArtBox";
+            this.combatArtBox.Size = new System.Drawing.Size(226, 21);
+            this.combatArtBox.TabIndex = 1;
+            this.combatArtBox.SelectedIndexChanged += new System.EventHandler(this.combatArtBox_SelectedIndexChanged);
+            // 
+            // combatArtListGroupbox2
+            // 
+            this.combatArtListGroupbox2.Controls.Add(this.combatArtsListbox);
+            this.combatArtListGroupbox2.Location = new System.Drawing.Point(5, 3);
+            this.combatArtListGroupbox2.Name = "combatArtListGroupbox2";
+            this.combatArtListGroupbox2.Size = new System.Drawing.Size(102, 281);
+            this.combatArtListGroupbox2.TabIndex = 2;
+            this.combatArtListGroupbox2.TabStop = false;
+            this.combatArtListGroupbox2.Text = "Combat Arts List";
+            // 
+            // combatArtsListbox
+            // 
+            this.combatArtsListbox.FormattingEnabled = true;
+            this.combatArtsListbox.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.combatArtsListbox.Location = new System.Drawing.Point(6, 19);
+            this.combatArtsListbox.Name = "combatArtsListbox";
+            this.combatArtsListbox.Size = new System.Drawing.Size(85, 251);
+            this.combatArtsListbox.TabIndex = 0;
+            this.combatArtsListbox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.facePicBox);
@@ -4990,138 +5122,6 @@
             this.groupBox10.TabIndex = 0;
             this.groupBox10.TabStop = false;
             // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.combatArtListGroupbox);
-            this.tabPage8.Controls.Add(this.combatArtListGroupbox2);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(509, 287);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Combat Arts";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // combatArtListGroupbox
-            // 
-            this.combatArtListGroupbox.Controls.Add(this.label67);
-            this.combatArtListGroupbox.Controls.Add(this.label68);
-            this.combatArtListGroupbox.Controls.Add(this.combatTypeBox);
-            this.combatArtListGroupbox.Controls.Add(this.combatRankBox);
-            this.combatArtListGroupbox.Controls.Add(this.combatArtBox);
-            this.combatArtListGroupbox.Location = new System.Drawing.Point(113, 3);
-            this.combatArtListGroupbox.Name = "combatArtListGroupbox";
-            this.combatArtListGroupbox.Size = new System.Drawing.Size(391, 281);
-            this.combatArtListGroupbox.TabIndex = 3;
-            this.combatArtListGroupbox.TabStop = false;
-            this.combatArtListGroupbox.Text = "Combat Art";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(147, 78);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(61, 13);
-            this.label67.TabIndex = 9;
-            this.label67.Text = "Skill Rank: ";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(6, 78);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(59, 13);
-            this.label68.TabIndex = 8;
-            this.label68.Text = "Skill Type: ";
-            // 
-            // combatTypeBox
-            // 
-            this.combatTypeBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.combatTypeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combatTypeBox.FormattingEnabled = true;
-            this.combatTypeBox.Items.AddRange(new object[] {
-            "Sword",
-            "Lance",
-            "Axe",
-            "Bow",
-            "Brawling",
-            "Reason",
-            "Faith",
-            "Authority",
-            "Armor",
-            "Riding",
-            "Flying",
-            "-------"});
-            this.combatTypeBox.Location = new System.Drawing.Point(6, 94);
-            this.combatTypeBox.Name = "combatTypeBox";
-            this.combatTypeBox.Size = new System.Drawing.Size(109, 21);
-            this.combatTypeBox.TabIndex = 7;
-            this.combatTypeBox.SelectedIndexChanged += new System.EventHandler(this.combatTypeBox_SelectedIndexChanged);
-            // 
-            // combatRankBox
-            // 
-            this.combatRankBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.combatRankBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combatRankBox.FormattingEnabled = true;
-            this.combatRankBox.Items.AddRange(new object[] {
-            "E",
-            "E+",
-            "D",
-            "D+",
-            "C",
-            "C+",
-            "B",
-            "B+",
-            "A",
-            "A+",
-            "S",
-            "S+"});
-            this.combatRankBox.Location = new System.Drawing.Point(150, 94);
-            this.combatRankBox.Name = "combatRankBox";
-            this.combatRankBox.Size = new System.Drawing.Size(82, 21);
-            this.combatRankBox.TabIndex = 6;
-            this.combatRankBox.SelectedIndexChanged += new System.EventHandler(this.combatRankBox_SelectedIndexChanged);
-            // 
-            // combatArtBox
-            // 
-            this.combatArtBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.combatArtBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combatArtBox.FormattingEnabled = true;
-            this.combatArtBox.Location = new System.Drawing.Point(6, 19);
-            this.combatArtBox.Name = "combatArtBox";
-            this.combatArtBox.Size = new System.Drawing.Size(226, 21);
-            this.combatArtBox.TabIndex = 1;
-            this.combatArtBox.SelectedIndexChanged += new System.EventHandler(this.combatArtBox_SelectedIndexChanged);
-            // 
-            // combatArtListGroupbox2
-            // 
-            this.combatArtListGroupbox2.Controls.Add(this.combatArtsListbox);
-            this.combatArtListGroupbox2.Location = new System.Drawing.Point(5, 3);
-            this.combatArtListGroupbox2.Name = "combatArtListGroupbox2";
-            this.combatArtListGroupbox2.Size = new System.Drawing.Size(102, 281);
-            this.combatArtListGroupbox2.TabIndex = 2;
-            this.combatArtListGroupbox2.TabStop = false;
-            this.combatArtListGroupbox2.Text = "Combat Arts List";
-            // 
-            // combatArtsListbox
-            // 
-            this.combatArtsListbox.FormattingEnabled = true;
-            this.combatArtsListbox.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.combatArtsListbox.Location = new System.Drawing.Point(6, 19);
-            this.combatArtsListbox.Name = "combatArtsListbox";
-            this.combatArtsListbox.Size = new System.Drawing.Size(85, 251);
-            this.combatArtsListbox.TabIndex = 0;
-            this.combatArtsListbox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
             // PersonDataEditorMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5145,10 +5145,10 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chestSize1NumBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chestSize2NumBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelScaleNumBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chestWidthScale)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chestSize1NumBox)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -5255,6 +5255,10 @@
             this.inventoryGroupbox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryFlagsNumbox)).EndInit();
             this.tableLayoutPanel13.ResumeLayout(false);
+            this.tabPage8.ResumeLayout(false);
+            this.combatArtListGroupbox.ResumeLayout(false);
+            this.combatArtListGroupbox.PerformLayout();
+            this.combatArtListGroupbox2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.facePicBox)).EndInit();
@@ -5301,10 +5305,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.tabPage8.ResumeLayout(false);
-            this.combatArtListGroupbox.ResumeLayout(false);
-            this.combatArtListGroupbox.PerformLayout();
-            this.combatArtListGroupbox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
