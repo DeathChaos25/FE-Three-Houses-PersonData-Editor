@@ -9,7 +9,7 @@ https://dotnet.microsoft.com/download/dotnet-framework/net472
   
 DISCLAIMER: While very much in a usable state, there are a lots of bugs that need to be ironed out, QoL implemented, code optimizations, etc etc.
 
-![Program WIP Screenshot](https://cdn.discordapp.com/attachments/377899265424621569/694374819709583410/unknown.png) 
+![Program WIP Screenshot](https://cdn.discordapp.com/attachments/516416628150239245/758438613854978058/unknown.png) 
 ![Program WIP Screenshot](https://cdn.discordapp.com/attachments/377899265424621569/694378127849422949/unknown.png)
 
 Makes use of (an earlier version of) Amicitia.IO from TGEnigma.
